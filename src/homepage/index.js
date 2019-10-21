@@ -5,7 +5,7 @@ var template2 = require('./template2');
 
 
 
-page('/Home', function(ctx,netx){
+page('/', function(ctx,netx){
     var main = document.getElementById('main-container');
     var arriba = document.getElementById('arriba');
 empty(arriba).appendChild(template);
