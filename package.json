@@ -1,0 +1,36 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "estoy es un blog de quinto semestre",
+  "main": "Gulpfile.js",
+  "dependencies": {
+    "empty-element": "^1.0.0",
+    "express": "^4.17.1",
+    "page": "^1.11.5",
+    "pug": "^2.0.4",
+    "bootstrap": "^4.3.1",
+    "yo-yo": "^1.4.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "babelify": "^10.0.0",
+    "browserify": "^16.5.0",
+    "gulp": "^4.0.2",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "vinyl-source-stream": "^2.0.0"
+  },
+  "scripts": {
+    "test": "Gulpfile.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.heroku.com/blog-quinto-semestre.git"
+  },
+  "keywords": [
+    "ciencia"
+  ],
+  "author": "team 1",
+  "license": "ISC"
+}
