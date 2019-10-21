@@ -1,5 +1,7 @@
 var express =require('express');
 var app = express();
+var distDir = __dirname + "/dist/";
+app.use(express.static(distDir));
 
 app.set('view engine' , 'pug');
 app.use(express.static('public'));
