@@ -1,7 +1,7 @@
 {
   "name": "blog",
   "version": "1.0.0",
-  "description": "estoy es un blog de quinto semestre",
+  "description": "esto es un blog de quinto semestre",
   "main": "Gulpfile.js",
   "dependencies": {
     "empty-element": "^1.0.0",
