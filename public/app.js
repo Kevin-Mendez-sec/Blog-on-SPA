@@ -2409,13 +2409,13 @@ pathToRegexp_1.tokensToRegExp = tokensToRegExp_1;
       return page.call(this, '*', path);
     }
 
-    // route <divath> to <callback ...>
+    // route <path> to <callback ...>
     if ('function' === typeof fn) {
       var route = new Route(/** @type {string} */ (path), null, this);
       for (var i = 1; i < arguments.length; ++i) {
         this.callbacks.push(route.middleware(arguments[i]));
       }
-      // show <divath> with [state]
+      // show <path> with [state]
     } else if ('string' === typeof path) {
       this['string' === typeof fn ? 'redirect' : 'show'](path, fn);
       // start [options]
@@ -2893,14 +2893,23 @@ module.exports = [
 },{}],15:[function(require,module,exports){
 var page = require('page');
 
-var yo = require('yo-yo');
-
 var empty = require('empty-element');
 
-var main = document.getElementById('main-container');
-var arriba = document.getElementById('arriba');
+var template = require('./template');
+
+var template2 = require('./template2');
+
 page('/Home', function (ctx, netx) {
-  var home1 = yo`
+  var main = document.getElementById('main-container');
+  var arriba = document.getElementById('arriba');
+  empty(arriba).appendChild(template);
+  empty(main).appendChild(template2);
+});
+
+},{"./template":16,"./template2":17,"empty-element":3,"page":11}],16:[function(require,module,exports){
+var yo = require('yo-yo');
+
+module.exports = yo`
 <div>
   <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
   <div class="col-md-6 px-0">
@@ -2940,11 +2949,15 @@ page('/Home', function (ctx, netx) {
   </div>
 </div>
   `;
-  var home2 = yo`
-  <div>
+
+},{"yo-yo":13}],17:[function(require,module,exports){
+var yo = require('yo-yo');
+
+module.exports = yo`
+<div>
   <h3 class="pb-4 mb-4 font-italic border-bottom">
   From the Firehose
-</h3>
+  </h3>
 
 <div class="blog-post">
   <h2 class="blog-post-title">Sample blog post</h2>
@@ -3011,31 +3024,44 @@ page('/Home', function (ctx, netx) {
 </nav>
 
 </div>`;
-  empty(arriba).appendChild(home1);
-  empty(main).appendChild(home2);
-});
-page('/Cultura', function () {});
-page('/fisica2', function () {});
-page('/calculo-diferencial', function () {});
-page('/nociones-de-derecho', function () {});
-page('/ingles', function () {});
-page('/artes', function () {});
-page('/estrategias', function () {
-  var es = yo`
-  <div>
-    <h1 class="blog-post-title text-center">ESTRATEGIAS</h1>
-      <div class="text-justify">
-        <h2>Mision</h2>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima totam voluptatum possimus tempore inventore quam vitae eaque beatae tenetur ab repellat dicta dolorum rem nam, vel iusto voluptatem impedit ratione! Doloremque architecto aliquam reprehenderit explicabo tempora at distinctio eligendi voluptatem laboriosam dolorum vel voluptatum nihil, sint nemo quibusdam laborum asperiores a veritatis aperiam quaerat laudantium, repudiandae quia. Facere, aliquid debitis!   
-        <h2>Vision</h2>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam obcaecati consequuntur laborum quae nostrum recusandae, ea perferendis placeat veniam, est rem expedita cupiditate eaque facere itaque esse. Exercitationem a dolor quis, laudantium odio recusandae veniam quas fugit ab necessitatibus tenetur sunt aliquam minima aspernatur repellat quo, laboriosam facilis iusto quibusdam officiis! Corrupti debitis pariatur sapiente! Commodi dignissimos ea pariatur natus!
-        <h2>Metas</h2>
-        Lorem, ipsum dolor <br> sit amet consectetur <br> adipisicing elit. Quia, eligendi.
-      </div>
-  </div>`;
-  empty(arriba);
-  empty(main).appendChild(es);
-});
+
+},{"yo-yo":13}],18:[function(require,module,exports){
+var page = require('page');
+
+require('./homepage');
+
+require('./optativas/estrategias'); //var main = document.getElementById('main-container');
+//var arriba = document.getElementById('arriba');
+
+
 page();
 
-},{"empty-element":3,"page":11,"yo-yo":13}]},{},[15]);
+},{"./homepage":15,"./optativas/estrategias":19,"page":11}],19:[function(require,module,exports){
+var page = require('page');
+
+var empty = require('empty-element');
+
+var template = require('./template');
+
+page('/estrategias', function (ctx, netx) {
+  var main = document.getElementById('main-container');
+  var arriba = document.getElementById('arriba');
+  empty(arriba);
+  empty(main).appendChild(template);
+});
+
+},{"./template":20,"empty-element":3,"page":11}],20:[function(require,module,exports){
+var yo = require('yo-yo');
+
+module.exports = yo`
+<div>
+  <h1 class="blog-post-title text-center">ESTRATEGIAS</h1>
+    <h2>Mision</h2>
+    <p class="text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima totam voluptatum possimus tempore inventore quam vitae eaque beatae tenetur ab repellat dicta dolorum rem nam, vel iusto voluptatem impedit ratione! Doloremque architecto aliquam reprehenderit explicabo tempora at distinctio eligendi voluptatem laboriosam dolorum vel voluptatum nihil, sint nemo quibusdam laborum asperiores a veritatis aperiam quaerat laudantium, repudiandae quia. Facere, aliquid debitis!   
+    <h2>Vision</h2>
+    <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam obcaecati consequuntur laborum quae nostrum recusandae, ea perferendis placeat veniam, est rem expedita cupiditate eaque facere itaque esse. Exercitationem a dolor quis, laudantium odio recusandae veniam quas fugit ab necessitatibus tenetur sunt aliquam minima aspernatur repellat quo, laboriosam facilis iusto quibusdam officiis! Corrupti debitis pariatur sapiente! Commodi dignissimos ea pariatur natus!
+    <h2>Metas</h2>
+    <p class="text-justify">Lorem, ipsum dolor <br> sit amet consectetur <br> adipisicing elit. Quia, eligendi.
+</div>`;
+
+},{"yo-yo":13}]},{},[18]);
