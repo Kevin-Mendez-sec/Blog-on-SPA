@@ -1,17 +1,42 @@
 var yo = require('yo-yo');
 module.exports = yo`
 <div>
-  <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
-  <div class="col-md-6 px-0">
-    <h1 class="display-4 font-italic">Title of a longer featured blog post</h1>
-    <div class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what’s most interesting in this post’s contents.</div>
-    <div class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continua Leyendo...</a></div>
-  </div>
-</div>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item ">
+        <img src="semaforos.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="text-dark">!Los semaforos inteligentes son la solución¡</h5>
+          <p class="text-dark">Para mejorar nuestro entorno esta es la solución</p>
+        </div>
+      </div>
+      <div class="carousel-item active">
+        <img src="http://mdbootstrap.com/img/Photos/Others/nature4.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://mdbootstrap.com/img/Photos/Others/images/92.jpg" class="d-block w-100 " alt="...">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    </div>
 
-<div class="row mb-2">
-  <div class="col-md-6">
-    <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+    <p class="p-2"></p>
+  
+  <div class="row mb-2">
+  <div class="col-md-6 ">
+    <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative shadow-lg bg-white rounded">
       <div class="col p-4 d-flex flex-column position-static">
         <strong class="d-inline-block mb-2 text-primary"> Alguna materia </strong>
         <h3 class="mb-0">Featured post</h3>
@@ -24,7 +49,7 @@ module.exports = yo`
     </div>
   </div>
   <div class="col-md-6">
-    <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+    <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative shadow-lg bg-white rounded">
       <div class="col p-4 d-flex flex-column position-static">
         <strong class="d-inline-block mb-2 text-success">Design</strong>
         <h3 class="mb-0">Post title</h3>
@@ -37,5 +62,6 @@ module.exports = yo`
       </div>
     </div>
   </div>
-</div>
+  </div>
+  </div>
   `;

@@ -3,7 +3,7 @@ var empty = require('empty-element');
 var template = require('./template');
 
 
-page('/optativas/estrategias', function(ctx,netx){
+page('/fisica', function(ctx,netx){
     var main = document.getElementById('main-container');
     var arriba = document.getElementById('arriba');
 empty(arriba);

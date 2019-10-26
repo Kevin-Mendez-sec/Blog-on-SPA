@@ -33,7 +33,7 @@ res.render('index');
 app.get('/optativas',function (req, res){
 res.render('index');
 })
-app.get('/estrategias',function (req, res){
+app.get('/optativas/estrategias',function (req, res){
 res.render('index');
 })
 

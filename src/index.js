@@ -1,7 +1,10 @@
 var page = require('page');
 require('./homepage');
+require('./cultura');
+require('./calculo');
+require('./derecho');
+require('./fisica');
+require('./optativas');
 require('./optativas/estrategias');
 
-//var main = document.getElementById('main-container');
-//var arriba = document.getElementById('arriba');
 page();
