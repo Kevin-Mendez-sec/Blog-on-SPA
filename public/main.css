@@ -4,6 +4,7 @@
   background-image: url("https://thumbs.dreamstime.com/z/header-footer-border-fresh-leaf-made-51094605.jpg");
   background-size: 50%;
   background-position: 50% 10%;
+  background-repeat:no-repeat;
 }
 
 .blog-header-logo {
@@ -125,4 +126,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 .blog-footer p:last-child {
   margin-bottom: 0;
+}
+#contenedor1{
+  background: url("trafico-introduccion.png") fixed; //Imagen de fondo
+  width:250px;
+  height: 350px; //altura del fondo
+  position: relative;
+  margin: 0 auto;
+  padding: 5%;
 }

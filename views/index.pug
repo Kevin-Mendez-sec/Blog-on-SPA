@@ -10,6 +10,7 @@ html(lang='en')
     // Bootstrap core CSS
     link(rel='stylesheet', href='app.css')
     link(rel='stylesheet', href='main.css')
+    script(src='https://use.fontawesome.com/a8624161fd.js')
     link(href='https://fonts.googleapis.com/css?family=Playfair+Display:700,900', rel='stylesheet')
     // Custom styles for this template
   body
@@ -21,7 +22,7 @@ html(lang='en')
       
       div.nav-scroller.py-1.mb-2.bg-dark
         nav.nav.d-flex.justify-content-between.container
-          a.p-2.text-white(href='/Cultura') Cultura y Desarrollo ambiental 
+          a.p-2.text-white(href='/Cultura') Cultura ambiental y Desarrollo sustentable 
           a.p-2.text-white(href='/fisica') Fisica II
           a.p-2.text-white(href='/calculo') Calculo Diferencial
           a.p-2.text-white(href='/derecho') Nociones de Derecho
@@ -66,11 +67,14 @@ html(lang='en')
                   li
                     a(href='#') Twitter
                   li
-                    a(href='#') Facebook
+                    a(href='#') 
+                      i.fa.fa-facebook-official(aria-hidden='true')
+                        |. Facebook
 
     footer.blog-footer
       p
-        | Blog hecho por el mejor equipo del mundo
+        i.fa.fa-heart(aria-hidden='true') _Blog hecho por el mejor equipo del mundo_ 
+        i.fa.fa-heart(aria-hidden='true')
       p
          a(href='/') volver al inicio
       script(src="app.js")

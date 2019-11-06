@@ -12,6 +12,9 @@ app.get('/',function (req, res){
 app.get('/Cultura',function (req, res){
 res.render('index');
 })
+app.get('/Cultura2',function (req, res){
+res.render('index');
+})
 
 app.get('/fisica',function (req, res){
 res.render('index');

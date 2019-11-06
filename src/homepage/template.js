@@ -32,7 +32,7 @@ module.exports = yo`
     </a>
     </div>
 
-    <p class="p-2"></p>
+    <div class="p-2"></div>
   
   <div class="row mb-2">
   <div class="col-md-6 ">
