@@ -10,4 +10,5 @@ page('/', function(ctx,netx){
     var arriba = document.getElementById('arriba');
 empty(arriba).appendChild(template);
 empty(main).appendChild(template2);
+empty()
 })

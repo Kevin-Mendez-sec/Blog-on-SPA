@@ -14,40 +14,31 @@ html(lang='en')
     link(href='https://fonts.googleapis.com/css?family=Playfair+Display:700,900', rel='stylesheet')
     // Custom styles for this template
   body
-    div.blog-header
+    .blog-header
       header
-        .flex-nowrap.justify-content-between.align-items-center 
-          .text-center 
-            a.blog-header-logo.text-center(href='/') Proyecto Verde
-      
-      div.nav-scroller.py-1.mb-2.bg-dark
+        .flex-nowrap.justify-content-between.align-items-center
+          .text-center
+            a.blog-header-logo.text-center(href='/') SMART TRAFFIC
+      .nav-scroller.py-1.materias
         nav.nav.d-flex.justify-content-between.container
-          a.p-2.text-white(href='/Cultura') Cultura ambiental y Desarrollo sustentable 
-          a.p-2.text-white(href='/fisica') Fisica II
-          a.p-2.text-white(href='/calculo') Calculo Diferencial
-          a.p-2.text-white(href='/derecho') Nociones de Derecho
-          a.p-2.text-white(href='/ingles') Ingles
-          a.p-2.text-white(href='/artes') Artes 
-          a.p-2.text-white(href='/optativas') Optativas
-
-    div.container  
+          a.p-2.text-white(href='/Cultura') CULTURA AMBIENTAL
+          a.p-2.text-white(href='/fisica') FISICA II
+          a.p-2.text-white(href='/calculo') CALCULO DIFERENCIAL
+          a.p-2.text-white(href='/derecho') NOCIONES DE DERECHO
+          a.p-2.text-white(href='/ingles') INGLÉS
+          a.p-2.text-white(href='/artes') ARTES
+          a.p-2.text-white(href='/optativas') OPTATIVAS
+    div#back
+      .container#principal
         section#arriba
-
         .container
           .row
             .col-md-8
               main#main-container
-        
-        
-
             aside.col-md-4.blog-sidebar
-              div.p-4.mb-3.bg-light.rounded
-                h4.font-italic About
-                p.mb-0
-                  | Etiam porta 
-                  em sem malesuada magna
-                  |  mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
-              div.p-4
+              .p-4.m-3.bg-light.rounded
+                div#about
+              .p-4.text-center
                 h4.font-italic Módulos
                 ol.list-unstyled.mb-0
                   li
@@ -58,26 +49,39 @@ html(lang='en')
                     a(href='/') Modulo 3
                   li
                     a(href='/') Módulo 4
-
-              div.p-4
-                h4.font-italic Elsewhere
+              .p-4.text-center
+                h4.font-italic Contactanos
+                  br
+                  br
                 ol.list-unstyled
                   li
-                    a(href='#') GitHub
-                  li
-                    a(href='#') Twitter
+                    a(href='#') 
+                      i.fa.fa-university.fa-3x 
+                      |. UAEMEX P5
+                      br
+                      br
                   li
                     a(href='#') 
-                      i.fa.fa-facebook-official(aria-hidden='true')
-                        |. Facebook
-
+                      i.fa.fa-instagram.fa-3x
+                      |.  Instagram
+                      br
+                      br
+                  li
+                    a(href='#')
+                      i.fa.fa-facebook-official.fa-3x
+                      |.  Facebook
+              .p-4.m-3.rounded
+                .text-center
+                  img(src="planta.png")
     footer.blog-footer
       p
         i.fa.fa-heart(aria-hidden='true') _Blog hecho por el mejor equipo del mundo_ 
         i.fa.fa-heart(aria-hidden='true')
       p
-         a(href='/') volver al inicio
-      script(src="app.js")
-      script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous")
-      script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous")
-      script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous")
+        a(href='/') volver al inicio
+      script(src='app.js')
+      script(src="https://unpkg.com/scrollreveal")
+      script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js', integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo', crossorigin='anonymous')
+      script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js', integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1', crossorigin='anonymous')
+      script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js', integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM', crossorigin='anonymous')
+      script(src="scripts.js")
