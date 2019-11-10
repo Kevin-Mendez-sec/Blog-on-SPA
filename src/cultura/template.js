@@ -29,10 +29,10 @@ module.exports= yo`
                 disminución en su rendimiento académico.
             </p>
             <div class="row pb-1">
-                <div id="contenedor1" class="col-5">
+                <div class="col-5">
                     <img src="trafico-introduccion.png" width="300px" height="400">
                 </div>
-                <div class="col-6 pt-2">
+                <div class="col-xl-7 pt-2">
                     <p>
                         Una las principales causas de este problema además del exceso de vehículos, es que los semáforos
                         que se ubican en las esquinas de estas calles están totalmente desincronizados y duran muy poco
@@ -40,16 +40,15 @@ module.exports= yo`
                         salida de los alumnos de la escuela preparatoria ya que los padres estacionan sus autos por
                         ambos lados de las calles entorpeciendo el tránsito
                     </p>
-
-                </div>
-                <p>
+                </div>     
+            </div>
+            <p class="p-2">
                     Sin entrar a plantear soluciones específicas, este documento pretende analizar cuáles son los
                     factores y las
                     consecuencias del tráfico, verdadera desgracia moderna de las zonas urbanas y amenaza para la
                     calidad de vida de sus
                     habitantes.
                 </p>
-            </div>
         </div>
         <!--PLANTEAMINETO DEL PROBLEMA-->
         <div class="text-justify">
@@ -140,7 +139,7 @@ module.exports= yo`
                 <div class="col-5">
                     <img src="trafico-teorico.png" width="300" height="400" alt="">
                 </div>
-                <div class="col-7">
+                <div class="col-xl-7">
                     <p>El ruido proveniente del trasporte vehicular constituye la principal fuente emisora de este
                         contaminante en las ciudades, producto de la necesidad de movilización diaria de millones de
                         personas a la escuela o al trabajo, además de los requerimientos de transporte para soporte del
@@ -226,7 +225,7 @@ module.exports= yo`
                 <div class="col-5">
                     <img src="trafico-salud.png" width="300" height="400">
                 </div>
-                <div class="col-7">
+                <div class="col-xl-7">
                     <p class="pb-2">Sin embargo, estudios realizados en varios países de la Comunidad Europea demuestran
                         que la contaminación producida por el tráfico es responsable de más muertes que las producidas
                         por los accidentes. (Madrid Salud. (11/09/2018) comunidad Europea.)</p>
@@ -252,7 +251,7 @@ module.exports= yo`
                 <div class="col-5">
                     <img src="gasolineria.jpg" width="300" height="150" alt="">
                 </div>
-                <div class="col-7">
+                <div class="col-xl-7">
                     <p class="pb-2">Con estos datos, es fácil entender por qué la movilidad urbana y la gestión de la
                         circulación de vehículos se ha convertido en uno de los grandes retos que deben afrontar las
                         urbes.</p>
@@ -274,7 +273,7 @@ module.exports= yo`
                     <div class="col-5">
                         <img src="trafico-soluciones.jpg" width="300" height="400" alt="">
                     </div>
-                    <div class="col-7">
+                    <div class="col-xl-7">
                         <p class="pb-2">Una alternativa que es factible es mejorar el sistema de tránsito por medio de
                             semáforos inteligentes que den prioridad a las calles con más tráfico para así evitarlo;
                             además estos semáforos inteligentes pueden alimentarse de energía solar lo cual beneficia al
@@ -296,9 +295,6 @@ module.exports= yo`
     <nav class="blog-pagination">
         <a href="/Cultura2" class="btn btn-outline-primary">Segunda parte</a>
     </nav>
-
-
-
 </div>
 
 `;

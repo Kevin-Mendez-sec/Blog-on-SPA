@@ -4,11 +4,12 @@
   "description": "esto es un blog de quinto semestre",
   "main": "Gulpfile.js",
   "dependencies": {
+    "bootstrap": "^4.3.1",
     "empty-element": "^1.0.0",
     "express": "^4.17.1",
     "page": "^1.11.5",
     "pug": "^2.0.4",
-    "bootstrap": "^4.3.1",
+    "scrollreveal": "^4.0.5",
     "yo-yo": "^1.4.1"
   },
   "devDependencies": {

@@ -11,8 +11,7 @@ module.exports = yo`
       <div class="carousel-item ">
         <img src="semaforos.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
-          <h5 class="text-dark">!Los semaforos inteligentes son la solución¡</h5>
-          <p class="text-dark">Para mejorar nuestro entorno esta es la solución</p>
+          <h1 class="text-dark">!Los semaforos inteligentes son la solución¡</h5>
         </div>
       </div>
       <div class="carousel-item active">
