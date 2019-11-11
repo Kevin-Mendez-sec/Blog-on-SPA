@@ -146,6 +146,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .titulo{
   font-family: 'Bowlby One SC', cursive;
+  color: forestgreen;
 }
 .subtitulo{
   font-family: 'Fredoka One', cursive;

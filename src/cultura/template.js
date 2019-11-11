@@ -7,7 +7,7 @@ module.exports= yo`
     <div class="text-justify">
         <!--INTRODUCCION-->
         <div>
-            <div class="rounded" style="background-color:#FA8072">
+            <div class="rounded-pill" style="background-color:#FA8072">
                 <h5 class="p-4 text-center  subtitulo">CÓMO EL TRÁFICO EN LAS CALLES DE HERIBERTO HENRÍQUEZ Y CEBORUCO
                     AFECTA DE MANERA VISUAL Y AUDITIVA A LOS ALUMNOS DEL PLANTEL "DR. ANGEL MA. GARIBAY KINTANA" Y A LA
                     BIODIVERSIDAD.</h5>
@@ -83,7 +83,7 @@ module.exports= yo`
         <div>
             <h5 class="pb-2 text-center rounded-pill subtitulo" style="background-color: #008080">OBJETIVOS</h5>
             <h6 class="pb-1 text-center objetivos">Generales</h6>
-            <div style="background-color: #1ba3a3;">
+            <div class="rounded" style="background-color: #1ba3a3;">
                  <p class="p-1">
                     1.- Lograr que se disminuya el trafico en las calles de Heriberto Henríquez y Ceboruco.
                 </p>
@@ -93,7 +93,7 @@ module.exports= yo`
             </div>
             
             <h6 class="pb-1 text-center objetivos">Especificos</h6>
-            <div style="background: aquamarine;">
+            <div class="rounded" style="background: aquamarine;">
                 <p class="pb-1">1. Colocar semáforos inteligentes. </p>
                 <p class="pb-1">2. Disminuir la congestión automovilística</p>
                 <p class="pb-1">3. Reducir el efecto que el trafico vehicular tiene sobre los alumnos.</p>
