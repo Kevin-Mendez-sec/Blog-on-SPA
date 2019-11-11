@@ -2809,1554 +2809,6 @@ process.chdir = function (dir) {
 process.umask = function() { return 0; };
 
 },{}],13:[function(require,module,exports){
-/*! @license ScrollReveal v4.0.5
-
-	Copyright 2018 Fisssion LLC.
-
-	Licensed under the GNU General Public License 3.0 for
-	compatible open source projects and non-commercial use.
-
-	For commercial sites, themes, projects, and applications,
-	keep your source code private/proprietary by purchasing
-	a commercial license from https://scrollrevealjs.org/
-*/
-(function (global, factory) {
-	typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
-	typeof define === 'function' && define.amd ? define(factory) :
-	(global.ScrollReveal = factory());
-}(this, (function () { 'use strict';
-
-var defaults = {
-	delay: 0,
-	distance: '0',
-	duration: 600,
-	easing: 'cubic-bezier(0.5, 0, 0, 1)',
-	interval: 0,
-	opacity: 0,
-	origin: 'bottom',
-	rotate: {
-		x: 0,
-		y: 0,
-		z: 0
-	},
-	scale: 1,
-	cleanup: false,
-	container: document.documentElement,
-	desktop: true,
-	mobile: true,
-	reset: false,
-	useDelay: 'always',
-	viewFactor: 0.0,
-	viewOffset: {
-		top: 0,
-		right: 0,
-		bottom: 0,
-		left: 0
-	},
-	afterReset: function afterReset() {},
-	afterReveal: function afterReveal() {},
-	beforeReset: function beforeReset() {},
-	beforeReveal: function beforeReveal() {}
-}
-
-function failure() {
-	document.documentElement.classList.remove('sr');
-
-	return {
-		clean: function clean() {},
-		destroy: function destroy() {},
-		reveal: function reveal() {},
-		sync: function sync() {},
-		get noop() {
-			return true
-		}
-	}
-}
-
-function success() {
-	document.documentElement.classList.add('sr');
-
-	if (document.body) {
-		document.body.style.height = '100%';
-	} else {
-		document.addEventListener('DOMContentLoaded', function () {
-			document.body.style.height = '100%';
-		});
-	}
-}
-
-var mount = { success: success, failure: failure }
-
-/*! @license is-dom-node v1.0.4
-
-	Copyright 2018 Fisssion LLC.
-
-	Permission is hereby granted, free of charge, to any person obtaining a copy
-	of this software and associated documentation files (the "Software"), to deal
-	in the Software without restriction, including without limitation the rights
-	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-	copies of the Software, and to permit persons to whom the Software is
-	furnished to do so, subject to the following conditions:
-
-	The above copyright notice and this permission notice shall be included in all
-	copies or substantial portions of the Software.
-
-	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-	SOFTWARE.
-
-*/
-function isDomNode(x) {
-	return typeof window.Node === 'object'
-		? x instanceof window.Node
-		: x !== null &&
-				typeof x === 'object' &&
-				typeof x.nodeType === 'number' &&
-				typeof x.nodeName === 'string'
-}
-
-/*! @license is-dom-node-list v1.2.1
-
-	Copyright 2018 Fisssion LLC.
-
-	Permission is hereby granted, free of charge, to any person obtaining a copy
-	of this software and associated documentation files (the "Software"), to deal
-	in the Software without restriction, including without limitation the rights
-	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-	copies of the Software, and to permit persons to whom the Software is
-	furnished to do so, subject to the following conditions:
-
-	The above copyright notice and this permission notice shall be included in all
-	copies or substantial portions of the Software.
-
-	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-	SOFTWARE.
-
-*/
-function isDomNodeList(x) {
-	var prototypeToString = Object.prototype.toString.call(x);
-	var regex = /^\[object (HTMLCollection|NodeList|Object)\]$/;
-
-	return typeof window.NodeList === 'object'
-		? x instanceof window.NodeList
-		: x !== null &&
-				typeof x === 'object' &&
-				typeof x.length === 'number' &&
-				regex.test(prototypeToString) &&
-				(x.length === 0 || isDomNode(x[0]))
-}
-
-/*! @license Tealight v0.3.6
-
-	Copyright 2018 Fisssion LLC.
-
-	Permission is hereby granted, free of charge, to any person obtaining a copy
-	of this software and associated documentation files (the "Software"), to deal
-	in the Software without restriction, including without limitation the rights
-	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-	copies of the Software, and to permit persons to whom the Software is
-	furnished to do so, subject to the following conditions:
-
-	The above copyright notice and this permission notice shall be included in all
-	copies or substantial portions of the Software.
-
-	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-	SOFTWARE.
-
-*/
-function tealight(target, context) {
-  if ( context === void 0 ) { context = document; }
-
-  if (target instanceof Array) { return target.filter(isDomNode); }
-  if (isDomNode(target)) { return [target]; }
-  if (isDomNodeList(target)) { return Array.prototype.slice.call(target); }
-  if (typeof target === "string") {
-    try {
-      var query = context.querySelectorAll(target);
-      return Array.prototype.slice.call(query);
-    } catch (err) {
-      return [];
-    }
-  }
-  return [];
-}
-
-function isObject(x) {
-	return (
-		x !== null &&
-		x instanceof Object &&
-		(x.constructor === Object ||
-			Object.prototype.toString.call(x) === '[object Object]')
-	)
-}
-
-function each(collection, callback) {
-	if (isObject(collection)) {
-		var keys = Object.keys(collection);
-		return keys.forEach(function (key) { return callback(collection[key], key, collection); })
-	}
-	if (collection instanceof Array) {
-		return collection.forEach(function (item, i) { return callback(item, i, collection); })
-	}
-	throw new TypeError('Expected either an array or object literal.')
-}
-
-function logger(message) {
-	var details = [], len = arguments.length - 1;
-	while ( len-- > 0 ) details[ len ] = arguments[ len + 1 ];
-
-	if (this.constructor.debug && console) {
-		var report = "%cScrollReveal: " + message;
-		details.forEach(function (detail) { return (report += "\n — " + detail); });
-		console.log(report, 'color: #ea654b;'); // eslint-disable-line no-console
-	}
-}
-
-function rinse() {
-	var this$1 = this;
-
-	var struct = function () { return ({
-		active: [],
-		stale: []
-	}); };
-
-	var elementIds = struct();
-	var sequenceIds = struct();
-	var containerIds = struct();
-
-	/**
-	 * Take stock of active element IDs.
-	 */
-	try {
-		each(tealight('[data-sr-id]'), function (node) {
-			var id = parseInt(node.getAttribute('data-sr-id'));
-			elementIds.active.push(id);
-		});
-	} catch (e) {
-		throw e
-	}
-	/**
-	 * Destroy stale elements.
-	 */
-	each(this.store.elements, function (element) {
-		if (elementIds.active.indexOf(element.id) === -1) {
-			elementIds.stale.push(element.id);
-		}
-	});
-
-	each(elementIds.stale, function (staleId) { return delete this$1.store.elements[staleId]; });
-
-	/**
-	 * Take stock of active container and sequence IDs.
-	 */
-	each(this.store.elements, function (element) {
-		if (containerIds.active.indexOf(element.containerId) === -1) {
-			containerIds.active.push(element.containerId);
-		}
-		if (element.hasOwnProperty('sequence')) {
-			if (sequenceIds.active.indexOf(element.sequence.id) === -1) {
-				sequenceIds.active.push(element.sequence.id);
-			}
-		}
-	});
-
-	/**
-	 * Destroy stale containers.
-	 */
-	each(this.store.containers, function (container) {
-		if (containerIds.active.indexOf(container.id) === -1) {
-			containerIds.stale.push(container.id);
-		}
-	});
-
-	each(containerIds.stale, function (staleId) {
-		var stale = this$1.store.containers[staleId].node;
-		stale.removeEventListener('scroll', this$1.delegate);
-		stale.removeEventListener('resize', this$1.delegate);
-		delete this$1.store.containers[staleId];
-	});
-
-	/**
-	 * Destroy stale sequences.
-	 */
-	each(this.store.sequences, function (sequence) {
-		if (sequenceIds.active.indexOf(sequence.id) === -1) {
-			sequenceIds.stale.push(sequence.id);
-		}
-	});
-
-	each(sequenceIds.stale, function (staleId) { return delete this$1.store.sequences[staleId]; });
-}
-
-function clean(target) {
-	var this$1 = this;
-
-	var dirty;
-	try {
-		each(tealight(target), function (node) {
-			var id = node.getAttribute('data-sr-id');
-			if (id !== null) {
-				dirty = true;
-				var element = this$1.store.elements[id];
-				if (element.callbackTimer) {
-					window.clearTimeout(element.callbackTimer.clock);
-				}
-				node.setAttribute('style', element.styles.inline.generated);
-				node.removeAttribute('data-sr-id');
-				delete this$1.store.elements[id];
-			}
-		});
-	} catch (e) {
-		return logger.call(this, 'Clean failed.', e.message)
-	}
-
-	if (dirty) {
-		try {
-			rinse.call(this);
-		} catch (e) {
-			return logger.call(this, 'Clean failed.', e.message)
-		}
-	}
-}
-
-function destroy() {
-	var this$1 = this;
-
-	/**
-	 * Remove all generated styles and element ids
-	 */
-	each(this.store.elements, function (element) {
-		element.node.setAttribute('style', element.styles.inline.generated);
-		element.node.removeAttribute('data-sr-id');
-	});
-
-	/**
-	 * Remove all event listeners.
-	 */
-	each(this.store.containers, function (container) {
-		var target =
-			container.node === document.documentElement ? window : container.node;
-		target.removeEventListener('scroll', this$1.delegate);
-		target.removeEventListener('resize', this$1.delegate);
-	});
-
-	/**
-	 * Clear all data from the store
-	 */
-	this.store = {
-		containers: {},
-		elements: {},
-		history: [],
-		sequences: {}
-	};
-}
-
-/*! @license Rematrix v0.3.0
-
-	Copyright 2018 Julian Lloyd.
-
-	Permission is hereby granted, free of charge, to any person obtaining a copy
-	of this software and associated documentation files (the "Software"), to deal
-	in the Software without restriction, including without limitation the rights
-	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-	copies of the Software, and to permit persons to whom the Software is
-	furnished to do so, subject to the following conditions:
-
-	The above copyright notice and this permission notice shall be included in
-	all copies or substantial portions of the Software.
-
-	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-	THE SOFTWARE.
-*/
-/**
- * @module Rematrix
- */
-
-/**
- * Transformation matrices in the browser come in two flavors:
- *
- *  - `matrix` using 6 values (short)
- *  - `matrix3d` using 16 values (long)
- *
- * This utility follows this [conversion guide](https://goo.gl/EJlUQ1)
- * to expand short form matrices to their equivalent long form.
- *
- * @param  {array} source - Accepts both short and long form matrices.
- * @return {array}
- */
-function format(source) {
-	if (source.constructor !== Array) {
-		throw new TypeError('Expected array.')
-	}
-	if (source.length === 16) {
-		return source
-	}
-	if (source.length === 6) {
-		var matrix = identity();
-		matrix[0] = source[0];
-		matrix[1] = source[1];
-		matrix[4] = source[2];
-		matrix[5] = source[3];
-		matrix[12] = source[4];
-		matrix[13] = source[5];
-		return matrix
-	}
-	throw new RangeError('Expected array with either 6 or 16 values.')
-}
-
-/**
- * Returns a matrix representing no transformation. The product of any matrix
- * multiplied by the identity matrix will be the original matrix.
- *
- * > **Tip:** Similar to how `5 * 1 === 5`, where `1` is the identity.
- *
- * @return {array}
- */
-function identity() {
-	var matrix = [];
-	for (var i = 0; i < 16; i++) {
-		i % 5 == 0 ? matrix.push(1) : matrix.push(0);
-	}
-	return matrix
-}
-
-/**
- * Returns a 4x4 matrix describing the combined transformations
- * of both arguments.
- *
- * > **Note:** Order is very important. For example, rotating 45°
- * along the Z-axis, followed by translating 500 pixels along the
- * Y-axis... is not the same as translating 500 pixels along the
- * Y-axis, followed by rotating 45° along on the Z-axis.
- *
- * @param  {array} m - Accepts both short and long form matrices.
- * @param  {array} x - Accepts both short and long form matrices.
- * @return {array}
- */
-function multiply(m, x) {
-	var fm = format(m);
-	var fx = format(x);
-	var product = [];
-
-	for (var i = 0; i < 4; i++) {
-		var row = [fm[i], fm[i + 4], fm[i + 8], fm[i + 12]];
-		for (var j = 0; j < 4; j++) {
-			var k = j * 4;
-			var col = [fx[k], fx[k + 1], fx[k + 2], fx[k + 3]];
-			var result =
-				row[0] * col[0] + row[1] * col[1] + row[2] * col[2] + row[3] * col[3];
-
-			product[i + k] = result;
-		}
-	}
-
-	return product
-}
-
-/**
- * Attempts to return a 4x4 matrix describing the CSS transform
- * matrix passed in, but will return the identity matrix as a
- * fallback.
- *
- * > **Tip:** This method is used to convert a CSS matrix (retrieved as a
- * `string` from computed styles) to its equivalent array format.
- *
- * @param  {string} source - `matrix` or `matrix3d` CSS Transform value.
- * @return {array}
- */
-function parse(source) {
-	if (typeof source === 'string') {
-		var match = source.match(/matrix(3d)?\(([^)]+)\)/);
-		if (match) {
-			var raw = match[2].split(', ').map(parseFloat);
-			return format(raw)
-		}
-	}
-	return identity()
-}
-
-/**
- * Returns a 4x4 matrix describing X-axis rotation.
- *
- * @param  {number} angle - Measured in degrees.
- * @return {array}
- */
-function rotateX(angle) {
-	var theta = Math.PI / 180 * angle;
-	var matrix = identity();
-
-	matrix[5] = matrix[10] = Math.cos(theta);
-	matrix[6] = matrix[9] = Math.sin(theta);
-	matrix[9] *= -1;
-
-	return matrix
-}
-
-/**
- * Returns a 4x4 matrix describing Y-axis rotation.
- *
- * @param  {number} angle - Measured in degrees.
- * @return {array}
- */
-function rotateY(angle) {
-	var theta = Math.PI / 180 * angle;
-	var matrix = identity();
-
-	matrix[0] = matrix[10] = Math.cos(theta);
-	matrix[2] = matrix[8] = Math.sin(theta);
-	matrix[2] *= -1;
-
-	return matrix
-}
-
-/**
- * Returns a 4x4 matrix describing Z-axis rotation.
- *
- * @param  {number} angle - Measured in degrees.
- * @return {array}
- */
-function rotateZ(angle) {
-	var theta = Math.PI / 180 * angle;
-	var matrix = identity();
-
-	matrix[0] = matrix[5] = Math.cos(theta);
-	matrix[1] = matrix[4] = Math.sin(theta);
-	matrix[4] *= -1;
-
-	return matrix
-}
-
-/**
- * Returns a 4x4 matrix describing 2D scaling. The first argument
- * is used for both X and Y-axis scaling, unless an optional
- * second argument is provided to explicitly define Y-axis scaling.
- *
- * @param  {number} scalar    - Decimal multiplier.
- * @param  {number} [scalarY] - Decimal multiplier.
- * @return {array}
- */
-function scale(scalar, scalarY) {
-	var matrix = identity();
-
-	matrix[0] = scalar;
-	matrix[5] = typeof scalarY === 'number' ? scalarY : scalar;
-
-	return matrix
-}
-
-/**
- * Returns a 4x4 matrix describing X-axis translation.
- *
- * @param  {number} distance - Measured in pixels.
- * @return {array}
- */
-function translateX(distance) {
-	var matrix = identity();
-	matrix[12] = distance;
-	return matrix
-}
-
-/**
- * Returns a 4x4 matrix describing Y-axis translation.
- *
- * @param  {number} distance - Measured in pixels.
- * @return {array}
- */
-function translateY(distance) {
-	var matrix = identity();
-	matrix[13] = distance;
-	return matrix
-}
-
-var getPrefixedCssProp = (function () {
-	var properties = {};
-	var style = document.documentElement.style;
-
-	function getPrefixedCssProperty(name, source) {
-		if ( source === void 0 ) source = style;
-
-		if (name && typeof name === 'string') {
-			if (properties[name]) {
-				return properties[name]
-			}
-			if (typeof source[name] === 'string') {
-				return (properties[name] = name)
-			}
-			if (typeof source[("-webkit-" + name)] === 'string') {
-				return (properties[name] = "-webkit-" + name)
-			}
-			throw new RangeError(("Unable to find \"" + name + "\" style property."))
-		}
-		throw new TypeError('Expected a string.')
-	}
-
-	getPrefixedCssProperty.clearCache = function () { return (properties = {}); };
-
-	return getPrefixedCssProperty
-})();
-
-function style(element) {
-	var computed = window.getComputedStyle(element.node);
-	var position = computed.position;
-	var config = element.config;
-
-	/**
-	 * Generate inline styles
-	 */
-	var inline = {};
-	var inlineStyle = element.node.getAttribute('style') || '';
-	var inlineMatch = inlineStyle.match(/[\w-]+\s*:\s*[^;]+\s*/gi) || [];
-
-	inline.computed = inlineMatch ? inlineMatch.map(function (m) { return m.trim(); }).join('; ') + ';' : '';
-
-	inline.generated = inlineMatch.some(function (m) { return m.match(/visibility\s?:\s?visible/i); })
-		? inline.computed
-		: inlineMatch.concat( ['visibility: visible']).map(function (m) { return m.trim(); }).join('; ') + ';';
-
-	/**
-	 * Generate opacity styles
-	 */
-	var computedOpacity = parseFloat(computed.opacity);
-	var configOpacity = !isNaN(parseFloat(config.opacity))
-		? parseFloat(config.opacity)
-		: parseFloat(computed.opacity);
-
-	var opacity = {
-		computed: computedOpacity !== configOpacity ? ("opacity: " + computedOpacity + ";") : '',
-		generated: computedOpacity !== configOpacity ? ("opacity: " + configOpacity + ";") : ''
-	};
-
-	/**
-	 * Generate transformation styles
-	 */
-	var transformations = [];
-
-	if (parseFloat(config.distance)) {
-		var axis = config.origin === 'top' || config.origin === 'bottom' ? 'Y' : 'X';
-
-		/**
-		 * Let’s make sure our our pixel distances are negative for top and left.
-		 * e.g. { origin: 'top', distance: '25px' } starts at `top: -25px` in CSS.
-		 */
-		var distance = config.distance;
-		if (config.origin === 'top' || config.origin === 'left') {
-			distance = /^-/.test(distance) ? distance.substr(1) : ("-" + distance);
-		}
-
-		var ref = distance.match(/(^-?\d+\.?\d?)|(em$|px$|%$)/g);
-		var value = ref[0];
-		var unit = ref[1];
-
-		switch (unit) {
-			case 'em':
-				distance = parseInt(computed.fontSize) * value;
-				break
-			case 'px':
-				distance = value;
-				break
-			case '%':
-				/**
-				 * Here we use `getBoundingClientRect` instead of
-				 * the existing data attached to `element.geometry`
-				 * because only the former includes any transformations
-				 * current applied to the element.
-				 *
-				 * If that behavior ends up being unintuitive, this
-				 * logic could instead utilize `element.geometry.height`
-				 * and `element.geoemetry.width` for the distaince calculation
-				 */
-				distance =
-					axis === 'Y'
-						? element.node.getBoundingClientRect().height * value / 100
-						: element.node.getBoundingClientRect().width * value / 100;
-				break
-			default:
-				throw new RangeError('Unrecognized or missing distance unit.')
-		}
-
-		if (axis === 'Y') {
-			transformations.push(translateY(distance));
-		} else {
-			transformations.push(translateX(distance));
-		}
-	}
-
-	if (config.rotate.x) { transformations.push(rotateX(config.rotate.x)); }
-	if (config.rotate.y) { transformations.push(rotateY(config.rotate.y)); }
-	if (config.rotate.z) { transformations.push(rotateZ(config.rotate.z)); }
-	if (config.scale !== 1) {
-		if (config.scale === 0) {
-			/**
-			 * The CSS Transforms matrix interpolation specification
-			 * basically disallows transitions of non-invertible
-			 * matrixes, which means browsers won't transition
-			 * elements with zero scale.
-			 *
-			 * That’s inconvenient for the API and developer
-			 * experience, so we simply nudge their value
-			 * slightly above zero; this allows browsers
-			 * to transition our element as expected.
-			 *
-			 * `0.0002` was the smallest number
-			 * that performed across browsers.
-			 */
-			transformations.push(scale(0.0002));
-		} else {
-			transformations.push(scale(config.scale));
-		}
-	}
-
-	var transform = {};
-	if (transformations.length) {
-		transform.property = getPrefixedCssProp('transform');
-		/**
-		 * The default computed transform value should be one of:
-		 * undefined || 'none' || 'matrix()' || 'matrix3d()'
-		 */
-		transform.computed = {
-			raw: computed[transform.property],
-			matrix: parse(computed[transform.property])
-		};
-
-		transformations.unshift(transform.computed.matrix);
-		var product = transformations.reduce(multiply);
-
-		transform.generated = {
-			initial: ((transform.property) + ": matrix3d(" + (product.join(', ')) + ");"),
-			final: ((transform.property) + ": matrix3d(" + (transform.computed.matrix.join(
-				', '
-			)) + ");")
-		};
-	} else {
-		transform.generated = {
-			initial: '',
-			final: ''
-		};
-	}
-
-	/**
-	 * Generate transition styles
-	 */
-	var transition = {};
-	if (opacity.generated || transform.generated.initial) {
-		transition.property = getPrefixedCssProp('transition');
-		transition.computed = computed[transition.property];
-		transition.fragments = [];
-
-		var delay = config.delay;
-		var duration = config.duration;
-		var easing = config.easing;
-
-		if (opacity.generated) {
-			transition.fragments.push({
-				delayed: ("opacity " + (duration / 1000) + "s " + easing + " " + (delay / 1000) + "s"),
-				instant: ("opacity " + (duration / 1000) + "s " + easing + " 0s")
-			});
-		}
-
-		if (transform.generated.initial) {
-			transition.fragments.push({
-				delayed: ((transform.property) + " " + (duration / 1000) + "s " + easing + " " + (delay /
-					1000) + "s"),
-				instant: ((transform.property) + " " + (duration / 1000) + "s " + easing + " 0s")
-			});
-		}
-
-		/**
-		 * The default computed transition property should be one of:
-		 * undefined || '' || 'all 0s ease 0s' || 'all 0s 0s cubic-bezier()'
-		 */
-		if (transition.computed && !transition.computed.match(/all 0s/)) {
-			transition.fragments.unshift({
-				delayed: transition.computed,
-				instant: transition.computed
-			});
-		}
-
-		var composed = transition.fragments.reduce(
-			function (composition, fragment, i) {
-				composition.delayed +=
-					i === 0 ? fragment.delayed : (", " + (fragment.delayed));
-				composition.instant +=
-					i === 0 ? fragment.instant : (", " + (fragment.instant));
-				return composition
-			},
-			{
-				delayed: '',
-				instant: ''
-			}
-		);
-
-		transition.generated = {
-			delayed: ((transition.property) + ": " + (composed.delayed) + ";"),
-			instant: ((transition.property) + ": " + (composed.instant) + ";")
-		};
-	} else {
-		transition.generated = {
-			delayed: '',
-			instant: ''
-		};
-	}
-
-	return {
-		inline: inline,
-		opacity: opacity,
-		position: position,
-		transform: transform,
-		transition: transition
-	}
-}
-
-function animate(element, force) {
-	if ( force === void 0 ) force = {};
-
-	var pristine = force.pristine || this.pristine;
-	var delayed =
-		element.config.useDelay === 'always' ||
-		(element.config.useDelay === 'onload' && pristine) ||
-		(element.config.useDelay === 'once' && !element.seen);
-
-	var shouldReveal = element.visible && !element.revealed;
-	var shouldReset = !element.visible && element.revealed && element.config.reset;
-
-	if (force.reveal || shouldReveal) {
-		return triggerReveal.call(this, element, delayed)
-	}
-
-	if (force.reset || shouldReset) {
-		return triggerReset.call(this, element)
-	}
-}
-
-function triggerReveal(element, delayed) {
-	var styles = [
-		element.styles.inline.generated,
-		element.styles.opacity.computed,
-		element.styles.transform.generated.final
-	];
-	if (delayed) {
-		styles.push(element.styles.transition.generated.delayed);
-	} else {
-		styles.push(element.styles.transition.generated.instant);
-	}
-	element.revealed = element.seen = true;
-	element.node.setAttribute('style', styles.filter(function (s) { return s !== ''; }).join(' '));
-	registerCallbacks.call(this, element, delayed);
-}
-
-function triggerReset(element) {
-	var styles = [
-		element.styles.inline.generated,
-		element.styles.opacity.generated,
-		element.styles.transform.generated.initial,
-		element.styles.transition.generated.instant
-	];
-	element.revealed = false;
-	element.node.setAttribute('style', styles.filter(function (s) { return s !== ''; }).join(' '));
-	registerCallbacks.call(this, element);
-}
-
-function registerCallbacks(element, isDelayed) {
-	var this$1 = this;
-
-	var duration = isDelayed
-		? element.config.duration + element.config.delay
-		: element.config.duration;
-
-	var beforeCallback = element.revealed
-		? element.config.beforeReveal
-		: element.config.beforeReset;
-
-	var afterCallback = element.revealed
-		? element.config.afterReveal
-		: element.config.afterReset;
-
-	var elapsed = 0;
-	if (element.callbackTimer) {
-		elapsed = Date.now() - element.callbackTimer.start;
-		window.clearTimeout(element.callbackTimer.clock);
-	}
-
-	beforeCallback(element.node);
-
-	element.callbackTimer = {
-		start: Date.now(),
-		clock: window.setTimeout(function () {
-			afterCallback(element.node);
-			element.callbackTimer = null;
-			if (element.revealed && !element.config.reset && element.config.cleanup) {
-				clean.call(this$1, element.node);
-			}
-		}, duration - elapsed)
-	};
-}
-
-var nextUniqueId = (function () {
-	var uid = 0;
-	return function () { return uid++; }
-})();
-
-function sequence(element, pristine) {
-	if ( pristine === void 0 ) pristine = this.pristine;
-
-	/**
-	 * We first check if the element should reset.
-	 */
-	if (!element.visible && element.revealed && element.config.reset) {
-		return animate.call(this, element, { reset: true })
-	}
-
-	var seq = this.store.sequences[element.sequence.id];
-	var i = element.sequence.index;
-
-	if (seq) {
-		var visible = new SequenceModel(seq, 'visible', this.store);
-		var revealed = new SequenceModel(seq, 'revealed', this.store);
-
-		seq.models = { visible: visible, revealed: revealed };
-
-		/**
-		 * If the sequence has no revealed members,
-		 * then we reveal the first visible element
-		 * within that sequence.
-		 *
-		 * The sequence then cues a recursive call
-		 * in both directions.
-		 */
-		if (!revealed.body.length) {
-			var nextId = seq.members[visible.body[0]];
-			var nextElement = this.store.elements[nextId];
-
-			if (nextElement) {
-				cue.call(this, seq, visible.body[0], -1, pristine);
-				cue.call(this, seq, visible.body[0], +1, pristine);
-				return animate.call(this, nextElement, { reveal: true, pristine: pristine })
-			}
-		}
-
-		/**
-		 * If our element isn’t resetting, we check the
-		 * element sequence index against the head, and
-		 * then the foot of the sequence.
-		 */
-		if (
-			!seq.blocked.head &&
-			i === [].concat( revealed.head ).pop() &&
-			i >= [].concat( visible.body ).shift()
-		) {
-			cue.call(this, seq, i, -1, pristine);
-			return animate.call(this, element, { reveal: true, pristine: pristine })
-		}
-
-		if (
-			!seq.blocked.foot &&
-			i === [].concat( revealed.foot ).shift() &&
-			i <= [].concat( visible.body ).pop()
-		) {
-			cue.call(this, seq, i, +1, pristine);
-			return animate.call(this, element, { reveal: true, pristine: pristine })
-		}
-	}
-}
-
-function Sequence(interval) {
-	var i = Math.abs(interval);
-	if (!isNaN(i)) {
-		this.id = nextUniqueId();
-		this.interval = Math.max(i, 16);
-		this.members = [];
-		this.models = {};
-		this.blocked = {
-			head: false,
-			foot: false
-		};
-	} else {
-		throw new RangeError('Invalid sequence interval.')
-	}
-}
-
-function SequenceModel(seq, prop, store) {
-	var this$1 = this;
-
-	this.head = [];
-	this.body = [];
-	this.foot = [];
-
-	each(seq.members, function (id, index) {
-		var element = store.elements[id];
-		if (element && element[prop]) {
-			this$1.body.push(index);
-		}
-	});
-
-	if (this.body.length) {
-		each(seq.members, function (id, index) {
-			var element = store.elements[id];
-			if (element && !element[prop]) {
-				if (index < this$1.body[0]) {
-					this$1.head.push(index);
-				} else {
-					this$1.foot.push(index);
-				}
-			}
-		});
-	}
-}
-
-function cue(seq, i, direction, pristine) {
-	var this$1 = this;
-
-	var blocked = ['head', null, 'foot'][1 + direction];
-	var nextId = seq.members[i + direction];
-	var nextElement = this.store.elements[nextId];
-
-	seq.blocked[blocked] = true;
-
-	setTimeout(function () {
-		seq.blocked[blocked] = false;
-		if (nextElement) {
-			sequence.call(this$1, nextElement, pristine);
-		}
-	}, seq.interval);
-}
-
-function initialize() {
-	var this$1 = this;
-
-	rinse.call(this);
-
-	each(this.store.elements, function (element) {
-		var styles = [element.styles.inline.generated];
-
-		if (element.visible) {
-			styles.push(element.styles.opacity.computed);
-			styles.push(element.styles.transform.generated.final);
-			element.revealed = true;
-		} else {
-			styles.push(element.styles.opacity.generated);
-			styles.push(element.styles.transform.generated.initial);
-			element.revealed = false;
-		}
-
-		element.node.setAttribute('style', styles.filter(function (s) { return s !== ''; }).join(' '));
-	});
-
-	each(this.store.containers, function (container) {
-		var target =
-			container.node === document.documentElement ? window : container.node;
-		target.addEventListener('scroll', this$1.delegate);
-		target.addEventListener('resize', this$1.delegate);
-	});
-
-	/**
-	 * Manually invoke delegate once to capture
-	 * element and container dimensions, container
-	 * scroll position, and trigger any valid reveals
-	 */
-	this.delegate();
-
-	/**
-	 * Wipe any existing `setTimeout` now
-	 * that initialization has completed.
-	 */
-	this.initTimeout = null;
-}
-
-function isMobile(agent) {
-	if ( agent === void 0 ) agent = navigator.userAgent;
-
-	return /Android|iPhone|iPad|iPod/i.test(agent)
-}
-
-function deepAssign(target) {
-	var sources = [], len = arguments.length - 1;
-	while ( len-- > 0 ) sources[ len ] = arguments[ len + 1 ];
-
-	if (isObject(target)) {
-		each(sources, function (source) {
-			each(source, function (data, key) {
-				if (isObject(data)) {
-					if (!target[key] || !isObject(target[key])) {
-						target[key] = {};
-					}
-					deepAssign(target[key], data);
-				} else {
-					target[key] = data;
-				}
-			});
-		});
-		return target
-	} else {
-		throw new TypeError('Target must be an object literal.')
-	}
-}
-
-function reveal(target, options, syncing) {
-	var this$1 = this;
-	if ( options === void 0 ) options = {};
-	if ( syncing === void 0 ) syncing = false;
-
-	var containerBuffer = [];
-	var sequence$$1;
-	var interval = options.interval || defaults.interval;
-
-	try {
-		if (interval) {
-			sequence$$1 = new Sequence(interval);
-		}
-
-		var nodes = tealight(target);
-		if (!nodes.length) {
-			throw new Error('Invalid reveal target.')
-		}
-
-		var elements = nodes.reduce(function (elementBuffer, elementNode) {
-			var element = {};
-			var existingId = elementNode.getAttribute('data-sr-id');
-
-			if (existingId) {
-				deepAssign(element, this$1.store.elements[existingId]);
-
-				/**
-				 * In order to prevent previously generated styles
-				 * from throwing off the new styles, the style tag
-				 * has to be reverted to its pre-reveal state.
-				 */
-				element.node.setAttribute('style', element.styles.inline.computed);
-			} else {
-				element.id = nextUniqueId();
-				element.node = elementNode;
-				element.seen = false;
-				element.revealed = false;
-				element.visible = false;
-			}
-
-			var config = deepAssign({}, element.config || this$1.defaults, options);
-
-			if ((!config.mobile && isMobile()) || (!config.desktop && !isMobile())) {
-				if (existingId) {
-					clean.call(this$1, element);
-				}
-				return elementBuffer // skip elements that are disabled
-			}
-
-			var containerNode = tealight(config.container)[0];
-			if (!containerNode) {
-				throw new Error('Invalid container.')
-			}
-			if (!containerNode.contains(elementNode)) {
-				return elementBuffer // skip elements found outside the container
-			}
-
-			var containerId;
-			{
-				containerId = getContainerId(
-					containerNode,
-					containerBuffer,
-					this$1.store.containers
-				);
-				if (containerId === null) {
-					containerId = nextUniqueId();
-					containerBuffer.push({ id: containerId, node: containerNode });
-				}
-			}
-
-			element.config = config;
-			element.containerId = containerId;
-			element.styles = style(element);
-
-			if (sequence$$1) {
-				element.sequence = {
-					id: sequence$$1.id,
-					index: sequence$$1.members.length
-				};
-				sequence$$1.members.push(element.id);
-			}
-
-			elementBuffer.push(element);
-			return elementBuffer
-		}, []);
-
-		/**
-		 * Modifying the DOM via setAttribute needs to be handled
-		 * separately from reading computed styles in the map above
-		 * for the browser to batch DOM changes (limiting reflows)
-		 */
-		each(elements, function (element) {
-			this$1.store.elements[element.id] = element;
-			element.node.setAttribute('data-sr-id', element.id);
-		});
-	} catch (e) {
-		return logger.call(this, 'Reveal failed.', e.message)
-	}
-
-	/**
-	 * Now that element set-up is complete...
-	 * Let’s commit any container and sequence data we have to the store.
-	 */
-	each(containerBuffer, function (container) {
-		this$1.store.containers[container.id] = {
-			id: container.id,
-			node: container.node
-		};
-	});
-	if (sequence$$1) {
-		this.store.sequences[sequence$$1.id] = sequence$$1;
-	}
-
-	/**
-	 * If reveal wasn't invoked by sync, we want to
-	 * make sure to add this call to the history.
-	 */
-	if (syncing !== true) {
-		this.store.history.push({ target: target, options: options });
-
-		/**
-		 * Push initialization to the event queue, giving
-		 * multiple reveal calls time to be interpreted.
-		 */
-		if (this.initTimeout) {
-			window.clearTimeout(this.initTimeout);
-		}
-		this.initTimeout = window.setTimeout(initialize.bind(this), 0);
-	}
-}
-
-function getContainerId(node) {
-	var collections = [], len = arguments.length - 1;
-	while ( len-- > 0 ) collections[ len ] = arguments[ len + 1 ];
-
-	var id = null;
-	each(collections, function (collection) {
-		each(collection, function (container) {
-			if (id === null && container.node === node) {
-				id = container.id;
-			}
-		});
-	});
-	return id
-}
-
-/**
- * Re-runs the reveal method for each record stored in history,
- * for capturing new content asynchronously loaded into the DOM.
- */
-function sync() {
-	var this$1 = this;
-
-	each(this.store.history, function (record) {
-		reveal.call(this$1, record.target, record.options, true);
-	});
-
-	initialize.call(this);
-}
-
-var polyfill = function (x) { return (x > 0) - (x < 0) || +x; };
-var mathSign = Math.sign || polyfill
-
-/*! @license miniraf v1.0.0
-
-	Copyright 2018 Fisssion LLC.
-
-	Permission is hereby granted, free of charge, to any person obtaining a copy
-	of this software and associated documentation files (the "Software"), to deal
-	in the Software without restriction, including without limitation the rights
-	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-	copies of the Software, and to permit persons to whom the Software is
-	furnished to do so, subject to the following conditions:
-
-	The above copyright notice and this permission notice shall be included in all
-	copies or substantial portions of the Software.
-
-	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-	SOFTWARE.
-
-*/
-var polyfill$1 = (function () {
-	var clock = Date.now();
-
-	return function (callback) {
-		var currentTime = Date.now();
-		if (currentTime - clock > 16) {
-			clock = currentTime;
-			callback(currentTime);
-		} else {
-			setTimeout(function () { return polyfill$1(callback); }, 0);
-		}
-	}
-})();
-
-var index = window.requestAnimationFrame ||
-	window.webkitRequestAnimationFrame ||
-	window.mozRequestAnimationFrame ||
-	polyfill$1;
-
-function getGeometry(target, isContainer) {
-	/**
-	 * We want to ignore padding and scrollbars for container elements.
-	 * More information here: https://goo.gl/vOZpbz
-	 */
-	var height = isContainer ? target.node.clientHeight : target.node.offsetHeight;
-	var width = isContainer ? target.node.clientWidth : target.node.offsetWidth;
-
-	var offsetTop = 0;
-	var offsetLeft = 0;
-	var node = target.node;
-
-	do {
-		if (!isNaN(node.offsetTop)) {
-			offsetTop += node.offsetTop;
-		}
-		if (!isNaN(node.offsetLeft)) {
-			offsetLeft += node.offsetLeft;
-		}
-		node = node.offsetParent;
-	} while (node)
-
-	return {
-		bounds: {
-			top: offsetTop,
-			right: offsetLeft + width,
-			bottom: offsetTop + height,
-			left: offsetLeft
-		},
-		height: height,
-		width: width
-	}
-}
-
-function getScrolled(container) {
-	var top, left;
-	if (container.node === document.documentElement) {
-		top = window.pageYOffset;
-		left = window.pageXOffset;
-	} else {
-		top = container.node.scrollTop;
-		left = container.node.scrollLeft;
-	}
-	return { top: top, left: left }
-}
-
-function isElementVisible(element) {
-	if ( element === void 0 ) element = {};
-
-	var container = this.store.containers[element.containerId];
-	if (!container) { return }
-
-	var viewFactor = Math.max(0, Math.min(1, element.config.viewFactor));
-	var viewOffset = element.config.viewOffset;
-
-	var elementBounds = {
-		top: element.geometry.bounds.top + element.geometry.height * viewFactor,
-		right: element.geometry.bounds.right - element.geometry.width * viewFactor,
-		bottom: element.geometry.bounds.bottom - element.geometry.height * viewFactor,
-		left: element.geometry.bounds.left + element.geometry.width * viewFactor
-	};
-
-	var containerBounds = {
-		top: container.geometry.bounds.top + container.scroll.top + viewOffset.top,
-		right: container.geometry.bounds.right + container.scroll.left - viewOffset.right,
-		bottom:
-			container.geometry.bounds.bottom + container.scroll.top - viewOffset.bottom,
-		left: container.geometry.bounds.left + container.scroll.left + viewOffset.left
-	};
-
-	return (
-		(elementBounds.top < containerBounds.bottom &&
-			elementBounds.right > containerBounds.left &&
-			elementBounds.bottom > containerBounds.top &&
-			elementBounds.left < containerBounds.right) ||
-		element.styles.position === 'fixed'
-	)
-}
-
-function delegate(
-	event,
-	elements
-) {
-	var this$1 = this;
-	if ( event === void 0 ) event = { type: 'init' };
-	if ( elements === void 0 ) elements = this.store.elements;
-
-	index(function () {
-		var stale = event.type === 'init' || event.type === 'resize';
-
-		each(this$1.store.containers, function (container) {
-			if (stale) {
-				container.geometry = getGeometry.call(this$1, container, true);
-			}
-			var scroll = getScrolled.call(this$1, container);
-			if (container.scroll) {
-				container.direction = {
-					x: mathSign(scroll.left - container.scroll.left),
-					y: mathSign(scroll.top - container.scroll.top)
-				};
-			}
-			container.scroll = scroll;
-		});
-
-		/**
-		 * Due to how the sequencer is implemented, it’s
-		 * important that we update the state of all
-		 * elements, before any animation logic is
-		 * evaluated (in the second loop below).
-		 */
-		each(elements, function (element) {
-			if (stale) {
-				element.geometry = getGeometry.call(this$1, element);
-			}
-			element.visible = isElementVisible.call(this$1, element);
-		});
-
-		each(elements, function (element) {
-			if (element.sequence) {
-				sequence.call(this$1, element);
-			} else {
-				animate.call(this$1, element);
-			}
-		});
-
-		this$1.pristine = false;
-	});
-}
-
-function transformSupported() {
-	var style = document.documentElement.style;
-	return 'transform' in style || 'WebkitTransform' in style
-}
-
-function transitionSupported() {
-	var style = document.documentElement.style;
-	return 'transition' in style || 'WebkitTransition' in style
-}
-
-var version = "4.0.5";
-
-var boundDelegate;
-var boundDestroy;
-var boundReveal;
-var boundClean;
-var boundSync;
-var config;
-var debug;
-var instance;
-
-function ScrollReveal(options) {
-	if ( options === void 0 ) options = {};
-
-	var invokedWithoutNew =
-		typeof this === 'undefined' ||
-		Object.getPrototypeOf(this) !== ScrollReveal.prototype;
-
-	if (invokedWithoutNew) {
-		return new ScrollReveal(options)
-	}
-
-	if (!ScrollReveal.isSupported()) {
-		logger.call(this, 'Instantiation failed.', 'This browser is not supported.');
-		return mount.failure()
-	}
-
-	var buffer;
-	try {
-		buffer = config
-			? deepAssign({}, config, options)
-			: deepAssign({}, defaults, options);
-	} catch (e) {
-		logger.call(this, 'Invalid configuration.', e.message);
-		return mount.failure()
-	}
-
-	try {
-		var container = tealight(buffer.container)[0];
-		if (!container) {
-			throw new Error('Invalid container.')
-		}
-	} catch (e) {
-		logger.call(this, e.message);
-		return mount.failure()
-	}
-
-	config = buffer;
-
-	if ((!config.mobile && isMobile()) || (!config.desktop && !isMobile())) {
-		logger.call(
-			this,
-			'This device is disabled.',
-			("desktop: " + (config.desktop)),
-			("mobile: " + (config.mobile))
-		);
-		return mount.failure()
-	}
-
-	mount.success();
-
-	this.store = {
-		containers: {},
-		elements: {},
-		history: [],
-		sequences: {}
-	};
-
-	this.pristine = true;
-
-	boundDelegate = boundDelegate || delegate.bind(this);
-	boundDestroy = boundDestroy || destroy.bind(this);
-	boundReveal = boundReveal || reveal.bind(this);
-	boundClean = boundClean || clean.bind(this);
-	boundSync = boundSync || sync.bind(this);
-
-	Object.defineProperty(this, 'delegate', { get: function () { return boundDelegate; } });
-	Object.defineProperty(this, 'destroy', { get: function () { return boundDestroy; } });
-	Object.defineProperty(this, 'reveal', { get: function () { return boundReveal; } });
-	Object.defineProperty(this, 'clean', { get: function () { return boundClean; } });
-	Object.defineProperty(this, 'sync', { get: function () { return boundSync; } });
-
-	Object.defineProperty(this, 'defaults', { get: function () { return config; } });
-	Object.defineProperty(this, 'version', { get: function () { return version; } });
-	Object.defineProperty(this, 'noop', { get: function () { return false; } });
-
-	return instance ? instance : (instance = this)
-}
-
-ScrollReveal.isSupported = function () { return transformSupported() && transitionSupported(); };
-
-Object.defineProperty(ScrollReveal, 'debug', {
-	get: function () { return debug || false; },
-	set: function (value) { return (debug = typeof value === 'boolean' ? value : debug); }
-});
-
-ScrollReveal();
-
-return ScrollReveal;
-
-})));
-
-},{}],14:[function(require,module,exports){
 var bel = require('bel') // turns template tag into DOM elements
 var morphdom = require('morphdom') // efficiently diffs + morphs two DOM elements
 var defaultEvents = require('./update-events.js') // default events to be copied when dom elements update
@@ -4400,7 +2852,7 @@ module.exports.update = function (fromNode, toNode, opts) {
   }
 }
 
-},{"./update-events.js":15,"bel":1,"morphdom":8}],15:[function(require,module,exports){
+},{"./update-events.js":14,"bel":1,"morphdom":8}],14:[function(require,module,exports){
 module.exports = [
   // attribute events (can be set with attributes)
   'onclick',
@@ -4438,7 +2890,7 @@ module.exports = [
   'onfocusout'
 ]
 
-},{}],16:[function(require,module,exports){
+},{}],15:[function(require,module,exports){
 var page = require('page');
 
 var empty = require('empty-element');
@@ -4456,13 +2908,13 @@ page('/calculo', function (ctx, netx) {
   empty(about).appendChild(template2);
 });
 
-},{"./template":17,"./template2":18,"empty-element":3,"page":11}],17:[function(require,module,exports){
+},{"./template":16,"./template2":17,"empty-element":3,"page":11}],16:[function(require,module,exports){
 yo = require('yo-yo');
 module.exports = yo`
 <h1> aqui va lo de calculo</h2>
 `;
 
-},{"yo-yo":14}],18:[function(require,module,exports){
+},{"yo-yo":13}],17:[function(require,module,exports){
 yo = require('yo-yo');
 module.exports = yo`
 
@@ -4473,7 +2925,7 @@ module.exports = yo`
 
 `;
 
-},{"yo-yo":14}],19:[function(require,module,exports){
+},{"yo-yo":13}],18:[function(require,module,exports){
 var page = require('page');
 
 var empty = require('empty-element');
@@ -4508,7 +2960,7 @@ page('/Cultura2', function (ctx, next) {
   empty(plantas).appendChild(template5);
 });
 
-},{"./template":20,"./template2":21,"./template3":22,"./template4":23,"./template5":24,"empty-element":3,"page":11}],20:[function(require,module,exports){
+},{"./template":19,"./template2":20,"./template3":21,"./template4":22,"./template5":23,"empty-element":3,"page":11}],19:[function(require,module,exports){
 yo = require('yo-yo');
 module.exports = yo`
 
@@ -4517,8 +2969,8 @@ module.exports = yo`
     <div class="text-justify">
         <!--INTRODUCCION-->
         <div>
-            <div style="background-color:#FA8072">
-                <h5 class="p-4 text-center subtitulo">CÓMO EL TRÁFICO EN LAS CALLES DE HERIBERTO HENRÍQUEZ Y CEBORUCO
+            <div class="rounded" style="background-color:#FA8072">
+                <h5 class="p-4 text-center  subtitulo">CÓMO EL TRÁFICO EN LAS CALLES DE HERIBERTO HENRÍQUEZ Y CEBORUCO
                     AFECTA DE MANERA VISUAL Y AUDITIVA A LOS ALUMNOS DEL PLANTEL "DR. ANGEL MA. GARIBAY KINTANA" Y A LA
                     BIODIVERSIDAD.</h5>
             </div>
@@ -4540,7 +2992,7 @@ module.exports = yo`
             </p>
             <div class="row pb-1">
                 <div class="col-5">
-                    <img src="trafico-introduccion.png" width="300px" height="400">
+                    <img class="wow slideInLeft" src="trafico-introduccion.png" width="300px" height="400">
                 </div>
                 <div class="col-xl-7 pt-2">
                     <p>
@@ -4562,7 +3014,7 @@ module.exports = yo`
         </div>
         <!--PLANTEAMINETO DEL PROBLEMA-->
         <div class="text-justify">
-            <h5 class="p-2 text-center subtitulo" style="background-color: #FFA500;">PLANTEAMINETO DEL PROBLEMA</h5>
+            <h5 class="p-2 text-center rounded-pill subtitulo" style="background-color: #FFA500;">PLANTEAMINETO DEL PROBLEMA</h5>
             <p class="p-2 text-center">
                 Cómo el tráfico en las calles de Heriberto Henríquez y Ceboruco afecta de manera visual y auditiva a los
                 alumnos del plantel “Dr. Ángel Ma. Garibay Kintana” y a la biodiversidad ambiental.
@@ -4576,7 +3028,7 @@ module.exports = yo`
         </div>
         <!--justificacion-->
         <div>
-            <h5 class="p-2 text-center subtitulo" style="background-color: #9370DB;">JUSTIFICACIÓN</h5>
+            <h5 class="p-2 text-center rounded-pill subtitulo" style="background-color: #9370DB;">JUSTIFICACIÓN</h5>
             <p class="p-2">
                 El tema de investigación fue elegido por ser un problema social de actualidad. El presente trabajo tiene
                 como finalidad el análisis de las afecciones por el tráfico a los alumnos del Plantel 5 “Dr. Ángel Ma.
@@ -4591,7 +3043,7 @@ module.exports = yo`
         </div>
         <!--objetivos-->
         <div>
-            <h5 class="pb-2 text-center subtitulo" style="background-color: #008080">OBJETIVOS</h5>
+            <h5 class="pb-2 text-center rounded-pill subtitulo" style="background-color: #008080">OBJETIVOS</h5>
             <h6 class="pb-1 text-center objetivos">Generales</h6>
             <div style="background-color: #1ba3a3;">
                  <p class="p-1">
@@ -4614,7 +3066,7 @@ module.exports = yo`
         </div>
         <!--hipotesis-->
         <div>
-            <h5 class="pb-2 text-center subtitulo" style="background-color: #DAA520;">HIPÓTESIS</h5>
+            <h5 class="pb-2 text-center rounded-pill subtitulo" style="background-color: #DAA520;">HIPÓTESIS</h5>
             <p class="pb-2">
                 Los alumnos del Plantel 5 “Dr. Ángel Ma. Garibay Kintana” aumentarían su aprovechamiento académico si
                 los efectos del trafico en las calles de Heriberto Enríquez y Ceboruco disminuyen.
@@ -4626,7 +3078,7 @@ module.exports = yo`
         </div>
         <!--ARGUMENTACIÓN TEÓRICO – METODOLÓGICA-->
         <div>
-            <h5 class="pb-2 text-center subtitulo" style="background-color: #778899;">ARGUMENTACIÓN TEÓRICO –
+            <h5 class="pb-2 text-center rounded-pill subtitulo" style="background-color: #778899;">ARGUMENTACIÓN TEÓRICO –
                 METODOLÓGICA</h5><br>
             <h6 class="pb-2 objetivos text-center">¿Cuáles son las afectaciones de esta problemática?</h6>
             <p class="pb-2">En los últimos años, especialmente desde principios de los años noventa, el aumento de la
@@ -4647,7 +3099,7 @@ module.exports = yo`
                 NIOSH Hearing Loss Research Program, 2006).</p>
             <div class="row pb-1">
                 <div class="col-5">
-                    <img src="trafico-teorico.png" width="300" height="400" alt="">
+                    <img class="wow rotateInUpLeft" src="trafico-teorico.png" width="300" height="400" alt="">
                 </div>
                 <div class="col-xl-7">
                     <p>El ruido proveniente del trasporte vehicular constituye la principal fuente emisora de este
@@ -4733,7 +3185,7 @@ module.exports = yo`
                 muertes y discapacidades asociadas a los accidentes de circulación. </p>
             <div class="row pb-1">
                 <div class="col-5">
-                    <img src="trafico-salud.png" width="300" height="400">
+                    <img class="wow fadeInLeft" src="trafico-salud.png" width="300" height="400">
                 </div>
                 <div class="col-xl-7">
                     <p class="pb-2">Sin embargo, estudios realizados en varios países de la Comunidad Europea demuestran
@@ -4759,7 +3211,7 @@ module.exports = yo`
                 de mayor consideración, hace subir el valor de los pasajes.</p>
             <div class="row pb-1">
                 <div class="col-5">
-                    <img src="gasolineria.jpg" width="300" height="150" alt="">
+                    <img class="wow zoomInLeft" src="gasolineria.jpg" width="300" height="150" alt="">
                 </div>
                 <div class="col-xl-7">
                     <p class="pb-2">Con estos datos, es fácil entender por qué la movilidad urbana y la gestión de la
@@ -4768,7 +3220,7 @@ module.exports = yo`
                 </div>
             </div>
 
-            <h5 class="pb-2 text-center subtitulo" style="background-color: #FFC0CB;">SOLUCIONES</h6>
+            <h5 class="pb-2 text-center rounded-pill subtitulo" style="background-color: #FFC0CB;">SOLUCIONES</h6>
                 <p class="pb-2">Las soluciones tradicionales -construir más calles - no bastarán para superar el
                     crecimiento del tránsito en Toluca, de modo que es necesario implementar múltiples soluciones
                     simultáneamente para evitar el colapso de las redes de transporte. Se necesitan nuevas técnicas que
@@ -4781,7 +3233,7 @@ module.exports = yo`
                     ciudades, y propone mejoras en la gestión del tráfico.</p>
                 <div class="row">
                     <div class="col-5">
-                        <img src="trafico-soluciones.jpg" width="300" height="400" alt="">
+                        <img class="wow rotateInUpLeft" src="trafico-soluciones.jpg" width="300" height="400" alt="">
                     </div>
                     <div class="col-xl-7">
                         <p class="pb-2">Una alternativa que es factible es mejorar el sistema de tránsito por medio de
@@ -4797,97 +3249,97 @@ module.exports = yo`
         </div>
         <!--cronograma-->
         <div>
-            <h5 class="p-2 text-center subtitulo" style="background-color: #BC8F8F;">CRONOGRAMA</h5>
-            <img src="cronograma.png" width="800" height="500">
+            <h5 class="p-2 text-center rounded-pill subtitulo" style="background-color: #BC8F8F;">CRONOGRAMA</h5>
+            <img  class="img-fluid wow rollIn" src="cronograma.png" width="800" height="500">
             <p class="pb-1"></p>
         </div>
     </div>
     <nav class="blog-pagination">
-        <a href="/Cultura2" class="btn btn-outline-primary">Segunda parte</a>
+        <a href="/Cultura2#" class="btn btn-outline-primary">Segunda parte</a>
     </nav>
 </div>
 
 `;
 
-},{"yo-yo":14}],21:[function(require,module,exports){
+},{"yo-yo":13}],20:[function(require,module,exports){
 yo = require('yo-yo');
 module.exports = yo`
 <div id="cult2">
     <h2 class="blog-post-title"> Gráficas de los resultados de encuesta</h2>
     <div class="text-center">
-        <img class="mx-auto"  style="border:black;border-width:2px;border-style: solid;border-radius: 20px;"  width="600" height="300" src="Grafica-1.png">
+        <img class="img-fluid" style="border:black;border-width:2px;border-style: solid;border-radius: 20px;"  width="600" height="300" src="Grafica-1.png">
         <p class="p-2 text-justify">
              Del total de las encuestas aplicadas más de la mitad de los encuestados dice presentar desconcentración a causa del ruido, al 29% le es más complicado comunicarse debido a esto, el 12.9% restante no lo considera molesto. Ninguno de los encuestados siente que su rendimiento académico se vea directamente afectado debido al ruido. 
         </p>
     </div>
     <div class="text-center">
-        <img style="border:black;border-width:2px;border-style: solid;border-radius: 20px;" width="600" height="300" src="Grafica-2.png" alt="">
+        <img class="img-fluid" style="border:black;border-width:2px;border-style: solid;border-radius: 20px;" width="600" height="300" src="Grafica-2.png" alt="">
         <p class="p-2 text-justify">
                 En los resultados obtenidos podemos afirmar que la mayor parte de los alumnos encuestados se encuentra poco informado con respecto a la contaminación sobre la contaminación por trafico vehicular ,12.9%  se encuentra muy informado al respecto ,por el contrario el otro 12.9% restante está nada informado.
         </p>
     </div>
     <div class="text-center">
-        <img style="border:black;border-width:2px;border-style: solid;border-radius: 20px;" width="600" height="300" src="Grafica-3.png">
+        <img class="img-fluid" style="border:black;border-width:2px;border-style: solid;border-radius: 20px;" width="600" height="300" src="Grafica-3.png">
         <p class="p-2 text-justify">
                 Dados los resultados de la encuesta más de la mitad de los encuestados dice ver trafico intenso cerca del plantel siempre , un 35.5% dice que casi siempre se crea tráfico , un 3.2% dice que casi nunca y el 3.2% restante dice que nunca. 
         </p>
      </div>
      <div class="text-center">
-         <img style="border:black;border-width:2px;border-style: solid;border-radius: 20px;" width="600" height="300" src="Grafica-4.png">
+         <img class="img-fluid" style="border:black;border-width:2px;border-style: solid;border-radius: 20px;" width="600" height="300" src="Grafica-4.png">
          <p class="p-2 text-justify">
                 Alrededor de la mitad de alumnos llega antes de que se genere el trafico, el 12.9% no le es posible evitarlo y el 32.2% prefiere ir caminado 
          </p>
      </div>
      <div class="text-center">
-         <img style="border:black;border-width:2px;border-style: solid;border-radius: 20px;" width="600" height="300" src="Grafica-5.png" alt="" srcset="">
+         <img class="img-fluid" style="border:black;border-width:2px;border-style: solid;border-radius: 20px;" width="600" height="300" src="Grafica-5.png" alt="" srcset="">
          <p class="p-2 text-justify">
                 De los 3 tipos de contaminación dados en cada opción la mayoría de los alumnos dice que los 3 tipos aplican, El 19.4% considera que el problema que genera es contaminación del aire, otro 19.4% cree que causa contaminación auditiva. Y únicamente 3.2% dice que solo genera disminución de la biodiversidad. 
          </p>
      </div>
     <div class="text-center">
-        <img style="border:black;border-width:2px;border-style: solid;border-radius: 20px;" width="600" height="300" src="Grafica-6.png" alt="">
+        <img class="img-fluid" style="border:black;border-width:2px;border-style: solid;border-radius: 20px;" width="600" height="300" src="Grafica-6.png" alt="">
         <p class="p-2 text-justify">
                 El 54% de los encuestado dice que la producción del trafico es a causa del uso innecesario de automóviles , el 32.3% dice que el mal manejo de los automovilistas es lo que lo causa  y solo el 12.9% dice que es a causa de la mala programación de los semáforos. 
         </p>
     </div>
     <div class="text-center">
-        <img style="border:black;border-width:2px;border-style: solid;border-radius: 20px;" width="600" height="300" src="Grafica-7.png">
+        <img class="img-fluid" style="border:black;border-width:2px;border-style: solid;border-radius: 20px;" width="600" height="300" src="Grafica-7.png">
         <p class="p-2 text-justify">
                 La mitad de la población estudiantil encuestada piensa que el trafico vehicular tiene poca importancia en la disminución de la biodiversidad , el 32.3% cree que tiene mucha importancia y para el 16.1% no tiene ninguna importancia.
         </p>
     </div>
     <div class="text-center">
-        <img style="border:black;border-width:2px;border-style: solid;border-radius: 20px;" width="600" height="300" src="Grafica-8.png">
+        <img class="img-fluid" style="border:black;border-width:2px;border-style: solid;border-radius: 20px;" width="600" height="300" src="Grafica-8.png">
         <p class="p-2 text-justify">
             El 25.8% de los encuestados piensa que la perdida de la biodiversidad es un problema derivado de la contaminación auditiva, el 38.7% dice que los problemas de comunicación es un derivado de esta contaminación, el 32.3% cree que los conflictos interpersonales se derivan de esta. 
         </p>
     </div>
     <div class="text-center">
-        <img style="border:black;border-width:2px;border-style: solid;border-radius: 20px;" width="600" height="300" src="Grafica-9.png">
+        <img class="img-fluid" style="border:black;border-width:2px;border-style: solid;border-radius: 20px;" width="600" height="300" src="Grafica-9.png">
         <p class="p-2 text-justify">
             Más la mitad de los encuestado pierde entre 10 y 20 minutos en el trafico , el 38.7% pierde de 30 a 40 minutos solo el 3.2% de los alumnos pierde 1 hora o más.
         </p>
     </div>
     <div class="text-center">
-        <img style="border:black;border-width:2px;border-style: solid;border-radius: 20px;" width="600" height="300" src="Grafica-10.png" alt="">
+        <img class="img-fluid" style="border:black;border-width:2px;border-style: solid;border-radius: 20px;" width="600" height="300" src="Grafica-10.png" alt="">
         <p class="p-2 text-justify">
             La mayor parte de los encuestados solo utiliza de manera innecesaria algún medio de transporte 1 vez por semana, otra gran parte 2 veces por semana, una menor parte 5 veces por semana y un 22.6% más de 7 veces por semana.
         </p>
     </div>
     <div class="text-center">
-        <img style="border:black;border-width:2px;border-style: solid;border-radius: 20px;" width="600" height="300" src="Grafica-11.png" alt="">
+        <img class="img-fluid" style="border:black;border-width:2px;border-style: solid;border-radius: 20px;" width="600" height="300" src="Grafica-11.png" alt="">
         <p class="p-2 text-justify">
             Poco más de la mitad de los encuestado piensa que es importante disminuir el tráfico para reducir la contaminación , una cuarta parte dice que para mejorar la calidad de vida y el resto dice que para cuidar al medio ambiente 
         </p>
     </div>
     <div class="text-center">
-        <img style="border:black;border-width:2px;border-style: solid;border-radius: 20px;" width="600" height="300" src="Grafica-12.png" alt="">
+        <img class="img-fluid" style="border:black;border-width:2px;border-style: solid;border-radius: 20px;" width="600" height="300" src="Grafica-12.png" alt="">
         <p class="p-2 text-justify">
             Prácticamente todos los alumnos encuestados dicen que en el ultimo semestre sus profesores de tuvieron 5 veces la clase y solo una persona dice que más de 15 veces sucedió esto
         </p>
     </div>
     <div class="text-center">
-        <img style="border:black;border-width:2px;border-style: solid;border-radius: 20px;" width="600" height="300" src="Grafica-13.png" alt="">
+        <img class="img-fluid" style="border:black;border-width:2px;border-style: solid;border-radius: 20px;" width="600" height="300" src="Grafica-13.png" alt="">
         <p class="p-2 text-justify">
             La mitad de los alumnos se preocupa frecuentemente por la biodiversidad dentro del plantel  , otra gran parte dice que siempre lo hace y una pequeña parte dice que nunca lo hace. 
         </p>
@@ -4910,19 +3362,83 @@ module.exports = yo`
 
 `;
 
-},{"yo-yo":14}],22:[function(require,module,exports){
+},{"yo-yo":13}],21:[function(require,module,exports){
 yo = require('yo-yo');
 module.exports = yo`
   <div>
-      <img src="planeta.gif" width="260px" height="200px" alt="">
+      <img class="shadow-lg" src="planeta.gif" width="260px" height="200px" alt="">
   </div>
  `;
 
-},{"yo-yo":14}],23:[function(require,module,exports){
+},{"yo-yo":13}],22:[function(require,module,exports){
 var yo = require('yo-yo');
 
 module.exports = yo`
 <div>
+    <div class="d-none d-xl-block">
+        <img class="plantas" planta src="https://especiales.semana.com/especiales/inventario-biblioteca-nacional/images/enredadera.png">
+            
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        
+        <img class="plantas" planta src="https://especiales.semana.com/especiales/inventario-biblioteca-nacional/images/enredadera.png">
+        
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+        <img class="plantas" planta src="https://especiales.semana.com/especiales/inventario-biblioteca-nacional/images/enredadera.png">
+        
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+        <img class="plantas" planta src="https://especiales.semana.com/especiales/inventario-biblioteca-nacional/images/enredadera.png">
+        
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+        <img class="plantas" planta src="https://especiales.semana.com/especiales/inventario-biblioteca-nacional/images/enredadera.png">
+        
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+        <img class="plantas" planta src="https://especiales.semana.com/especiales/inventario-biblioteca-nacional/images/enredadera.png">
+        
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+        <img class="plantas" planta src="https://especiales.semana.com/especiales/inventario-biblioteca-nacional/images/enredadera.png">
+        
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+        <img class="plantas" planta src="https://especiales.semana.com/especiales/inventario-biblioteca-nacional/images/enredadera.png">
+
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+        <img class="plantas" planta src="https://especiales.semana.com/especiales/inventario-biblioteca-nacional/images/enredadera.png">
+            
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        
+        <img class="plantas" planta src="https://especiales.semana.com/especiales/inventario-biblioteca-nacional/images/enredadera.png">
+        
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+        <img class="plantas" planta src="https://especiales.semana.com/especiales/inventario-biblioteca-nacional/images/enredadera.png">
+        
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+        <img class="plantas" planta src="https://especiales.semana.com/especiales/inventario-biblioteca-nacional/images/enredadera.png">
+        
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+        <img class="plantas" planta src="https://especiales.semana.com/especiales/inventario-biblioteca-nacional/images/enredadera.png">
+        
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+        <img class="plantas" planta src="https://especiales.semana.com/especiales/inventario-biblioteca-nacional/images/enredadera.png">
+    </div>
+</div>
+
+`;
+
+},{"yo-yo":13}],23:[function(require,module,exports){
+var yo = require('yo-yo');
+
+module.exports = yo`
+<div class="d-none d-xl-block">
     <img class="plantas" planta src="https://especiales.semana.com/especiales/inventario-biblioteca-nacional/images/enredadera.png">
         
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -4935,30 +3451,6 @@ module.exports = yo`
     
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-    <img class="plantas" planta src="https://especiales.semana.com/especiales/inventario-biblioteca-nacional/images/enredadera.png">
-    
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-    <img class="plantas" planta src="https://especiales.semana.com/especiales/inventario-biblioteca-nacional/images/enredadera.png">
-    
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-    <img class="plantas" planta src="https://especiales.semana.com/especiales/inventario-biblioteca-nacional/images/enredadera.png">
-    
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-    <img class="plantas" planta src="https://especiales.semana.com/especiales/inventario-biblioteca-nacional/images/enredadera.png">
-    
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-    <img class="plantas" planta src="https://especiales.semana.com/especiales/inventario-biblioteca-nacional/images/enredadera.png">
-
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-    <img class="plantas" planta src="https://especiales.semana.com/especiales/inventario-biblioteca-nacional/images/enredadera.png">
-        
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    
     <img class="plantas" planta src="https://especiales.semana.com/especiales/inventario-biblioteca-nacional/images/enredadera.png">
     
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -4979,44 +3471,7 @@ module.exports = yo`
 </div>
 `;
 
-},{"yo-yo":14}],24:[function(require,module,exports){
-var yo = require('yo-yo');
-
-module.exports = yo`
-<div>
-    <img class="plantas" planta src="https://especiales.semana.com/especiales/inventario-biblioteca-nacional/images/enredadera.png">
-        
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    
-    <img class="plantas" planta src="https://especiales.semana.com/especiales/inventario-biblioteca-nacional/images/enredadera.png">
-    
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-    <img class="plantas" planta src="https://especiales.semana.com/especiales/inventario-biblioteca-nacional/images/enredadera.png">
-    
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-    <img class="plantas" planta src="https://especiales.semana.com/especiales/inventario-biblioteca-nacional/images/enredadera.png">
-    
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-    <img class="plantas" planta src="https://especiales.semana.com/especiales/inventario-biblioteca-nacional/images/enredadera.png">
-    
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-    <img class="plantas" planta src="https://especiales.semana.com/especiales/inventario-biblioteca-nacional/images/enredadera.png">
-    
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-    <img class="plantas" planta src="https://especiales.semana.com/especiales/inventario-biblioteca-nacional/images/enredadera.png">
-    
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-    <img class="plantas" planta src="https://especiales.semana.com/especiales/inventario-biblioteca-nacional/images/enredadera.png">
-</div>
-`;
-
-},{"yo-yo":14}],25:[function(require,module,exports){
+},{"yo-yo":13}],24:[function(require,module,exports){
 var page = require('page');
 
 var empty = require('empty-element');
@@ -5034,7 +3489,7 @@ page('/derecho', function (ctx, netx) {
   empty(about).appendChild(template2);
 });
 
-},{"./template":26,"./template2":27,"empty-element":3,"page":11}],26:[function(require,module,exports){
+},{"./template":25,"./template2":26,"empty-element":3,"page":11}],25:[function(require,module,exports){
 yo = require('yo-yo');
 module.exports = yo`
 <div>
@@ -5050,7 +3505,7 @@ module.exports = yo`
     
 `;
 
-},{"yo-yo":14}],27:[function(require,module,exports){
+},{"yo-yo":13}],26:[function(require,module,exports){
 yo = require('yo-yo');
 module.exports = yo`
 <div>
@@ -5058,7 +3513,7 @@ module.exports = yo`
 </div>
 `;
 
-},{"yo-yo":14}],28:[function(require,module,exports){
+},{"yo-yo":13}],27:[function(require,module,exports){
 var page = require('page');
 
 var empty = require('empty-element');
@@ -5076,13 +3531,13 @@ page('/fisica', function (ctx, netx) {
   empty(about).appendChild(template2);
 });
 
-},{"./template":29,"./template2":30,"empty-element":3,"page":11}],29:[function(require,module,exports){
+},{"./template":28,"./template2":29,"empty-element":3,"page":11}],28:[function(require,module,exports){
 yo = require('yo-yo');
 module.exports = yo`
 <h1> aqui va lo de fisica</h2>
 `;
 
-},{"yo-yo":14}],30:[function(require,module,exports){
+},{"yo-yo":13}],29:[function(require,module,exports){
 yo = require('yo-yo');
 module.exports = yo`
 <div>
@@ -5090,7 +3545,7 @@ module.exports = yo`
 </div>
 `;
 
-},{"yo-yo":14}],31:[function(require,module,exports){
+},{"yo-yo":13}],30:[function(require,module,exports){
 var page = require('page');
 
 var empty = require('empty-element');
@@ -5105,12 +3560,14 @@ page('/', function (ctx, netx) {
   var main = document.getElementById('main-container');
   var arriba = document.getElementById('arriba');
   var about = document.getElementById('about');
+  var plantas = document.getElementById('plantas');
   empty(arriba).appendChild(template);
   empty(main).appendChild(template2);
   empty(about).appendChild(template3);
+  empty(plantas);
 });
 
-},{"./template":32,"./template2":33,"./template3":34,"empty-element":3,"page":11}],32:[function(require,module,exports){
+},{"./template":31,"./template2":32,"./template3":33,"empty-element":3,"page":11}],31:[function(require,module,exports){
 var yo = require('yo-yo');
 
 module.exports = yo`
@@ -5179,7 +3636,7 @@ module.exports = yo`
   </div>
   `;
 
-},{"yo-yo":14}],33:[function(require,module,exports){
+},{"yo-yo":13}],32:[function(require,module,exports){
 var yo = require('yo-yo');
 
 module.exports = yo`
@@ -5254,7 +3711,7 @@ module.exports = yo`
 
 </div>`;
 
-},{"yo-yo":14}],34:[function(require,module,exports){
+},{"yo-yo":13}],33:[function(require,module,exports){
 yo = require('yo-yo');
 module.exports = yo`
 <div>
@@ -5262,8 +3719,8 @@ module.exports = yo`
 </div>
 `;
 
-},{"yo-yo":14}],35:[function(require,module,exports){
-var page = require('page');
+},{"yo-yo":13}],34:[function(require,module,exports){
+const page = require('page');
 
 require('./homepage');
 
@@ -5281,18 +3738,7 @@ require('./optativas/estrategias');
 
 page();
 
-const sr = require('scrollreveal');
-
-window.sr = ScrollReveal();
-sr.reveal('.blog-header-logo', {
-  origin: 'top',
-  duration: 2000
-});
-sr.reveal('.subtitulo', {
-  origin: 'buttom'
-});
-
-},{"./calculo":16,"./cultura":19,"./derecho":25,"./fisica":28,"./homepage":31,"./optativas":39,"./optativas/estrategias":36,"page":11,"scrollreveal":13}],36:[function(require,module,exports){
+},{"./calculo":15,"./cultura":18,"./derecho":24,"./fisica":27,"./homepage":30,"./optativas":38,"./optativas/estrategias":35,"page":11}],35:[function(require,module,exports){
 var page = require('page');
 
 var empty = require('empty-element');
@@ -5310,7 +3756,7 @@ page('/optativas/estrategias', function (ctx, netx) {
   empty(about).appendChild(template2);
 });
 
-},{"./template":37,"./template2":38,"empty-element":3,"page":11}],37:[function(require,module,exports){
+},{"./template":36,"./template2":37,"empty-element":3,"page":11}],36:[function(require,module,exports){
 var yo = require('yo-yo');
 
 module.exports = yo`
@@ -5328,7 +3774,7 @@ module.exports = yo`
     <div class="text-justify">Se lograría la reducción de tiempos que se emplean en los recorridos en vehículo,  la contaminación ambiental, auditiva y visual, lo cual se pretende lograr a finales de este semestre.</div>
 </div>`;
 
-},{"yo-yo":14}],38:[function(require,module,exports){
+},{"yo-yo":13}],37:[function(require,module,exports){
 yo = require('yo-yo');
 module.exports = yo`
 <div>
@@ -5336,7 +3782,7 @@ module.exports = yo`
 </div>
 `;
 
-},{"yo-yo":14}],39:[function(require,module,exports){
+},{"yo-yo":13}],38:[function(require,module,exports){
 var page = require('page');
 
 var empty = require('empty-element');
@@ -5354,7 +3800,7 @@ page('/optativas', function (ctx, netx) {
   empty(about).appendChild(template2);
 });
 
-},{"./template":40,"./template2":41,"empty-element":3,"page":11}],40:[function(require,module,exports){
+},{"./template":39,"./template2":40,"empty-element":3,"page":11}],39:[function(require,module,exports){
 yo = require('yo-yo');
 module.exports = yo`
  <div class="container">
@@ -5383,7 +3829,7 @@ module.exports = yo`
 
 `;
 
-},{"yo-yo":14}],41:[function(require,module,exports){
+},{"yo-yo":13}],40:[function(require,module,exports){
 yo = require('yo-yo');
 module.exports = yo`
 <div>
@@ -5391,4 +3837,4 @@ module.exports = yo`
 </div>
 `;
 
-},{"yo-yo":14}]},{},[35]);
+},{"yo-yo":13}]},{},[34]);

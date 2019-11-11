@@ -7,8 +7,8 @@ module.exports= yo`
     <div class="text-justify">
         <!--INTRODUCCION-->
         <div>
-            <div style="background-color:#FA8072">
-                <h5 class="p-4 text-center subtitulo">CÓMO EL TRÁFICO EN LAS CALLES DE HERIBERTO HENRÍQUEZ Y CEBORUCO
+            <div class="rounded" style="background-color:#FA8072">
+                <h5 class="p-4 text-center  subtitulo">CÓMO EL TRÁFICO EN LAS CALLES DE HERIBERTO HENRÍQUEZ Y CEBORUCO
                     AFECTA DE MANERA VISUAL Y AUDITIVA A LOS ALUMNOS DEL PLANTEL "DR. ANGEL MA. GARIBAY KINTANA" Y A LA
                     BIODIVERSIDAD.</h5>
             </div>
@@ -30,7 +30,7 @@ module.exports= yo`
             </p>
             <div class="row pb-1">
                 <div class="col-5">
-                    <img src="trafico-introduccion.png" width="300px" height="400">
+                    <img class="wow slideInLeft" src="trafico-introduccion.png" width="300px" height="400">
                 </div>
                 <div class="col-xl-7 pt-2">
                     <p>
@@ -52,7 +52,7 @@ module.exports= yo`
         </div>
         <!--PLANTEAMINETO DEL PROBLEMA-->
         <div class="text-justify">
-            <h5 class="p-2 text-center subtitulo" style="background-color: #FFA500;">PLANTEAMINETO DEL PROBLEMA</h5>
+            <h5 class="p-2 text-center rounded-pill subtitulo" style="background-color: #FFA500;">PLANTEAMINETO DEL PROBLEMA</h5>
             <p class="p-2 text-center">
                 Cómo el tráfico en las calles de Heriberto Henríquez y Ceboruco afecta de manera visual y auditiva a los
                 alumnos del plantel “Dr. Ángel Ma. Garibay Kintana” y a la biodiversidad ambiental.
@@ -66,7 +66,7 @@ module.exports= yo`
         </div>
         <!--justificacion-->
         <div>
-            <h5 class="p-2 text-center subtitulo" style="background-color: #9370DB;">JUSTIFICACIÓN</h5>
+            <h5 class="p-2 text-center rounded-pill subtitulo" style="background-color: #9370DB;">JUSTIFICACIÓN</h5>
             <p class="p-2">
                 El tema de investigación fue elegido por ser un problema social de actualidad. El presente trabajo tiene
                 como finalidad el análisis de las afecciones por el tráfico a los alumnos del Plantel 5 “Dr. Ángel Ma.
@@ -81,7 +81,7 @@ module.exports= yo`
         </div>
         <!--objetivos-->
         <div>
-            <h5 class="pb-2 text-center subtitulo" style="background-color: #008080">OBJETIVOS</h5>
+            <h5 class="pb-2 text-center rounded-pill subtitulo" style="background-color: #008080">OBJETIVOS</h5>
             <h6 class="pb-1 text-center objetivos">Generales</h6>
             <div style="background-color: #1ba3a3;">
                  <p class="p-1">
@@ -104,7 +104,7 @@ module.exports= yo`
         </div>
         <!--hipotesis-->
         <div>
-            <h5 class="pb-2 text-center subtitulo" style="background-color: #DAA520;">HIPÓTESIS</h5>
+            <h5 class="pb-2 text-center rounded-pill subtitulo" style="background-color: #DAA520;">HIPÓTESIS</h5>
             <p class="pb-2">
                 Los alumnos del Plantel 5 “Dr. Ángel Ma. Garibay Kintana” aumentarían su aprovechamiento académico si
                 los efectos del trafico en las calles de Heriberto Enríquez y Ceboruco disminuyen.
@@ -116,7 +116,7 @@ module.exports= yo`
         </div>
         <!--ARGUMENTACIÓN TEÓRICO – METODOLÓGICA-->
         <div>
-            <h5 class="pb-2 text-center subtitulo" style="background-color: #778899;">ARGUMENTACIÓN TEÓRICO –
+            <h5 class="pb-2 text-center rounded-pill subtitulo" style="background-color: #778899;">ARGUMENTACIÓN TEÓRICO –
                 METODOLÓGICA</h5><br>
             <h6 class="pb-2 objetivos text-center">¿Cuáles son las afectaciones de esta problemática?</h6>
             <p class="pb-2">En los últimos años, especialmente desde principios de los años noventa, el aumento de la
@@ -137,7 +137,7 @@ module.exports= yo`
                 NIOSH Hearing Loss Research Program, 2006).</p>
             <div class="row pb-1">
                 <div class="col-5">
-                    <img src="trafico-teorico.png" width="300" height="400" alt="">
+                    <img class="wow rotateInUpLeft" src="trafico-teorico.png" width="300" height="400" alt="">
                 </div>
                 <div class="col-xl-7">
                     <p>El ruido proveniente del trasporte vehicular constituye la principal fuente emisora de este
@@ -223,7 +223,7 @@ module.exports= yo`
                 muertes y discapacidades asociadas a los accidentes de circulación. </p>
             <div class="row pb-1">
                 <div class="col-5">
-                    <img src="trafico-salud.png" width="300" height="400">
+                    <img class="wow fadeInLeft" src="trafico-salud.png" width="300" height="400">
                 </div>
                 <div class="col-xl-7">
                     <p class="pb-2">Sin embargo, estudios realizados en varios países de la Comunidad Europea demuestran
@@ -249,7 +249,7 @@ module.exports= yo`
                 de mayor consideración, hace subir el valor de los pasajes.</p>
             <div class="row pb-1">
                 <div class="col-5">
-                    <img src="gasolineria.jpg" width="300" height="150" alt="">
+                    <img class="wow zoomInLeft" src="gasolineria.jpg" width="300" height="150" alt="">
                 </div>
                 <div class="col-xl-7">
                     <p class="pb-2">Con estos datos, es fácil entender por qué la movilidad urbana y la gestión de la
@@ -258,7 +258,7 @@ module.exports= yo`
                 </div>
             </div>
 
-            <h5 class="pb-2 text-center subtitulo" style="background-color: #FFC0CB;">SOLUCIONES</h6>
+            <h5 class="pb-2 text-center rounded-pill subtitulo" style="background-color: #FFC0CB;">SOLUCIONES</h6>
                 <p class="pb-2">Las soluciones tradicionales -construir más calles - no bastarán para superar el
                     crecimiento del tránsito en Toluca, de modo que es necesario implementar múltiples soluciones
                     simultáneamente para evitar el colapso de las redes de transporte. Se necesitan nuevas técnicas que
@@ -271,7 +271,7 @@ module.exports= yo`
                     ciudades, y propone mejoras en la gestión del tráfico.</p>
                 <div class="row">
                     <div class="col-5">
-                        <img src="trafico-soluciones.jpg" width="300" height="400" alt="">
+                        <img class="wow rotateInUpLeft" src="trafico-soluciones.jpg" width="300" height="400" alt="">
                     </div>
                     <div class="col-xl-7">
                         <p class="pb-2">Una alternativa que es factible es mejorar el sistema de tránsito por medio de
@@ -287,13 +287,13 @@ module.exports= yo`
         </div>
         <!--cronograma-->
         <div>
-            <h5 class="p-2 text-center subtitulo" style="background-color: #BC8F8F;">CRONOGRAMA</h5>
-            <img src="cronograma.png" width="800" height="500">
+            <h5 class="p-2 text-center rounded-pill subtitulo" style="background-color: #BC8F8F;">CRONOGRAMA</h5>
+            <img  class="img-fluid wow rollIn" src="cronograma.png" width="800" height="500">
             <p class="pb-1"></p>
         </div>
     </div>
     <nav class="blog-pagination">
-        <a href="/Cultura2" class="btn btn-outline-primary">Segunda parte</a>
+        <a href="/Cultura2#" class="btn btn-outline-primary">Segunda parte</a>
     </nav>
 </div>
 
