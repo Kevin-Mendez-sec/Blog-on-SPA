@@ -8,10 +8,9 @@
   position: relative;
 }
 #back{
-  background-image: url("file1.gif");
+  background-image: url("https://data.whicdn.com/images/85992445/original.gif");
   background-attachment: fixed;
   position: relative;
-  background-size: 100%;
   font-family: 'Catamaran', sans-serif;
   font-size: 20px;
 }

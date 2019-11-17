@@ -3625,7 +3625,7 @@ module.exports = yo`
       <div class="col p-4 d-flex flex-column position-static">
         <strong class="d-inline-block mb-2 text-success">Te podría interesar!</strong>
         <h3 class="mb-0">Semaforos Inteligentes ITESM</h3>
-        <div class="mb-auto"> Semáforos inteligentes es un proyecto que esta siendo desarrollado por Estudiantes del ITESM Campus Toluca.</div>
+        <div class="mb-auto text-justify"> Semáforos inteligentes es un proyecto que esta siendo desarrollado por Estudiantes del ITESM Campus Toluca.</div>
         <a href="https://www.facebook.com/pg/SemaforointeligenteITESM/about/?ref=page_internal" class="stretched-link">Continua Leyendo</a>
       </div>
       <div class="col-auto d-none d-lg-block">
