@@ -28,9 +28,12 @@
 
 .blog-header-logo:hover {
   text-decoration: none;
-  color: black;
+  color: #111 ;
 }
-
+.blog-header-logo2:hover {
+  text-decoration: none;
+  color: #111 ;
+}
 h1, h2, h3, h4, h5, h6 {
   font-family: "Playfair Display", Georgia, "Times New Roman", serif;
 }
@@ -134,7 +137,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 2.5rem 0;
   color: #999;
   text-align: center;
-  background-color: black;
+  background-color: #111;
   border-top: .05rem solid #e5e5e5;
 }
 .blog-footer p:last-child {
@@ -155,7 +158,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .materias{
   font-family: 'Bungee Inline', cursive;
-  background-color: black;
+  background-color: #111;
 }
 .objetivos{
   font-family: 'Passion One', cursive;
@@ -167,3 +170,28 @@ h1, h2, h3, h4, h5, h6 {
  -ms-transform: rotate(-90deg);
  transform: rotate(-90deg);
 }
+
+.letritas span { display:inline-block;  font-size: 6rem;}
+ 
+.blog-header:hover span { animation:bounce .6s; }
+@keyframes bounce {
+  0%,100%{ transform:translate(0); }
+  25%{ transform:rotateX(40deg) translateY(4px) rotate(-6deg); }
+  50%{ transform:translateY(-40px) rotate(6deg) scale(1.1);  }
+}
+
+
+
+.letritas span:nth-child(2){ animation-delay:.05s; }
+.letritas span:nth-child(3){ animation-delay:.1s; }
+.letritas span:nth-child(4){ animation-delay:.15s; }
+.letritas span:nth-child(5){ animation-delay:.2s; }
+.letritas span:nth-child(6){ animation-delay:.25s; }
+.letritas span:nth-child(7){ animation-delay:.3s; }
+.letritas span:nth-child(8){ animation-delay:.35s; }
+.letritas span:nth-child(9){ animation-delay:.4s; }
+.letritas span:nth-child(10){ animation-delay:.45s; }
+.letritas span:nth-child(11){ animation-delay:.5s; }
+.letritas span:nth-child(12){ animation-delay:.55s; }
+.letritas span:nth-child(13){ animation-delay:.6s; }
+.letritas span:nth-child(14){ animation-delay:.65s; }

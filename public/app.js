@@ -2974,7 +2974,6 @@ module.exports = yo`
                     AFECTA DE MANERA VISUAL Y AUDITIVA A LOS ALUMNOS DEL PLANTEL "DR. ANGEL MA. GARIBAY KINTANA" Y A LA
                     BIODIVERSIDAD.</h5>
             </div>
-
             <p class="p-2">
                 En los últimos años el aumento de la demanda de transporte y del tránsito vial han traído como
                 consecuencia, particularmente en las ciudades grandes, incrementos en la congestión, demoras, accidentes
@@ -3255,7 +3254,7 @@ module.exports = yo`
         </div>
     </div>
     <nav class="blog-pagination">
-        <a href="/Cultura2#" class="btn btn-outline-primary">Segunda parte</a>
+        <a href="/Cultura2#cult2" class="btn btn-outline-primary">Segunda parte</a>
     </nav>
 </div>
 
@@ -3264,9 +3263,9 @@ module.exports = yo`
 },{"yo-yo":13}],20:[function(require,module,exports){
 yo = require('yo-yo');
 module.exports = yo`
-<div id="cult2">
+<div >
     <h2 class="blog-post-title"> Gráficas de los resultados de encuesta</h2>
-    <div class="text-center">
+    <div id="cult2" class="text-center">
         <img class="img-fluid" style="border:black;border-width:2px;border-style: solid;border-radius: 20px;"  width="600" height="300" src="Grafica-1.png">
         <p class="p-2 text-justify">
              Del total de las encuestas aplicadas más de la mitad de los encuestados dice presentar desconcentración a causa del ruido, al 29% le es más complicado comunicarse debido a esto, el 12.9% restante no lo considera molesto. Ninguno de los encuestados siente que su rendimiento académico se vea directamente afectado debido al ruido. 
@@ -3376,6 +3375,7 @@ var yo = require('yo-yo');
 module.exports = yo`
 <div>
     <div class="d-none d-xl-block">
+        <br><br><br><br>
         <img class="plantas" planta src="https://especiales.semana.com/especiales/inventario-biblioteca-nacional/images/enredadera.png">
             
             <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -3484,9 +3484,11 @@ page('/derecho', function (ctx, netx) {
   var main = document.getElementById('main-container');
   var arriba = document.getElementById('arriba');
   var about = document.getElementById('about');
+  var plantas = document.getElementById('plantas');
   empty(arriba);
   empty(main).appendChild(template);
   empty(about).appendChild(template2);
+  empty(plantas);
 });
 
 },{"./template":25,"./template2":26,"empty-element":3,"page":11}],25:[function(require,module,exports){
@@ -3579,14 +3581,14 @@ module.exports = yo`
       <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
     </ol>
     <div class="carousel-inner">
-      <div class="carousel-item ">
+      <div class="carousel-item active">
         <img src="semaforos.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
-          <h1 class="text-dark">!Los semaforos inteligentes son la solución¡</h5>
+          <h1  style="color: black;">!Los semaforos inteligentes son la solución¡</h5>
         </div>
       </div>
-      <div class="carousel-item active">
-        <img src="http://mdbootstrap.com/img/Photos/Others/nature4.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-item ">
+        <img src="semaforosinteligentes.jpg" class="d-block w-100" alt="...">
       </div>
       <div class="carousel-item">
         <img src="https://mdbootstrap.com/img/Photos/Others/images/92.jpg" class="d-block w-100 " alt="...">
@@ -3608,27 +3610,26 @@ module.exports = yo`
   <div class="col-md-6 ">
     <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative shadow-lg bg-white rounded">
       <div class="col p-4 d-flex flex-column position-static">
-        <strong class="d-inline-block mb-2 text-primary"> Alguna materia </strong>
-        <h3 class="mb-0">Featured post</h3>
-        <div class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</div>
-        <a href="#" class="stretched-link">Continua Leyendo</a>
+        <strong class="d-inline-block mb-2 text-primary"> ¿ Sabias que ? </strong>
+        <h3 class="mb-0">Semáforos inteligentes en la capital</h3>
+        <div class="card-text mb-auto">En la capital del pais ya se incorpora un sistema de semaforos inteligentes para mejorar el transito vehicular</div>
+        <a href="https://www.elsoldemexico.com.mx/metropoli/cdmx/asi-operan-los-semaforos-inteligentes-en-la-capital-3287849.html" class="stretched-link">Saber más!</a>
       </div>
       <div class="col-auto d-none d-lg-block">
-        <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+        <img src="https://www.elsoldemexico.com.mx/metropoli/dcovee-070419-semaforos-inteligentes-metropoli-web.png/ALTERNATES/FREE_160/070419%20Sema%CC%81foros%20Inteligentes%20Metro%CC%81poli%20WEB.png" alt="" srcset="">
       </div>
     </div>
   </div>
   <div class="col-md-6">
     <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative shadow-lg bg-white rounded">
       <div class="col p-4 d-flex flex-column position-static">
-        <strong class="d-inline-block mb-2 text-success">Design</strong>
-        <h3 class="mb-0">Post title</h3>
-        <div class="mb-1 text-muted">Nov 11</div>
-        <div class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</div>
-        <a href="#" class="stretched-link">Continua Leyendo</a>
+        <strong class="d-inline-block mb-2 text-success">Te podría interesar!</strong>
+        <h3 class="mb-0">Semaforos Inteligentes ITESM</h3>
+        <div class="mb-auto"> Semáforos inteligentes es un proyecto que esta siendo desarrollado por Estudiantes del ITESM Campus Toluca.</div>
+        <a href="https://www.facebook.com/pg/SemaforointeligenteITESM/about/?ref=page_internal" class="stretched-link">Continua Leyendo</a>
       </div>
       <div class="col-auto d-none d-lg-block">
-        <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+        <img  width="160px" height="240px" src="https://scontent.fmex6-1.fna.fbcdn.net/v/t1.0-9/1796482_1447965538770205_1630895418_n.jpg?_nc_cat=102&_nc_oc=AQm3JXr0mTFhBtLA6u-o38z2pmtVe4YhxZgOTDShBwKnDjC1cn-wpiz62hGyoKnRAgw&_nc_ht=scontent.fmex6-1.fna&oh=ee447ed076e865eb203957d4a0380337&oe=5E4271C8" alt="" srcset="">
       </div>
     </div>
   </div>

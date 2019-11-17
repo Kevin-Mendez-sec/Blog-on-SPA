@@ -1,9 +1,9 @@
 yo = require('yo-yo');
 
 module.exports= yo`
-<div id="cult2">
+<div >
     <h2 class="blog-post-title"> Gráficas de los resultados de encuesta</h2>
-    <div class="text-center">
+    <div id="cult2" class="text-center">
         <img class="img-fluid" style="border:black;border-width:2px;border-style: solid;border-radius: 20px;"  width="600" height="300" src="Grafica-1.png">
         <p class="p-2 text-justify">
              Del total de las encuestas aplicadas más de la mitad de los encuestados dice presentar desconcentración a causa del ruido, al 29% le es más complicado comunicarse debido a esto, el 12.9% restante no lo considera molesto. Ninguno de los encuestados siente que su rendimiento académico se vea directamente afectado debido al ruido. 

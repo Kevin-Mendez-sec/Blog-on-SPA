@@ -12,7 +12,6 @@ module.exports= yo`
                     AFECTA DE MANERA VISUAL Y AUDITIVA A LOS ALUMNOS DEL PLANTEL "DR. ANGEL MA. GARIBAY KINTANA" Y A LA
                     BIODIVERSIDAD.</h5>
             </div>
-
             <p class="p-2">
                 En los últimos años el aumento de la demanda de transporte y del tránsito vial han traído como
                 consecuencia, particularmente en las ciudades grandes, incrementos en la congestión, demoras, accidentes
@@ -293,7 +292,7 @@ module.exports= yo`
         </div>
     </div>
     <nav class="blog-pagination">
-        <a href="/Cultura2#" class="btn btn-outline-primary">Segunda parte</a>
+        <a href="/Cultura2#cult2" class="btn btn-outline-primary">Segunda parte</a>
     </nav>
 </div>
 

@@ -1,28 +1,56 @@
 doctype html
 html(lang='en')
   head
+    link(rel="stylesheet", href="preloader.css")
+    
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
     meta(name='description', content='')
     meta(name='author', content='Mark Otto, Jacob Thornton, and Bootstrap contributors')
     meta(name='generator', content='Jekyll v3.8.5')
     title Blog Proyecto
-    // Bootstrap core CSS
     link(rel='stylesheet', href='app.css')
     link(rel='stylesheet', href='main.css')
+    
     link(rel="stylesheet", href="animate.css")
     script(src='https://use.fontawesome.com/a8624161fd.js')
     link(href='https://fonts.googleapis.com/css?family=Playfair+Display:700,900', rel='stylesheet')
-    // Custom styles for this template
+    // Custom styles
   body
     .blog-header
       header
         .flex-nowrap.justify-content-between.align-items-center
           .text-center
-            a.blog-header-logo.text-center.wow.bounceInDown.d-none.d-xl-block(href='/' data-wow-duration="2s") SMART TRAFFIC
-            a.blog-header-logo2.text-center.wow.bounceInDown.d-xl-none(href='/' data-wow-duration="2s") SMART TRAFFIC
+            a.blog-header-logo.text-center.wow.bounceInDown.d-none.d-xl-block(href='/' data-wow-delay="2s" data-wow-duration="2s") 
+              .letritas
+                span S
+                span M
+                span A
+                span R
+                span T
+                span
+                span T
+                span R
+                span A
+                span F
+                span I
+                span C
+            a.blog-header-logo2.text-center.wow.bounceInDown.d-xl-none(href='/'  data-wow-delay="3.5s" data-wow-duration="2s")
+              .letritas
+                span S
+                span M
+                span A
+                span R
+                span T
+                span
+                span T
+                span R
+                span A
+                span F
+                span I
+                span C
       .nav-scroller.py-1.materias
-        nav.nav.d-flex.justify-content-between.container.wow.fadeInLeftBig
+        nav.nav.d-flex.justify-content-between.container.wow.fadeInLeftBig(data-wow-delay="1.5s")
           a.p-2.text-white(href='/Cultura') CULTURA AMBIENTAL
           a.p-2.text-white(href='/fisica') FISICA II
           a.p-2.text-white(href='/calculo') CALCULO DIFERENCIAL
@@ -53,13 +81,13 @@ html(lang='en')
                     a(href='/') Módulo 4
               .p-4.text-center
                 .d-none.d-xl-block
-                  img.plantas(src="https://especiales.semana.com/especiales/inventario-biblioteca-nacional/images/enredadera.png")
+
                 h4.font-italic.wow.flash(data-wow-duration="2s",data-wow-iteration="infinite") Contactanos
                   br
                   br
                 ol.list-unstyled
                   li
-                    a(href='#') 
+                    a(href='http://web.uaemex.mx/PAngelMaGaribay/') 
                       i.fa.fa-university.fa-3x 
                       |. UAEMEX P5
                       br
@@ -87,6 +115,7 @@ html(lang='en')
         i.fa.fa-heart(aria-hidden='true')
       p
         a(href='#') volver al inicio
+      script(src="preloader.js")
       script(src='app.js')
       script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js', integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo', crossorigin='anonymous')
       script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js', integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1', crossorigin='anonymous')
