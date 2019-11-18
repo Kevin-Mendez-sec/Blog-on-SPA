@@ -18,7 +18,7 @@ module.exports = yo`
         <img src="semaforosinteligentes.jpg" class="d-block w-100" alt="...">
       </div>
       <div class="carousel-item">
-        <img src="https://mdbootstrap.com/img/Photos/Others/images/92.jpg" class="d-block w-100 " alt="...">
+        <img src="https://www.itc.com.ar/wp-content/uploads/2019/05/semaforo-inteligente.jpg" class="d-block w-100 " alt="...">
       </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
