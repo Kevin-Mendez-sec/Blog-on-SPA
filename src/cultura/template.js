@@ -39,19 +39,20 @@ module.exports= yo`
                         salida de los alumnos de la escuela preparatoria ya que los padres estacionan sus autos por
                         ambos lados de las calles entorpeciendo el tránsito
                     </p>
-                </div>     
+                </div>
             </div>
             <p class="p-2">
-                    Sin entrar a plantear soluciones específicas, este documento pretende analizar cuáles son los
-                    factores y las
-                    consecuencias del tráfico, verdadera desgracia moderna de las zonas urbanas y amenaza para la
-                    calidad de vida de sus
-                    habitantes.
-                </p>
+                Sin entrar a plantear soluciones específicas, este documento pretende analizar cuáles son los
+                factores y las
+                consecuencias del tráfico, verdadera desgracia moderna de las zonas urbanas y amenaza para la
+                calidad de vida de sus
+                habitantes.
+            </p>
         </div>
         <!--PLANTEAMINETO DEL PROBLEMA-->
         <div class="text-justify">
-            <h5 class="p-2 text-center rounded-pill subtitulo" style="background-color: #FFA500;">PLANTEAMINETO DEL PROBLEMA</h5>
+            <h5 class="p-2 text-center rounded-pill subtitulo" style="background-color: #FFA500;">PLANTEAMINETO DEL
+                PROBLEMA</h5>
             <p class="p-2 text-center">
                 Cómo el tráfico en las calles de Heriberto Henríquez y Ceboruco afecta de manera visual y auditiva a los
                 alumnos del plantel “Dr. Ángel Ma. Garibay Kintana” y a la biodiversidad ambiental.
@@ -83,14 +84,15 @@ module.exports= yo`
             <h5 class="pb-2 text-center rounded-pill subtitulo" style="background-color: #008080">OBJETIVOS</h5>
             <h6 class="pb-1 text-center objetivos">Generales</h6>
             <div class="rounded" style="background-color: #1ba3a3;">
-                 <p class="p-1">
+                <p class="p-1">
                     1.- Lograr que se disminuya el trafico en las calles de Heriberto Henríquez y Ceboruco.
                 </p>
-                <p class="pb-1">2. Reducir la contaminación afecta de manera visual y auditiva a los alumnos del Plantel 5
+                <p class="pb-1">2. Reducir la contaminación afecta de manera visual y auditiva a los alumnos del Plantel
+                    5
                     “Dr. Ángel Ma. Garibay Kintana” y a su entorno ambiental. </p>
                 <p class="pb-1">3. Mejorar el desempeño académico de los alumnos del plantel. </p>
             </div>
-            
+
             <h6 class="pb-1 text-center objetivos">Especificos</h6>
             <div class="rounded" style="background: aquamarine;">
                 <p class="pb-1">1. Colocar semáforos inteligentes. </p>
@@ -99,7 +101,7 @@ module.exports= yo`
                 <p class="pb-1">4. Recuperar la biodiversidad cercana al Plantel 5 “Dr. Ángel Ma. Garibay Kintana”</p>
             </div>
 
-            
+
         </div>
         <!--hipotesis-->
         <div>
@@ -115,7 +117,8 @@ module.exports= yo`
         </div>
         <!--ARGUMENTACIÓN TEÓRICO – METODOLÓGICA-->
         <div>
-            <h5 class="pb-2 text-center rounded-pill subtitulo" style="background-color: #778899;">ARGUMENTACIÓN TEÓRICO –
+            <h5 class="pb-2 text-center rounded-pill subtitulo" style="background-color: #778899;">ARGUMENTACIÓN TEÓRICO
+                –
                 METODOLÓGICA</h5><br>
             <h6 class="pb-2 objetivos text-center">¿Cuáles son las afectaciones de esta problemática?</h6>
             <p class="pb-2">En los últimos años, especialmente desde principios de los años noventa, el aumento de la
@@ -287,7 +290,7 @@ module.exports= yo`
         <!--cronograma-->
         <div>
             <h5 class="p-2 text-center rounded-pill subtitulo" style="background-color: #BC8F8F;">CRONOGRAMA</h5>
-            <img  class="img-fluid wow rollIn" src="cronograma.png" width="800" height="500">
+            <img class="img-fluid wow rollIn" src="cronograma.png" width="800" height="500">
             <p class="pb-1"></p>
         </div>
     </div>

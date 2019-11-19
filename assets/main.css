@@ -198,10 +198,12 @@ h1, h2, h3, h4, h5, h6 {
 .letritas span:nth-child(14){ animation-delay:.65s; }
 
 .new_footer_area {
-  background: hsl(259, 93%, 6%);
+  background: url("https://i.pinimg.com/originals/2c/f8/89/2cf889d186c6f7ac4585215af85265fd.gif")  center;
+  background-size: 100%;
+  background-color: hsl(259, 93%, 6%);
 }
 .new_footer_top {
-  padding: 120px 0px 270px;
+  padding: 120px 0px 180px;
   position: relative;
     overflow-x: hidden;
 }

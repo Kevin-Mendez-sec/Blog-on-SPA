@@ -3001,19 +3001,20 @@ module.exports = yo`
                         salida de los alumnos de la escuela preparatoria ya que los padres estacionan sus autos por
                         ambos lados de las calles entorpeciendo el tránsito
                     </p>
-                </div>     
+                </div>
             </div>
             <p class="p-2">
-                    Sin entrar a plantear soluciones específicas, este documento pretende analizar cuáles son los
-                    factores y las
-                    consecuencias del tráfico, verdadera desgracia moderna de las zonas urbanas y amenaza para la
-                    calidad de vida de sus
-                    habitantes.
-                </p>
+                Sin entrar a plantear soluciones específicas, este documento pretende analizar cuáles son los
+                factores y las
+                consecuencias del tráfico, verdadera desgracia moderna de las zonas urbanas y amenaza para la
+                calidad de vida de sus
+                habitantes.
+            </p>
         </div>
         <!--PLANTEAMINETO DEL PROBLEMA-->
         <div class="text-justify">
-            <h5 class="p-2 text-center rounded-pill subtitulo" style="background-color: #FFA500;">PLANTEAMINETO DEL PROBLEMA</h5>
+            <h5 class="p-2 text-center rounded-pill subtitulo" style="background-color: #FFA500;">PLANTEAMINETO DEL
+                PROBLEMA</h5>
             <p class="p-2 text-center">
                 Cómo el tráfico en las calles de Heriberto Henríquez y Ceboruco afecta de manera visual y auditiva a los
                 alumnos del plantel “Dr. Ángel Ma. Garibay Kintana” y a la biodiversidad ambiental.
@@ -3045,14 +3046,15 @@ module.exports = yo`
             <h5 class="pb-2 text-center rounded-pill subtitulo" style="background-color: #008080">OBJETIVOS</h5>
             <h6 class="pb-1 text-center objetivos">Generales</h6>
             <div class="rounded" style="background-color: #1ba3a3;">
-                 <p class="p-1">
+                <p class="p-1">
                     1.- Lograr que se disminuya el trafico en las calles de Heriberto Henríquez y Ceboruco.
                 </p>
-                <p class="pb-1">2. Reducir la contaminación afecta de manera visual y auditiva a los alumnos del Plantel 5
+                <p class="pb-1">2. Reducir la contaminación afecta de manera visual y auditiva a los alumnos del Plantel
+                    5
                     “Dr. Ángel Ma. Garibay Kintana” y a su entorno ambiental. </p>
                 <p class="pb-1">3. Mejorar el desempeño académico de los alumnos del plantel. </p>
             </div>
-            
+
             <h6 class="pb-1 text-center objetivos">Especificos</h6>
             <div class="rounded" style="background: aquamarine;">
                 <p class="pb-1">1. Colocar semáforos inteligentes. </p>
@@ -3061,7 +3063,7 @@ module.exports = yo`
                 <p class="pb-1">4. Recuperar la biodiversidad cercana al Plantel 5 “Dr. Ángel Ma. Garibay Kintana”</p>
             </div>
 
-            
+
         </div>
         <!--hipotesis-->
         <div>
@@ -3077,7 +3079,8 @@ module.exports = yo`
         </div>
         <!--ARGUMENTACIÓN TEÓRICO – METODOLÓGICA-->
         <div>
-            <h5 class="pb-2 text-center rounded-pill subtitulo" style="background-color: #778899;">ARGUMENTACIÓN TEÓRICO –
+            <h5 class="pb-2 text-center rounded-pill subtitulo" style="background-color: #778899;">ARGUMENTACIÓN TEÓRICO
+                –
                 METODOLÓGICA</h5><br>
             <h6 class="pb-2 objetivos text-center">¿Cuáles son las afectaciones de esta problemática?</h6>
             <p class="pb-2">En los últimos años, especialmente desde principios de los años noventa, el aumento de la
@@ -3249,7 +3252,7 @@ module.exports = yo`
         <!--cronograma-->
         <div>
             <h5 class="p-2 text-center rounded-pill subtitulo" style="background-color: #BC8F8F;">CRONOGRAMA</h5>
-            <img  class="img-fluid wow rollIn" src="cronograma.png" width="800" height="500">
+            <img class="img-fluid wow rollIn" src="cronograma.png" width="800" height="500">
             <p class="pb-1"></p>
         </div>
     </div>
@@ -3263,88 +3266,124 @@ module.exports = yo`
 },{"yo-yo":13}],20:[function(require,module,exports){
 yo = require('yo-yo');
 module.exports = yo`
-<div >
+<div>
     <h2 class="blog-post-title"> Gráficas de los resultados de encuesta</h2>
     <div id="cult2" class="text-center">
-        <img class="img-fluid" style="border:black;border-width:2px;border-style: solid;border-radius: 20px;"  width="600" height="300" src="Grafica-1.png">
+        <img class="img-fluid" style="border:black;border-width:2px;border-style: solid;border-radius: 20px;"
+            width="600" height="300" src="Grafica-1.png">
         <p class="p-2 text-justify">
-             Del total de las encuestas aplicadas más de la mitad de los encuestados dice presentar desconcentración a causa del ruido, al 29% le es más complicado comunicarse debido a esto, el 12.9% restante no lo considera molesto. Ninguno de los encuestados siente que su rendimiento académico se vea directamente afectado debido al ruido. 
+            Del total de las encuestas aplicadas más de la mitad de los encuestados dice presentar desconcentración a
+            causa del ruido, al 29% le es más complicado comunicarse debido a esto, el 12.9% restante no lo considera
+            molesto. Ninguno de los encuestados siente que su rendimiento académico se vea directamente afectado debido
+            al ruido.
         </p>
     </div>
     <div class="text-center">
-        <img class="img-fluid" style="border:black;border-width:2px;border-style: solid;border-radius: 20px;" width="600" height="300" src="Grafica-2.png" alt="">
+        <img class="img-fluid" style="border:black;border-width:2px;border-style: solid;border-radius: 20px;"
+            width="600" height="300" src="Grafica-2.png" alt="">
         <p class="p-2 text-justify">
-                En los resultados obtenidos podemos afirmar que la mayor parte de los alumnos encuestados se encuentra poco informado con respecto a la contaminación sobre la contaminación por trafico vehicular ,12.9%  se encuentra muy informado al respecto ,por el contrario el otro 12.9% restante está nada informado.
+            En los resultados obtenidos podemos afirmar que la mayor parte de los alumnos encuestados se encuentra poco
+            informado con respecto a la contaminación sobre la contaminación por trafico vehicular ,12.9% se encuentra
+            muy informado al respecto ,por el contrario el otro 12.9% restante está nada informado.
         </p>
     </div>
     <div class="text-center">
-        <img class="img-fluid" style="border:black;border-width:2px;border-style: solid;border-radius: 20px;" width="600" height="300" src="Grafica-3.png">
+        <img class="img-fluid" style="border:black;border-width:2px;border-style: solid;border-radius: 20px;"
+            width="600" height="300" src="Grafica-3.png">
         <p class="p-2 text-justify">
-                Dados los resultados de la encuesta más de la mitad de los encuestados dice ver trafico intenso cerca del plantel siempre , un 35.5% dice que casi siempre se crea tráfico , un 3.2% dice que casi nunca y el 3.2% restante dice que nunca. 
-        </p>
-     </div>
-     <div class="text-center">
-         <img class="img-fluid" style="border:black;border-width:2px;border-style: solid;border-radius: 20px;" width="600" height="300" src="Grafica-4.png">
-         <p class="p-2 text-justify">
-                Alrededor de la mitad de alumnos llega antes de que se genere el trafico, el 12.9% no le es posible evitarlo y el 32.2% prefiere ir caminado 
-         </p>
-     </div>
-     <div class="text-center">
-         <img class="img-fluid" style="border:black;border-width:2px;border-style: solid;border-radius: 20px;" width="600" height="300" src="Grafica-5.png" alt="" srcset="">
-         <p class="p-2 text-justify">
-                De los 3 tipos de contaminación dados en cada opción la mayoría de los alumnos dice que los 3 tipos aplican, El 19.4% considera que el problema que genera es contaminación del aire, otro 19.4% cree que causa contaminación auditiva. Y únicamente 3.2% dice que solo genera disminución de la biodiversidad. 
-         </p>
-     </div>
-    <div class="text-center">
-        <img class="img-fluid" style="border:black;border-width:2px;border-style: solid;border-radius: 20px;" width="600" height="300" src="Grafica-6.png" alt="">
-        <p class="p-2 text-justify">
-                El 54% de los encuestado dice que la producción del trafico es a causa del uso innecesario de automóviles , el 32.3% dice que el mal manejo de los automovilistas es lo que lo causa  y solo el 12.9% dice que es a causa de la mala programación de los semáforos. 
+            Dados los resultados de la encuesta más de la mitad de los encuestados dice ver trafico intenso cerca del
+            plantel siempre , un 35.5% dice que casi siempre se crea tráfico , un 3.2% dice que casi nunca y el 3.2%
+            restante dice que nunca.
         </p>
     </div>
     <div class="text-center">
-        <img class="img-fluid" style="border:black;border-width:2px;border-style: solid;border-radius: 20px;" width="600" height="300" src="Grafica-7.png">
+        <img class="img-fluid" style="border:black;border-width:2px;border-style: solid;border-radius: 20px;"
+            width="600" height="300" src="Grafica-4.png">
         <p class="p-2 text-justify">
-                La mitad de la población estudiantil encuestada piensa que el trafico vehicular tiene poca importancia en la disminución de la biodiversidad , el 32.3% cree que tiene mucha importancia y para el 16.1% no tiene ninguna importancia.
+            Alrededor de la mitad de alumnos llega antes de que se genere el trafico, el 12.9% no le es posible evitarlo
+            y el 32.2% prefiere ir caminado
         </p>
     </div>
     <div class="text-center">
-        <img class="img-fluid" style="border:black;border-width:2px;border-style: solid;border-radius: 20px;" width="600" height="300" src="Grafica-8.png">
+        <img class="img-fluid" style="border:black;border-width:2px;border-style: solid;border-radius: 20px;"
+            width="600" height="300" src="Grafica-5.png" alt="" srcset="">
         <p class="p-2 text-justify">
-            El 25.8% de los encuestados piensa que la perdida de la biodiversidad es un problema derivado de la contaminación auditiva, el 38.7% dice que los problemas de comunicación es un derivado de esta contaminación, el 32.3% cree que los conflictos interpersonales se derivan de esta. 
+            De los 3 tipos de contaminación dados en cada opción la mayoría de los alumnos dice que los 3 tipos aplican,
+            El 19.4% considera que el problema que genera es contaminación del aire, otro 19.4% cree que causa
+            contaminación auditiva. Y únicamente 3.2% dice que solo genera disminución de la biodiversidad.
         </p>
     </div>
     <div class="text-center">
-        <img class="img-fluid" style="border:black;border-width:2px;border-style: solid;border-radius: 20px;" width="600" height="300" src="Grafica-9.png">
+        <img class="img-fluid" style="border:black;border-width:2px;border-style: solid;border-radius: 20px;"
+            width="600" height="300" src="Grafica-6.png" alt="">
         <p class="p-2 text-justify">
-            Más la mitad de los encuestado pierde entre 10 y 20 minutos en el trafico , el 38.7% pierde de 30 a 40 minutos solo el 3.2% de los alumnos pierde 1 hora o más.
+            El 54% de los encuestado dice que la producción del trafico es a causa del uso innecesario de automóviles ,
+            el 32.3% dice que el mal manejo de los automovilistas es lo que lo causa y solo el 12.9% dice que es a causa
+            de la mala programación de los semáforos.
         </p>
     </div>
     <div class="text-center">
-        <img class="img-fluid" style="border:black;border-width:2px;border-style: solid;border-radius: 20px;" width="600" height="300" src="Grafica-10.png" alt="">
+        <img class="img-fluid" style="border:black;border-width:2px;border-style: solid;border-radius: 20px;"
+            width="600" height="300" src="Grafica-7.png">
         <p class="p-2 text-justify">
-            La mayor parte de los encuestados solo utiliza de manera innecesaria algún medio de transporte 1 vez por semana, otra gran parte 2 veces por semana, una menor parte 5 veces por semana y un 22.6% más de 7 veces por semana.
+            La mitad de la población estudiantil encuestada piensa que el trafico vehicular tiene poca importancia en la
+            disminución de la biodiversidad , el 32.3% cree que tiene mucha importancia y para el 16.1% no tiene ninguna
+            importancia.
         </p>
     </div>
     <div class="text-center">
-        <img class="img-fluid" style="border:black;border-width:2px;border-style: solid;border-radius: 20px;" width="600" height="300" src="Grafica-11.png" alt="">
+        <img class="img-fluid" style="border:black;border-width:2px;border-style: solid;border-radius: 20px;"
+            width="600" height="300" src="Grafica-8.png">
         <p class="p-2 text-justify">
-            Poco más de la mitad de los encuestado piensa que es importante disminuir el tráfico para reducir la contaminación , una cuarta parte dice que para mejorar la calidad de vida y el resto dice que para cuidar al medio ambiente 
+            El 25.8% de los encuestados piensa que la perdida de la biodiversidad es un problema derivado de la
+            contaminación auditiva, el 38.7% dice que los problemas de comunicación es un derivado de esta
+            contaminación, el 32.3% cree que los conflictos interpersonales se derivan de esta.
         </p>
     </div>
     <div class="text-center">
-        <img class="img-fluid" style="border:black;border-width:2px;border-style: solid;border-radius: 20px;" width="600" height="300" src="Grafica-12.png" alt="">
+        <img class="img-fluid" style="border:black;border-width:2px;border-style: solid;border-radius: 20px;"
+            width="600" height="300" src="Grafica-9.png">
         <p class="p-2 text-justify">
-            Prácticamente todos los alumnos encuestados dicen que en el ultimo semestre sus profesores de tuvieron 5 veces la clase y solo una persona dice que más de 15 veces sucedió esto
+            Más la mitad de los encuestado pierde entre 10 y 20 minutos en el trafico , el 38.7% pierde de 30 a 40
+            minutos solo el 3.2% de los alumnos pierde 1 hora o más.
         </p>
     </div>
     <div class="text-center">
-        <img class="img-fluid" style="border:black;border-width:2px;border-style: solid;border-radius: 20px;" width="600" height="300" src="Grafica-13.png" alt="">
+        <img class="img-fluid" style="border:black;border-width:2px;border-style: solid;border-radius: 20px;"
+            width="600" height="300" src="Grafica-10.png" alt="">
         <p class="p-2 text-justify">
-            La mitad de los alumnos se preocupa frecuentemente por la biodiversidad dentro del plantel  , otra gran parte dice que siempre lo hace y una pequeña parte dice que nunca lo hace. 
+            La mayor parte de los encuestados solo utiliza de manera innecesaria algún medio de transporte 1 vez por
+            semana, otra gran parte 2 veces por semana, una menor parte 5 veces por semana y un 22.6% más de 7 veces por
+            semana.
         </p>
     </div>
     <div class="text-center">
-            <h3>  14.- ¿Tienes alguna propuesta para reducir el tráfico vehicular?  </h3>
+        <img class="img-fluid" style="border:black;border-width:2px;border-style: solid;border-radius: 20px;"
+            width="600" height="300" src="Grafica-11.png" alt="">
+        <p class="p-2 text-justify">
+            Poco más de la mitad de los encuestado piensa que es importante disminuir el tráfico para reducir la
+            contaminación , una cuarta parte dice que para mejorar la calidad de vida y el resto dice que para cuidar al
+            medio ambiente
+        </p>
+    </div>
+    <div class="text-center">
+        <img class="img-fluid" style="border:black;border-width:2px;border-style: solid;border-radius: 20px;"
+            width="600" height="300" src="Grafica-12.png" alt="">
+        <p class="p-2 text-justify">
+            Prácticamente todos los alumnos encuestados dicen que en el ultimo semestre sus profesores de tuvieron 5
+            veces la clase y solo una persona dice que más de 15 veces sucedió esto
+        </p>
+    </div>
+    <div class="text-center">
+        <img class="img-fluid" style="border:black;border-width:2px;border-style: solid;border-radius: 20px;"
+            width="600" height="300" src="Grafica-13.png" alt="">
+        <p class="p-2 text-justify">
+            La mitad de los alumnos se preocupa frecuentemente por la biodiversidad dentro del plantel , otra gran parte
+            dice que siempre lo hace y una pequeña parte dice que nunca lo hace.
+        </p>
+    </div>
+    <div class="text-center">
+        <h3> 14.- ¿Tienes alguna propuesta para reducir el tráfico vehicular? </h3>
         <p class="p-2 text-justify">
             Para esta pregunta la mayoría de los alumnos propone, entre otras,
             cosas el incrementar el uso de la bicicleta , así como implementar el
@@ -3574,7 +3613,7 @@ var yo = require('yo-yo');
 
 module.exports = yo`
 <div>
-    <div id="carouselExampleIndicators" class="carousel slide pt-2" data-ride="carousel">
+  <div id="carouselExampleIndicators" class="carousel slide pt-2" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
       <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -3584,14 +3623,15 @@ module.exports = yo`
       <div class="carousel-item active">
         <img src="semaforos.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
-          <h1  style="color: black;">!Los semaforos inteligentes son la solución¡</h5>
+          <h1 style="color: black;">!Los semaforos inteligentes son la solución¡</h5>
         </div>
       </div>
       <div class="carousel-item ">
         <img src="semaforosinteligentes.jpg" class="d-block w-100" alt="...">
       </div>
       <div class="carousel-item">
-        <img src="https://www.itc.com.ar/wp-content/uploads/2019/05/semaforo-inteligente.jpg" class="d-block w-100 " alt="...">
+        <img src="https://www.itc.com.ar/wp-content/uploads/2019/05/semaforo-inteligente.jpg" class="d-block w-100 "
+          alt="...">
       </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -3602,40 +3642,50 @@ module.exports = yo`
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
-    </div>
+  </div>
 
-    <div class="p-2"></div>
-  
+  <div class="p-2"></div>
+
   <div class="row mb-2">
-  <div class="col-md-6 ">
-    <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative shadow-lg bg-white rounded">
-      <div class="col p-4 d-flex flex-column position-static">
-        <strong class="d-inline-block mb-2 text-primary"> ¿ Sabias que ? </strong>
-        <h3 class="mb-0">Semáforos inteligentes en la capital</h3>
-        <div class="card-text mb-auto">En la capital del pais ya se incorpora un sistema de semaforos inteligentes para mejorar el transito vehicular</div>
-        <a href="https://www.elsoldemexico.com.mx/metropoli/cdmx/asi-operan-los-semaforos-inteligentes-en-la-capital-3287849.html" class="stretched-link">Saber más!</a>
+    <div class="col-md-6 ">
+      <div
+        class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative shadow-lg bg-white rounded">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary"> ¿ Sabias que ? </strong>
+          <h3 class="mb-0">Semáforos inteligentes en la capital</h3>
+          <div class="card-text mb-auto">En la capital del pais ya se incorpora un sistema de semaforos inteligentes
+            para mejorar el transito vehicular</div>
+          <a href="https://www.elsoldemexico.com.mx/metropoli/cdmx/asi-operan-los-semaforos-inteligentes-en-la-capital-3287849.html"
+            class="stretched-link">Saber más!</a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img
+            src="https://www.elsoldemexico.com.mx/metropoli/dcovee-070419-semaforos-inteligentes-metropoli-web.png/ALTERNATES/FREE_160/070419%20Sema%CC%81foros%20Inteligentes%20Metro%CC%81poli%20WEB.png"
+            alt="" srcset="">
+        </div>
       </div>
-      <div class="col-auto d-none d-lg-block">
-        <img src="https://www.elsoldemexico.com.mx/metropoli/dcovee-070419-semaforos-inteligentes-metropoli-web.png/ALTERNATES/FREE_160/070419%20Sema%CC%81foros%20Inteligentes%20Metro%CC%81poli%20WEB.png" alt="" srcset="">
+    </div>
+    <div class="col-md-6">
+      <div
+        class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative shadow-lg bg-white rounded">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-success">Te podría interesar!</strong>
+          <h3 class="mb-0">Semaforos Inteligentes ITESM</h3>
+          <div class="mb-auto text-justify"> Semáforos inteligentes es un proyecto que esta siendo desarrollado por
+            Estudiantes del ITESM Campus Toluca.</div>
+          <a href="https://www.facebook.com/pg/SemaforointeligenteITESM/about/?ref=page_internal"
+            class="stretched-link">Continua Leyendo</a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img width="160px" height="240px"
+            src="https://scontent.fmex6-1.fna.fbcdn.net/v/t1.0-9/1796482_1447965538770205_1630895418_n.jpg?_nc_cat=102&_nc_oc=AQm3JXr0mTFhBtLA6u-o38z2pmtVe4YhxZgOTDShBwKnDjC1cn-wpiz62hGyoKnRAgw&_nc_ht=scontent.fmex6-1.fna&oh=ee447ed076e865eb203957d4a0380337&oe=5E4271C8"
+            alt="" srcset="">
+        </div>
       </div>
     </div>
   </div>
-  <div class="col-md-6">
-    <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative shadow-lg bg-white rounded">
-      <div class="col p-4 d-flex flex-column position-static">
-        <strong class="d-inline-block mb-2 text-success">Te podría interesar!</strong>
-        <h3 class="mb-0">Semaforos Inteligentes ITESM</h3>
-        <div class="mb-auto text-justify"> Semáforos inteligentes es un proyecto que esta siendo desarrollado por Estudiantes del ITESM Campus Toluca.</div>
-        <a href="https://www.facebook.com/pg/SemaforointeligenteITESM/about/?ref=page_internal" class="stretched-link">Continua Leyendo</a>
-      </div>
-      <div class="col-auto d-none d-lg-block">
-        <img  width="160px" height="240px" src="https://scontent.fmex6-1.fna.fbcdn.net/v/t1.0-9/1796482_1447965538770205_1630895418_n.jpg?_nc_cat=102&_nc_oc=AQm3JXr0mTFhBtLA6u-o38z2pmtVe4YhxZgOTDShBwKnDjC1cn-wpiz62hGyoKnRAgw&_nc_ht=scontent.fmex6-1.fna&oh=ee447ed076e865eb203957d4a0380337&oe=5E4271C8" alt="" srcset="">
-      </div>
-    </div>
-  </div>
-  </div>
-  </div>
-  `;
+</div>
+`;
 
 },{"yo-yo":13}],32:[function(require,module,exports){
 var yo = require('yo-yo');
@@ -3643,72 +3693,91 @@ var yo = require('yo-yo');
 module.exports = yo`
 <div>
   <h3 class="pb-4 mb-4 font-italic border-bottom">
-  From the Firehose
+    From the Firehose
   </h3>
 
-<div class="blog-post">
-  <h2 class="blog-post-title">Sample blog post</h2>
-  <div class="blog-post-meta">January 1, 2014 by <a href="#">Mark</a></div>
+  <div class="blog-post">
+    <h2 class="blog-post-title">Sample blog post</h2>
+    <div class="blog-post-meta">January 1, 2014 by <a href="#">Mark</a></div>
 
-  <div>This blog post shows a few different types of content that’s supported and styled with Bootstrap. Basic typography, images, and code are all supported.</div>
-  <hr>
-  <div>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</div>
-  <blockquote>
-    <div>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</div>
-  </blockquote>
-  <div>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</div>
-  <h2>Heading</h2>
-  <div>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</div>
-  <h3>Sub-heading</h3>
-  <div>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</div>
-  <divre><code>Example code block</code></pre>
-  <div>Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</div>
-  <h3>Sub-heading</h3>
-  <div>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</div>
-  <ul>
-    <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
-    <li>Donec id elit non mi porta gravida at eget metus.</li>
-    <li>Nulla vitae elit libero, a pharetra augue.</li>
-  </ul>
-  <div>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</div>
-  <ol>
-    <li>Vestibulum id ligula porta felis euismod semper.</li>
-    <li>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</li>
-    <li>Maecenas sed diam eget risus varius blandit sit amet non magna.</li>
-  </ol>
-  <div>Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.</div>
-</div><!-- /.blog-post -->
+    <div>This blog post shows a few different types of content that’s supported and styled with Bootstrap. Basic
+      typography, images, and code are all supported.</div>
+    <hr>
+    <div>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu
+      leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras
+      mattis consectetur purus sit amet fermentum.</div>
+    <blockquote>
+      <div>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo.
+        Nullam id dolor id nibh ultricies vehicula ut id elit.</div>
+    </blockquote>
+    <div>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum.
+      Aenean lacinia bibendum nulla sed consectetur.</div>
+    <h2>Heading</h2>
+    <div>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus,
+      nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum
+      at eros.</div>
+    <h3>Sub-heading</h3>
+    <div>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</div>
+    <divre><code>Example code block</code></pre>
+      <div>Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus,
+        tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</div>
+      <h3>Sub-heading</h3>
+      <div>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum
+        nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo,
+        tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</div>
+      <ul>
+        <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
+        <li>Donec id elit non mi porta gravida at eget metus.</li>
+        <li>Nulla vitae elit libero, a pharetra augue.</li>
+      </ul>
+      <div>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</div>
+      <ol>
+        <li>Vestibulum id ligula porta felis euismod semper.</li>
+        <li>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</li>
+        <li>Maecenas sed diam eget risus varius blandit sit amet non magna.</li>
+      </ol>
+      <div>Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.</div>
+  </div><!-- /.blog-post -->
 
-<div class="blog-post">
-  <h2 class="blog-post-title">Another blog post</h2>
-  <div class="blog-post-meta">December 23, 2013 by <a href="#">Jacob</a></div>
+  <div class="blog-post">
+    <h2 class="blog-post-title">Another blog post</h2>
+    <div class="blog-post-meta">December 23, 2013 by <a href="#">Jacob</a></div>
 
-  <div>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</div>
-  <blockquote>
-    <div>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</div>
-  </blockquote>
-  <div>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</div>
-  <div>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</div>
-</div><!-- /.blog-post -->
+    <div>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu
+      leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras
+      mattis consectetur purus sit amet fermentum.</div>
+    <blockquote>
+      <div>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo.
+        Nullam id dolor id nibh ultricies vehicula ut id elit.</div>
+    </blockquote>
+    <div>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum.
+      Aenean lacinia bibendum nulla sed consectetur.</div>
+    <div>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus,
+      nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum
+      at eros.</div>
+  </div><!-- /.blog-post -->
 
-<div class="blog-post">
-  <h2 class="blog-post-title">New feature</h2>
-  <div class="blog-post-meta">December 14, 2013 by <a href="#">Chris</a></div>
+  <div class="blog-post">
+    <h2 class="blog-post-title">New feature</h2>
+    <div class="blog-post-meta">December 14, 2013 by <a href="#">Chris</a></div>
 
-  <div>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</div>
-  <ul>
-    <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
-    <li>Donec id elit non mi porta gravida at eget metus.</li>
-    <li>Nulla vitae elit libero, a pharetra augue.</li>
-  </ul>
-  <div>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</div>
-  <div>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</div>
-</div><!-- /.blog-post -->
+    <div>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum
+      nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo,
+      tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</div>
+    <ul>
+      <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
+      <li>Donec id elit non mi porta gravida at eget metus.</li>
+      <li>Nulla vitae elit libero, a pharetra augue.</li>
+    </ul>
+    <div>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum.
+      Aenean lacinia bibendum nulla sed consectetur.</div>
+    <div>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</div>
+  </div><!-- /.blog-post -->
 
-<nav class="blog-pagination">
-  <a class="btn btn-outline-primary" href="#">Older</a>
-  <a class="btn btn-outline-secondary disabled" href="#" tabindex="-1" aria-disabled="true">Newer</a>
-</nav>
+  <nav class="blog-pagination">
+    <a class="btn btn-outline-primary" href="#">Older</a>
+    <a class="btn btn-outline-secondary disabled" href="#" tabindex="-1" aria-disabled="true">Newer</a>
+  </nav>
 
 </div>`;
 
@@ -3763,16 +3832,25 @@ var yo = require('yo-yo');
 module.exports = yo`
 <div>
   <h1 class="blog-post-title text-center">ESTRATEGIAS</h1>
-    <h2 class="blog-post-title text-center"> <img class="bd-placeholder-img" width="40" height="40" src="data:image/png;base64,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">
-    Semáforos Inteligentes 
-    <img class="bd-placeholder-img" width="40" height="40" src="data:image/png;base64,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"> 
+  <h2 class="blog-post-title text-center"> <img class="bd-placeholder-img" width="40" height="40"
+      src="data:image/png;base64,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">
+    Semáforos Inteligentes
+    <img class="bd-placeholder-img" width="40" height="40"
+      src="data:image/png;base64,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">
   </h2>
-    <h3>Visión</h3>
-    <div class="text-justify">Nuestro prototipo consiste en un semáforo inteligente, el cual será alimentado con una celda solar y con él se busca mejorar los intervalos de tiempo de espera: siga, precaución y pare, esto se quiere lograr automatizando y programando las decisiones que tomaría un policía de tránsito cuando un semáforo no funciona. </div>
-    <h3>Misión</h3>
-    <div class="text-justify">Queremos desarrollar este prototipo ya que es una forma sustentable para resolver el contratiempo que causa el tráfico, es un proyecto verde o ecológico porque como lo dice su definición un proyecto ecológico es aquel que está orientado al desarrollo de prácticas responsables con su entorno y con el diseño de soluciones. En este proyecto se busca disminuir la cantidad de contaminación producida por los automóviles y esto se logrará de una forma amigable con el ambiente.</div>
-    <h3>Metas</h3>
-    <div class="text-justify">Se lograría la reducción de tiempos que se emplean en los recorridos en vehículo,  la contaminación ambiental, auditiva y visual, lo cual se pretende lograr a finales de este semestre.</div>
+  <h3>Visión</h3>
+  <div class="text-justify">Nuestro prototipo consiste en un semáforo inteligente, el cual será alimentado con una celda
+    solar y con él se busca mejorar los intervalos de tiempo de espera: siga, precaución y pare, esto se quiere lograr
+    automatizando y programando las decisiones que tomaría un policía de tránsito cuando un semáforo no funciona. </div>
+  <h3>Misión</h3>
+  <div class="text-justify">Queremos desarrollar este prototipo ya que es una forma sustentable para resolver el
+    contratiempo que causa el tráfico, es un proyecto verde o ecológico porque como lo dice su definición un proyecto
+    ecológico es aquel que está orientado al desarrollo de prácticas responsables con su entorno y con el diseño de
+    soluciones. En este proyecto se busca disminuir la cantidad de contaminación producida por los automóviles y esto se
+    logrará de una forma amigable con el ambiente.</div>
+  <h3>Metas</h3>
+  <div class="text-justify">Se lograría la reducción de tiempos que se emplean en los recorridos en vehículo, la
+    contaminación ambiental, auditiva y visual, lo cual se pretende lograr a finales de este semestre.</div>
 </div>`;
 
 },{"yo-yo":13}],37:[function(require,module,exports){
@@ -3804,28 +3882,34 @@ page('/optativas', function (ctx, netx) {
 },{"./template":39,"./template2":40,"empty-element":3,"page":11}],39:[function(require,module,exports){
 yo = require('yo-yo');
 module.exports = yo`
- <div class="container">
-    <div class="card mb-3 shadow-lg bg-white rounded">
-    <img class="card-img-top"  width="200" height="250" src="http://observatorio.edomex.gob.mx/sites/observatorio.edomex.gob.mx/files/images/banners_mision%2C-vis-y-obj.jpg" alt="...">
+<div class="container">
+  <div class="card mb-3 shadow-lg bg-white rounded">
+    <img class="card-img-top" width="200" height="250"
+      src="http://observatorio.edomex.gob.mx/sites/observatorio.edomex.gob.mx/files/images/banners_mision%2C-vis-y-obj.jpg"
+      alt="...">
     <div class="card-body">
-      <h5 class="card-title text-primary">Estrageias para la resolucion de conflictos </h5>
+      <h5 class="card-title text-primary">Estragias para la resolucion de conflictos </h5>
       <h3 class="mb-0">Misión,Visión,Metas</h3>
-      <div class="card-text mb-auto">Dentro de este apartado se habla acerca de la misión que se tiene con el proyecto , asi como la vision y las metas sobre el mismo</div>
+      <div class="card-text mb-auto">Dentro de este apartado se habla acerca de la misión que se tiene con el proyecto ,
+        asi como la vision y las metas sobre el mismo</div>
       <a href="/optativas/estrategias" class="stretched-link">Conocer más...</a>
     </div>
-    </div>
-  <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative shadow-lg bg-white rounded">
+  </div>
+  <div
+    class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative shadow-lg bg-white rounded">
     <div class="col p-4 d-flex flex-column position-static">
-      <h5 class="d-inline-block mb-2 text-success">Etimologias</h5>
+      <h5 class="d-inline-block mb-2 text-success">Etimologías</h5>
       <h3 class="mb-0">Glosario de 50 palabras </h3>
       <div class="mb-1 text-muted">Nov 11</div>
-      <div class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</div>
+      <div class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.
+      </div>
       <a href="/optativas/etimologias" class="stretched-link">Ver Glosario</a>
     </div>
     <div class="col-auto d-none d-lg-block">
-    <img class="bd-placeholder-img" width="200" height="250" src="data:image/png;base64,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">
+      <img class="bd-placeholder-img" width="200" height="250"
+        src="data:image/png;base64,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">
     </div>
-    </div>
+  </div>
 </div>
 
 `;
