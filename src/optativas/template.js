@@ -7,7 +7,7 @@ module.exports= yo`
       src="http://observatorio.edomex.gob.mx/sites/observatorio.edomex.gob.mx/files/images/banners_mision%2C-vis-y-obj.jpg"
       alt="...">
     <div class="card-body">
-      <h5 class="card-title text-primary">Estragias para la resolucion de conflictos </h5>
+      <h5 class="card-title text-primary">Estrategias para la resolucion de conflictos </h5>
       <h3 class="mb-0">Misión,Visión,Metas</h3>
       <div class="card-text mb-auto">Dentro de este apartado se habla acerca de la misión que se tiene con el proyecto ,
         asi como la vision y las metas sobre el mismo</div>

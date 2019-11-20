@@ -39,7 +39,9 @@ res.render('index');
 app.get('/optativas/estrategias',function (req, res){
 res.render('index');
 })
-
+app.get('/optativas/etimologias',function (req, res){
+  res.render('index');
+  })
     
 app.listen(process.env.PORT || 3000, function (err){
      if (err) return console.log('hubo un error'), process.exit(1);

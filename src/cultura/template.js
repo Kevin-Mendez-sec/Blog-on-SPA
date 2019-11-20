@@ -4,7 +4,7 @@ module.exports= yo`
 
 <div>
     <h1 class="p-3 text-center titulo"> Cultura ambiental y Desarrollo sustentable</h1>
-    <div class="text-justify">
+    <div class="text-justify wow bounceInUp">
         <!--INTRODUCCION-->
         <div>
             <div class="rounded-pill" style="background-color:#FA8072">
