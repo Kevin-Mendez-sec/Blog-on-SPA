@@ -7,7 +7,9 @@ page('/optativas', function(ctx,netx){
     var main = document.getElementById('main-container');
     var arriba = document.getElementById('arriba');
     var about = document.getElementById('about');
+    var plantas = document.getElementById('plantas')
 empty(arriba);
 empty(main).appendChild(template);
 empty(about).appendChild(template2);
+empty(plantas);
 })

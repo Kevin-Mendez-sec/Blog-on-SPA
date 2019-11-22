@@ -2,6 +2,10 @@ yo = require('yo-yo');
 
 module.exports= yo`
 <div>
-    <h1>inlges</h1>
+    <br>
+    <br>
+    <img src="ingles.jpg" width="100%" height="auto">
+    <br>
+    <br>
 </div>
 `;

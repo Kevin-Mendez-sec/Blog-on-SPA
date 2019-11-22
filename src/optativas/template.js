@@ -51,7 +51,7 @@ module.exports= yo`
       <a href="/optativas/herencia" class="stretched-link">Saber más...</a>
     </div>
     <div class="col-auto d-none d-lg-block">
-      <img class="bd-placeholder-img" width="200" height="250">
+      <img src="https://c8.alamy.com/compes/pg1f2k/lecturas-en-la-evolucion-la-genetica-y-la-eugenesia-evolucion-herencia-eugenesia-i66-lecturas-en-la-evolucion-la-genetica-y-la-eugenesia-exterior-la-forma-de-la-pared-circunferencial-de-esta-esfera-hueca-esto-se-denomina-blastula-blastoderm-o-etapa-de-desarrollo-y-el-embrion-en-si-se-denomina-blastula-o-blastoderm-en-esta-etapa-tambien-es-comun-a-todos-los-muchos-celled-los-animales-la-siguiente-etapa-en-el-desarrollo-embrionario-esta-formado-por-la-curvatura-hacia-adentro-de-una-parte-de-la-capa-de-celulas-blastoderm-tal-y-como-se-muestra-en-g-o-la-escision-interiormente-de-celulas-de-una-parte-especial-de-la-blastula-capa-celular-este-b-pg1f2k.jpg" class="bd-placeholder-img" width="200" height="250">
     </div>
   </div>
   <div
@@ -77,7 +77,7 @@ module.exports= yo`
       <a href="/optativas/dibujo" class="stretched-link">Saber más...</a>
     </div>
     <div class="col-auto d-none d-lg-block">
-      <img class="bd-placeholder-img" width="200" height="250">
+      <img src="https://cdn.pixabay.com/photo/2013/07/12/14/46/sketch-148769_960_720.png" class="bd-placeholder-img" width="200" height="250">
     </div>
   </div>
 </div>

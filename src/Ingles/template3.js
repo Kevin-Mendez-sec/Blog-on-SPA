@@ -1,3 +1,5 @@
 yo = require('yo-yo');
 
-module.exports= yo``
+module.exports= yo`
+
+`;

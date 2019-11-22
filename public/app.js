@@ -2916,17 +2916,28 @@ page('/ingles', function (ctx, netx) {
 yo = require('yo-yo');
 module.exports = yo`
 <div>
-    <h1>inlges</h1>
+    <br>
+    <br>
+    <img src="ingles.jpg" width="100%" height="auto">
+    <br>
+    <br>
 </div>
 `;
 
 },{"yo-yo":13}],17:[function(require,module,exports){
 yo = require('yo-yo');
-module.exports = yo``;
+module.exports = yo`
+<div>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Rotating_earth_%28large%29.gif/200px-Rotating_earth_%28large%29.gif" width="260px" height="200px" >
+</div>
+
+`;
 
 },{"yo-yo":13}],18:[function(require,module,exports){
 yo = require('yo-yo');
-module.exports = yo``;
+module.exports = yo`
+
+`;
 
 },{"yo-yo":13}],19:[function(require,module,exports){
 var page = require('page');
@@ -2993,110 +3004,154 @@ page('/calculo', function (ctx, netx) {
 },{"./template":24,"./template2":25,"./template3":26,"empty-element":3,"page":11}],24:[function(require,module,exports){
 yo = require('yo-yo');
 module.exports = yo`
-<div class=" wow rollIn">
+<div class=" text-justify wow rollIn">
     <h1 class="  p-2 text-center titulo">
         CALCULO DIFERENCIAL
     </h1>
-    <h5 class=" text-center subtitulo">PROBLEMA DE OPTIMIZACIÓN</h5>
-    En la asignatura de Cálculo Diferencial se nos solicitó realizar un modelo matemático en el cual aplicáramos todos
-    los conocimientos previos obtenidos durante el semestre en esta materia. El ejercicio que planteamos es un problema
-    de optimización, los cuales cabe aclarar son utilizados cuando se quiere sacar mayor provecho a algo, por ejemplo,
-    ¿Cuál es la mayor cantidad de terreno que puedo cercar con x cantidad de malla? O también se puede preguntar ¿Cuál
-    es la forma más barata de cercar un terreno?, etc. A partir de estos ejemplos planteados en clase, logramos generar
-    y resolver nuestro propio problema de optimización con el cual se quiere reducir el material que se ocupa al
-    construir un semáforo.
-    <h6 class=" text-center p-2 objetivos">Problema de optimización:</h6>
-    <p class="pb-2">
-        Con lámina de plástico reciclado se pretende hacer la cubierta de un semáforo que tiene forma de cilindro. Determine
-    las dimensiones del semáforo si se quiere usar la menor lámina posible y obtener 20 000 cm3 de volumen.
-    </p> 
-    <div class=" text-center">
-        V = r<sup>2</sup>πh = 20000cm<sup>3</sup> <br>
-        A = 2r<sup>2</sup>π + 2rπh <br>
-        <p class=" font-weight-bolder">Oteniendo el valor de h en terminos de r </p> <br>
-        h=
-        <div class=" fraction">
-            <span >2000</span>
-            <span class="bar">/</span>
-            <span class="fdn"> <i>r</i> <sup>2</sup>π</span>
-        </div> <br>
-    
-        <p class=" font-weight-bolder">Sustituyendo el valor de h en A </p> <br>
-    
-        A = 2r<sup>2</sup>π + 2rπ (
-        <div class=" fraction">
-            <span >2000</span>
-            <span class="bar">/</span>
-            <span class="fdn"> <i>r</i> <sup>2</sup>π</span>
-        </div>
-        ) <br>
-        A = 2r<sup>2</sup>π+ <div class=" fraction">
-            <span >4000</span>
-            <span class="bar">/</span>
-            <span class="fdn"> <i>r</i></span>
-        </div> F.O. <br>
-        <p class=" font-weight-bolder">Primera dervada</p>  <br>
-        A<sup>'</sup> = 4rπ-<div class=" fraction">
-            <span >4000</span>
-            <span class="bar">/</span>
-            <span class="fdn"> <i>r</i> <sup>2</sup></span>
-        </div> <br>
-        0 = 4rπ-<div class=" fraction">
-            <span >4000</span>
-            <span class="bar">/</span>
-            <span class="fdn"> <i>r</i> <sup>2</sup></span>
-        </div> <br>
-        <img src="http://asp.adicae.net/proyectos/nacionales/hipotecas/images/semaforo-verde.gif" class=" float-right" alt="">
-        4rπ =<div class=" fraction">
-            <span >4000</span>
-            <span class="bar">/</span>
-            <span class="fdn"> <i>r</i> <sup>2</sup></span>
-        </div> <br>
-        4πr<sup>3</sup>= 40000 <br>
-    
-        r =
-        <span class="radical"><span class="n-root">3</span>√</span><span class="radicand">
-            <div class=" fraction">
-                <span class=" pt-3">4000</span>
-                <span class="bar">/</span>
-                <span class="fdn"> 4π</span>
+    <div>
+        <div class="card mb-3">
+            <img src="https://www.fisicalab.com/sites/all/files/contenidos/matematicas/2311_calcular_limites_punto/concepto_limite.gif"
+                class="card-img-top rounded" alt="...">
+            <div class="card-body">
+                <h5 class="card-title"> <a
+                        href="https://www.mindomo.com/es/mindmap/linea-de-tiempo-limite-de9e25074e8a7a40309601438a8ce49b">Evolución
+                        del concepto de limite de una función</a> </h5>
             </div>
-            = 14.7101cm
-        </span>
+        </div>
     </div>
-        <br>
-        <br>
-        
 
-    <div class=" text-center">
-          <p class=" font-weight-bolder">Segunda derivada</p>  
-            A<sup>''</sup> = 4π + <div class=" fraction">
-                    <span >80000</span>
+    <h5 class=" text-center subtitulo">Aplicación de límites de una función en diferentes</h5>
+    En el área de las ciencias biológicas, en la enseñanza media ya aparecen aplicaciones matemáticas, como son los
+    logaritmos para calcular el pH en química, las ecuaciones químicas, el cálculo de mezclas... En biología, la forma
+    en que los padres transmiten su información a sus hijos, o genética, es una materia que utiliza mucho la estadística
+    y probabilidad. Es el caso de los estudios de Mendel, por ejemplo, quién se dedicó a estudiar el comportamiento de
+    ciertas plantas a las que cruzó y determinó cómo se relacionaban genéticamente los padres con los hijos, hablando de
+    Genotipo y Fenotipo.
+    Aplicaciones de la Topografía a la Construcción.
+    Un levantamiento topográfico del lugar, para utilizarse en la preparación de los planos de las estructuras; el
+    establecimiento en el terreno de un sistema de estacas o de otras marcas, tanto en planta como en elevaciones, de
+    las cuales se pueden tomar medidas para las terracerías y para las estructuras por el personal encargado de la
+    construcción; dar línea y niveles según sea necesario, para reponer las estacas movidas por la construcción o para
+    localizar puntos adicionales en la misma estructura.
+
+    <div>
+
+        <div>
+            <h5 class="card-title">COTINUIDAD DE UNA FUNCIÓN A LO LARGO DE LA HISTORIA</h5>
+            <div>
+                <img src="linea-calculo.jpg" class=" img-fluid" width="100%" height="auto">
+            </div>
+
+        </div>
+
+
+        <h5 class=" text-center subtitulo">PROBLEMA DE OPTIMIZACIÓN</h5>
+        En la asignatura de Cálculo Diferencial se nos solicitó realizar un modelo matemático en el cual aplicáramos
+        todos
+        los conocimientos previos obtenidos durante el semestre en esta materia. El ejercicio que planteamos es un
+        problema
+        de optimización, los cuales cabe aclarar son utilizados cuando se quiere sacar mayor provecho a algo, por
+        ejemplo,
+        ¿Cuál es la mayor cantidad de terreno que puedo cercar con x cantidad de malla? O también se puede preguntar
+        ¿Cuál
+        es la forma más barata de cercar un terreno?, etc. A partir de estos ejemplos planteados en clase, logramos
+        generar
+        y resolver nuestro propio problema de optimización con el cual se quiere reducir el material que se ocupa al
+        construir un semáforo.
+        <h6 class=" text-center p-2 objetivos">Problema de optimización:</h6>
+        <p class="pb-2">
+            Con lámina de plástico reciclado se pretende hacer la cubierta de un semáforo que tiene forma de cilindro.
+            Determine
+            las dimensiones del semáforo si se quiere usar la menor lámina posible y obtener 20 000 cm3 de volumen.
+        </p>
+        <div class=" text-center">
+            V = r<sup>2</sup>πh = 20000cm<sup>3</sup> <br>
+            A = 2r<sup>2</sup>π + 2rπh <br>
+            <p class=" font-weight-bolder">Oteniendo el valor de h en terminos de r </p> <br>
+            h=
+            <div class=" fraction">
+                <span>2000</span>
+                <span class="bar">/</span>
+                <span class="fdn"> <i>r</i> <sup>2</sup>π</span>
+            </div> <br>
+
+            <p class=" font-weight-bolder">Sustituyendo el valor de h en A </p> <br>
+
+            A = 2r<sup>2</sup>π + 2rπ (
+            <div class=" fraction">
+                <span>2000</span>
+                <span class="bar">/</span>
+                <span class="fdn"> <i>r</i> <sup>2</sup>π</span>
+            </div>
+            ) <br>
+            A = 2r<sup>2</sup>π+ <div class=" fraction">
+                <span>4000</span>
+                <span class="bar">/</span>
+                <span class="fdn"> <i>r</i></span>
+            </div> F.O. <br>
+            <p class=" font-weight-bolder">Primera dervada</p> <br>
+            A<sup>'</sup> = 4rπ-<div class=" fraction">
+                <span>4000</span>
+                <span class="bar">/</span>
+                <span class="fdn"> <i>r</i> <sup>2</sup></span>
+            </div> <br>
+            0 = 4rπ-<div class=" fraction">
+                <span>4000</span>
+                <span class="bar">/</span>
+                <span class="fdn"> <i>r</i> <sup>2</sup></span>
+            </div> <br>
+            <img src="http://asp.adicae.net/proyectos/nacionales/hipotecas/images/semaforo-verde.gif"
+                class=" float-right" alt="">
+            4rπ =<div class=" fraction">
+                <span>4000</span>
+                <span class="bar">/</span>
+                <span class="fdn"> <i>r</i> <sup>2</sup></span>
+            </div> <br>
+            4πr<sup>3</sup>= 40000 <br>
+
+            r =
+            <span class="radical"><span class="n-root">3</span>√</span><span class="radicand">
+                <div class=" fraction">
+                    <span class=" pt-3">4000</span>
                     <span class="bar">/</span>
-                    <span class="fdn"> <i>r</i> <sup>3</sup></span>
-                </div> <br>
-           <div>
-               A<sup>''</sup> = <span>37.69 </span> <span>mayor que</span> 0 Mínimo 
-           </div> <br>
+                    <span class="fdn"> 4π</span>
+                </div>
+                = 14.7101cm
+            </span>
+        </div>
+        <br>
+        <br>
+
+
+        <div class=" text-center">
+            <p class=" font-weight-bolder">Segunda derivada</p>
+            A<sup>''</sup> = 4π + <div class=" fraction">
+                <span>80000</span>
+                <span class="bar">/</span>
+                <span class="fdn"> <i>r</i> <sup>3</sup></span>
+            </div> <br>
+            <div>
+                A<sup>''</sup> = <span>37.69 </span> <span>mayor que</span> 0 Mínimo
+            </div> <br>
             <p class=" font-weight-bolder"> Solución de h</p>
             h =
             <div class=" fraction">
-                    <span >20000</span>
-                    <span class="bar">/</span>
-                    <span class="fdn"> <i>r</i> <sup>2</sup>π</span>
-                </div> <br>
+                <span>20000</span>
+                <span class="bar">/</span>
+                <span class="fdn"> <i>r</i> <sup>2</sup>π</span>
+            </div> <br>
             h =
             <div class=" fraction">
-                    <span >20000</span>
-                    <span class="bar">/</span>
-                    <span class="fdn"> <i>(14.7101)</i> <sup>2</sup>π</span>
-                </div> <br>
+                <span>20000</span>
+                <span class="bar">/</span>
+                <span class="fdn"> <i>(14.7101)</i> <sup>2</sup>π</span>
+            </div> <br>
             h = 29.4204 cm
-            
+
+        </div>
+        <br> <br> <br> <br>
     </div>
-    <br> <br> <br> <br>
-</div>
-`;
+    `;
 
 },{"yo-yo":13}],25:[function(require,module,exports){
 yo = require('yo-yo');
@@ -3119,6 +3174,12 @@ module.exports = yo`
         <img class="plantas" planta src="https://especiales.semana.com/especiales/inventario-biblioteca-nacional/images/enredadera.png">
             
             <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        
+        <img class="plantas" planta src="https://especiales.semana.com/especiales/inventario-biblioteca-nacional/images/enredadera.png">
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        
+        <img class="plantas" planta src="https://especiales.semana.com/especiales/inventario-biblioteca-nacional/images/enredadera.png">
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         
         <img class="plantas" planta src="https://especiales.semana.com/especiales/inventario-biblioteca-nacional/images/enredadera.png">
         
@@ -4261,21 +4322,26 @@ page('/optativas/dibujo', function (ctx, netx) {
 yo = require('yo-yo');
 module.exports = yo`
 
-<div>
-    <h1>dibujo</h1>
+<div class=" text-center">
+    <br>
+        <iframe src="https://drive.google.com/file/d/1KyBdBpGgUE7IOK9-VK6pcq2qnYE-bDnW/preview" width="640" height="480"></iframe>
 </div>
 
 `;
 
 },{"yo-yo":13}],51:[function(require,module,exports){
-arguments[4][47][0].apply(exports,arguments)
-},{"dup":47,"yo-yo":13}],52:[function(require,module,exports){
 yo = require('yo-yo');
 module.exports = yo`
 
+<div>
+        <img src="http://www.gifs-animados.es/gifs-imagenes/d/dibujo-de-la-figura/gifs-animados-dibujo-de-la-figura-601644.gif" width="260px" height="200px" alt="">
+</div>
+
 `;
 
-},{"yo-yo":13}],53:[function(require,module,exports){
+},{"yo-yo":13}],52:[function(require,module,exports){
+arguments[4][18][0].apply(exports,arguments)
+},{"dup":18,"yo-yo":13}],53:[function(require,module,exports){
 var page = require('page');
 
 var empty = require('empty-element');
@@ -4310,8 +4376,8 @@ module.exports = yo`
 },{"yo-yo":13}],55:[function(require,module,exports){
 arguments[4][47][0].apply(exports,arguments)
 },{"dup":47,"yo-yo":13}],56:[function(require,module,exports){
-arguments[4][52][0].apply(exports,arguments)
-},{"dup":52,"yo-yo":13}],57:[function(require,module,exports){
+arguments[4][18][0].apply(exports,arguments)
+},{"dup":18,"yo-yo":13}],57:[function(require,module,exports){
 var page = require('page');
 
 var empty = require('empty-element');
@@ -4460,9 +4526,11 @@ page('/optativas', function (ctx, netx) {
   var main = document.getElementById('main-container');
   var arriba = document.getElementById('arriba');
   var about = document.getElementById('about');
+  var plantas = document.getElementById('plantas');
   empty(arriba);
   empty(main).appendChild(template);
   empty(about).appendChild(template2);
+  empty(plantas);
 });
 
 },{"./template":68,"./template2":69,"empty-element":3,"page":11}],68:[function(require,module,exports){
@@ -4518,7 +4586,7 @@ module.exports = yo`
       <a href="/optativas/herencia" class="stretched-link">Saber más...</a>
     </div>
     <div class="col-auto d-none d-lg-block">
-      <img class="bd-placeholder-img" width="200" height="250">
+      <img src="https://c8.alamy.com/compes/pg1f2k/lecturas-en-la-evolucion-la-genetica-y-la-eugenesia-evolucion-herencia-eugenesia-i66-lecturas-en-la-evolucion-la-genetica-y-la-eugenesia-exterior-la-forma-de-la-pared-circunferencial-de-esta-esfera-hueca-esto-se-denomina-blastula-blastoderm-o-etapa-de-desarrollo-y-el-embrion-en-si-se-denomina-blastula-o-blastoderm-en-esta-etapa-tambien-es-comun-a-todos-los-muchos-celled-los-animales-la-siguiente-etapa-en-el-desarrollo-embrionario-esta-formado-por-la-curvatura-hacia-adentro-de-una-parte-de-la-capa-de-celulas-blastoderm-tal-y-como-se-muestra-en-g-o-la-escision-interiormente-de-celulas-de-una-parte-especial-de-la-blastula-capa-celular-este-b-pg1f2k.jpg" class="bd-placeholder-img" width="200" height="250">
     </div>
   </div>
   <div
@@ -4544,7 +4612,7 @@ module.exports = yo`
       <a href="/optativas/dibujo" class="stretched-link">Saber más...</a>
     </div>
     <div class="col-auto d-none d-lg-block">
-      <img class="bd-placeholder-img" width="200" height="250">
+      <img src="https://cdn.pixabay.com/photo/2013/07/12/14/46/sketch-148769_960_720.png" class="bd-placeholder-img" width="200" height="250">
     </div>
   </div>
 </div>
@@ -4555,7 +4623,7 @@ module.exports = yo`
 yo = require('yo-yo');
 module.exports = yo`
 <div>
-    <h1>about optativas</h1>
+<img src="https://media2.giphy.com/media/pylpD8AoQCf3CQ1oO2/giphy.gif" width="260px" height="200px" alt="">
 </div>
 `;
 
