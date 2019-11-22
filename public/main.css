@@ -172,6 +172,37 @@ h1, h2, h3, h4, h5, h6 {
  transform: rotate(-90deg);
 }
 
+
+.fraction {
+  display: inline-block;
+  vertical-align: middle; 
+  margin: 0 0.2em 0.4ex;
+  text-align: center;
+}
+.fraction > span {
+  display: block;
+  padding-top: 0.15em;
+}
+.fraction span.fdn {border-top: thin solid black;}
+.fraction span.bar {display: none;}
+
+.radical {
+  position: relative;
+  font-size: 1.6em;
+  vertical-align: middle;
+}
+.n-root {
+  position: absolute;
+  top: -0.333em;
+  left: 0.333em;
+  font-size: 45%;
+}
+.radicand { 
+  padding: 0.25em 0.25em;
+  border-top: thin black solid;
+}
+
+
 .letritas span { display:inline-block;  font-size: 6rem;}
  
 .blog-header:hover span { animation:bounce .6s; }
