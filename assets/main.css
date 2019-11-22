@@ -225,8 +225,6 @@ h1, h2, h3, h4, h5, h6 {
 .letritas span:nth-child(10){ animation-delay:.45s; }
 .letritas span:nth-child(11){ animation-delay:.5s; }
 .letritas span:nth-child(12){ animation-delay:.55s; }
-.letritas span:nth-child(13){ animation-delay:.6s; }
-.letritas span:nth-child(14){ animation-delay:.65s; }
 
 .new_footer_area {
   background: url("https://i.pinimg.com/originals/2c/f8/89/2cf889d186c6f7ac4585215af85265fd.gif")  center;

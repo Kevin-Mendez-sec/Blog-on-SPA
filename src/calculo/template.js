@@ -1,8 +1,8 @@
 yo = require('yo-yo');
 
 module.exports= yo`
-<div>
-    <h1 class=" text-center titulo">
+<div class=" wow rollIn">
+    <h1 class="  p-2 text-center titulo">
         CALCULO DIFERENCIAL
     </h1>
     <h5 class=" text-center subtitulo">PROBLEMA DE OPTIMIZACIÓN</h5>
@@ -21,41 +21,42 @@ module.exports= yo`
     <div class=" text-center">
         V = r<sup>2</sup>πh = 20000cm<sup>3</sup> <br>
         A = 2r<sup>2</sup>π + 2rπh <br>
-        Oteniendo el valor de h en terminos de r
+        <p class=" font-weight-bolder">Oteniendo el valor de h en terminos de r </p> <br>
         h=
         <div class=" fraction">
-            <span class="fup">2000</span>
+            <span >2000</span>
             <span class="bar">/</span>
             <span class="fdn"> <i>r</i> <sup>2</sup>π</span>
         </div> <br>
     
-        Sustituyendo el valor de h en A <br>
+        <p class=" font-weight-bolder">Sustituyendo el valor de h en A </p> <br>
     
         A = 2r<sup>2</sup>π + 2rπ (
         <div class=" fraction">
-            <span class="fup">2000</span>
+            <span >2000</span>
             <span class="bar">/</span>
             <span class="fdn"> <i>r</i> <sup>2</sup>π</span>
         </div>
         ) <br>
         A = 2r<sup>2</sup>π+ <div class=" fraction">
-            <span class="fup">4000</span>
+            <span >4000</span>
             <span class="bar">/</span>
             <span class="fdn"> <i>r</i></span>
         </div> F.O. <br>
-        Primera dervada <br>
+        <p class=" font-weight-bolder">Primera dervada</p>  <br>
         A<sup>'</sup> = 4rπ-<div class=" fraction">
-            <span class="fup">4000</span>
+            <span >4000</span>
             <span class="bar">/</span>
             <span class="fdn"> <i>r</i> <sup>2</sup></span>
         </div> <br>
         0 = 4rπ-<div class=" fraction">
-            <span class="fup">4000</span>
+            <span >4000</span>
             <span class="bar">/</span>
             <span class="fdn"> <i>r</i> <sup>2</sup></span>
         </div> <br>
+        <img src="http://asp.adicae.net/proyectos/nacionales/hipotecas/images/semaforo-verde.gif" class=" float-right" alt="">
         4rπ =<div class=" fraction">
-            <span class="fup">4000</span>
+            <span >4000</span>
             <span class="bar">/</span>
             <span class="fdn"> <i>r</i> <sup>2</sup></span>
         </div> <br>
@@ -67,39 +68,40 @@ module.exports= yo`
                 <span class=" pt-3">4000</span>
                 <span class="bar">/</span>
                 <span class="fdn"> 4π</span>
-            </div>= 14.7101cm
+            </div>
+            = 14.7101cm
         </span>
     </div>
         <br>
         <br>
-
+        
 
     <div class=" text-center">
-            Segunda derivada
+          <p class=" font-weight-bolder">Segunda derivada</p>  
             A<sup>''</sup> = 4π + <div class=" fraction">
-                    <span class="fup">80000</span>
+                    <span >80000</span>
                     <span class="bar">/</span>
                     <span class="fdn"> <i>r</i> <sup>3</sup></span>
                 </div> <br>
            <div>
-               A<sup>''</sup> = <span>37.69 </span> <span>mayor que</span> 0 Mínimo <br>
-           </div> 
-            Solución de h <br>
+               A<sup>''</sup> = <span>37.69 </span> <span>mayor que</span> 0 Mínimo 
+           </div> <br>
+            <p class=" font-weight-bolder"> Solución de h</p>
             h =
             <div class=" fraction">
-                    <span class="fup">20000</span>
+                    <span >20000</span>
                     <span class="bar">/</span>
                     <span class="fdn"> <i>r</i> <sup>2</sup>π</span>
-                </div>
+                </div> <br>
             h =
             <div class=" fraction">
-                    <span class="fup">20000</span>
+                    <span >20000</span>
                     <span class="bar">/</span>
                     <span class="fdn"> <i>(14.7101)</i> <sup>2</sup>π</span>
                 </div> <br>
             h = 29.4204 cm
             
     </div>
-    <br> <br>
+    <br> <br> <br> <br>
 </div>
 `;

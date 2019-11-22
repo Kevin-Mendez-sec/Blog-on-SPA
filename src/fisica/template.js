@@ -2,7 +2,7 @@ yo = require('yo-yo');
 
 module.exports= yo`
 <div>
-    <h1 class="p-2 titulo text-center" style=" font-size: 80px; "> Fisica II</h1>
+    <h1 class="p-2 titulo text-center" > Fisica II</h1>
     <div class="text-justify wow fadeInRightBig">
         <h5 class="p-2 text-center rounded-pill subtitulo" style="background-color: #BC8F8F;"> ¿Qué principio físico que sustenta el prototipo?</h5>
         Nuestro prototipo se ve sustentado en el principio físico que se conoce como el efecto fotovoltaico (FV), este

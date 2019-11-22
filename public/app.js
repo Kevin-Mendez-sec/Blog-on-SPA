@@ -2977,20 +2977,24 @@ var template = require('./template');
 
 var template2 = require('./template2');
 
+var template3 = require('./template3');
+
 page('/calculo', function (ctx, netx) {
   var main = document.getElementById('main-container');
   var arriba = document.getElementById('arriba');
   var about = document.getElementById('about');
+  var plantas = document.getElementById('plantas');
   empty(arriba);
   empty(main).appendChild(template);
   empty(about).appendChild(template2);
+  empty(plantas).appendChild(template3);
 });
 
-},{"./template":24,"./template2":25,"empty-element":3,"page":11}],24:[function(require,module,exports){
+},{"./template":24,"./template2":25,"./template3":26,"empty-element":3,"page":11}],24:[function(require,module,exports){
 yo = require('yo-yo');
 module.exports = yo`
-<div>
-    <h1 class=" text-center titulo">
+<div class=" wow rollIn">
+    <h1 class="  p-2 text-center titulo">
         CALCULO DIFERENCIAL
     </h1>
     <h5 class=" text-center subtitulo">PROBLEMA DE OPTIMIZACIÓN</h5>
@@ -3009,41 +3013,42 @@ module.exports = yo`
     <div class=" text-center">
         V = r<sup>2</sup>πh = 20000cm<sup>3</sup> <br>
         A = 2r<sup>2</sup>π + 2rπh <br>
-        Oteniendo el valor de h en terminos de r
+        <p class=" font-weight-bolder">Oteniendo el valor de h en terminos de r </p> <br>
         h=
         <div class=" fraction">
-            <span class="fup">2000</span>
+            <span >2000</span>
             <span class="bar">/</span>
             <span class="fdn"> <i>r</i> <sup>2</sup>π</span>
         </div> <br>
     
-        Sustituyendo el valor de h en A <br>
+        <p class=" font-weight-bolder">Sustituyendo el valor de h en A </p> <br>
     
         A = 2r<sup>2</sup>π + 2rπ (
         <div class=" fraction">
-            <span class="fup">2000</span>
+            <span >2000</span>
             <span class="bar">/</span>
             <span class="fdn"> <i>r</i> <sup>2</sup>π</span>
         </div>
         ) <br>
         A = 2r<sup>2</sup>π+ <div class=" fraction">
-            <span class="fup">4000</span>
+            <span >4000</span>
             <span class="bar">/</span>
             <span class="fdn"> <i>r</i></span>
         </div> F.O. <br>
-        Primera dervada <br>
+        <p class=" font-weight-bolder">Primera dervada</p>  <br>
         A<sup>'</sup> = 4rπ-<div class=" fraction">
-            <span class="fup">4000</span>
+            <span >4000</span>
             <span class="bar">/</span>
             <span class="fdn"> <i>r</i> <sup>2</sup></span>
         </div> <br>
         0 = 4rπ-<div class=" fraction">
-            <span class="fup">4000</span>
+            <span >4000</span>
             <span class="bar">/</span>
             <span class="fdn"> <i>r</i> <sup>2</sup></span>
         </div> <br>
+        <img src="http://asp.adicae.net/proyectos/nacionales/hipotecas/images/semaforo-verde.gif" class=" float-right" alt="">
         4rπ =<div class=" fraction">
-            <span class="fup">4000</span>
+            <span >4000</span>
             <span class="bar">/</span>
             <span class="fdn"> <i>r</i> <sup>2</sup></span>
         </div> <br>
@@ -3055,40 +3060,41 @@ module.exports = yo`
                 <span class=" pt-3">4000</span>
                 <span class="bar">/</span>
                 <span class="fdn"> 4π</span>
-            </div>= 14.7101cm
+            </div>
+            = 14.7101cm
         </span>
     </div>
         <br>
         <br>
-
+        
 
     <div class=" text-center">
-            Segunda derivada
+          <p class=" font-weight-bolder">Segunda derivada</p>  
             A<sup>''</sup> = 4π + <div class=" fraction">
-                    <span class="fup">80000</span>
+                    <span >80000</span>
                     <span class="bar">/</span>
                     <span class="fdn"> <i>r</i> <sup>3</sup></span>
                 </div> <br>
            <div>
-               A<sup>''</sup> = <span>37.69 </span> <span>mayor que</span> 0 Mínimo <br>
-           </div> 
-            Solución de h <br>
+               A<sup>''</sup> = <span>37.69 </span> <span>mayor que</span> 0 Mínimo 
+           </div> <br>
+            <p class=" font-weight-bolder"> Solución de h</p>
             h =
             <div class=" fraction">
-                    <span class="fup">20000</span>
+                    <span >20000</span>
                     <span class="bar">/</span>
                     <span class="fdn"> <i>r</i> <sup>2</sup>π</span>
-                </div>
+                </div> <br>
             h =
             <div class=" fraction">
-                    <span class="fup">20000</span>
+                    <span >20000</span>
                     <span class="bar">/</span>
                     <span class="fdn"> <i>(14.7101)</i> <sup>2</sup>π</span>
                 </div> <br>
             h = 29.4204 cm
             
     </div>
-    <br> <br>
+    <br> <br> <br> <br>
 </div>
 `;
 
@@ -3097,13 +3103,31 @@ yo = require('yo-yo');
 module.exports = yo`
 
 <div>
-    <h1>about calculo</h1>
- <!--<img src="planeta.gif" width="260px" height="200px" alt="">-->
+
+ <img src="http://centros5.pntic.mec.es/ies.de.melilla/cono_mat.gif" width="260px" height="200px" alt="">
 </div>
 
 `;
 
 },{"yo-yo":13}],26:[function(require,module,exports){
+var yo = require('yo-yo');
+
+module.exports = yo`
+<div>
+    <div class="d-none d-xl-block">
+        <br><br><br><br>
+        <img class="plantas" planta src="https://especiales.semana.com/especiales/inventario-biblioteca-nacional/images/enredadera.png">
+            
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        
+        <img class="plantas" planta src="https://especiales.semana.com/especiales/inventario-biblioteca-nacional/images/enredadera.png">
+        
+    </div>
+</div>
+
+`;
+
+},{"yo-yo":13}],27:[function(require,module,exports){
 var page = require('page');
 
 var empty = require('empty-element');
@@ -3138,7 +3162,7 @@ page('/Cultura2', function (ctx, next) {
   empty(plantas).appendChild(template5);
 });
 
-},{"./template":27,"./template2":28,"./template3":29,"./template4":30,"./template5":31,"empty-element":3,"page":11}],27:[function(require,module,exports){
+},{"./template":28,"./template2":29,"./template3":30,"./template4":31,"./template5":32,"empty-element":3,"page":11}],28:[function(require,module,exports){
 yo = require('yo-yo');
 module.exports = yo`
 
@@ -3441,7 +3465,7 @@ module.exports = yo`
 
 `;
 
-},{"yo-yo":13}],28:[function(require,module,exports){
+},{"yo-yo":13}],29:[function(require,module,exports){
 yo = require('yo-yo');
 module.exports = yo`
 <div>
@@ -3578,7 +3602,7 @@ module.exports = yo`
 
 `;
 
-},{"yo-yo":13}],29:[function(require,module,exports){
+},{"yo-yo":13}],30:[function(require,module,exports){
 yo = require('yo-yo');
 module.exports = yo`
   <div>
@@ -3586,7 +3610,7 @@ module.exports = yo`
   </div>
  `;
 
-},{"yo-yo":13}],30:[function(require,module,exports){
+},{"yo-yo":13}],31:[function(require,module,exports){
 var yo = require('yo-yo');
 
 module.exports = yo`
@@ -3651,7 +3675,7 @@ module.exports = yo`
 
 `;
 
-},{"yo-yo":13}],31:[function(require,module,exports){
+},{"yo-yo":13}],32:[function(require,module,exports){
 var yo = require('yo-yo');
 
 module.exports = yo`
@@ -3688,7 +3712,7 @@ module.exports = yo`
 </div>
 `;
 
-},{"yo-yo":13}],32:[function(require,module,exports){
+},{"yo-yo":13}],33:[function(require,module,exports){
 var page = require('page');
 
 var empty = require('empty-element');
@@ -3708,7 +3732,7 @@ page('/derecho', function (ctx, netx) {
   empty(plantas);
 });
 
-},{"./template":33,"./template2":34,"empty-element":3,"page":11}],33:[function(require,module,exports){
+},{"./template":34,"./template2":35,"empty-element":3,"page":11}],34:[function(require,module,exports){
 yo = require('yo-yo');
 module.exports = yo`
 <div>
@@ -3724,7 +3748,7 @@ module.exports = yo`
     
 `;
 
-},{"yo-yo":13}],34:[function(require,module,exports){
+},{"yo-yo":13}],35:[function(require,module,exports){
 yo = require('yo-yo');
 module.exports = yo`
 <div>
@@ -3732,7 +3756,7 @@ module.exports = yo`
 </div>
 `;
 
-},{"yo-yo":13}],35:[function(require,module,exports){
+},{"yo-yo":13}],36:[function(require,module,exports){
 var page = require('page');
 
 var empty = require('empty-element');
@@ -3754,11 +3778,11 @@ page('/fisica', function (ctx, netx) {
   empty(plantas).appendChild(template3);
 });
 
-},{"./template":36,"./template2":37,"./template3":38,"empty-element":3,"page":11}],36:[function(require,module,exports){
+},{"./template":37,"./template2":38,"./template3":39,"empty-element":3,"page":11}],37:[function(require,module,exports){
 yo = require('yo-yo');
 module.exports = yo`
 <div>
-    <h1 class="p-2 titulo text-center" style=" font-size: 80px; "> Fisica II</h1>
+    <h1 class="p-2 titulo text-center" > Fisica II</h1>
     <div class="text-justify wow fadeInRightBig">
         <h5 class="p-2 text-center rounded-pill subtitulo" style="background-color: #BC8F8F;"> ¿Qué principio físico que sustenta el prototipo?</h5>
         Nuestro prototipo se ve sustentado en el principio físico que se conoce como el efecto fotovoltaico (FV), este
@@ -3891,7 +3915,7 @@ module.exports = yo`
 
 `;
 
-},{"yo-yo":13}],37:[function(require,module,exports){
+},{"yo-yo":13}],38:[function(require,module,exports){
 yo = require('yo-yo');
 module.exports = yo`
 <div>
@@ -3899,7 +3923,7 @@ module.exports = yo`
 </div>
 `;
 
-},{"yo-yo":13}],38:[function(require,module,exports){
+},{"yo-yo":13}],39:[function(require,module,exports){
 yo = require('yo-yo');
 module.exports = yo`
 
@@ -3926,7 +3950,7 @@ module.exports = yo`
 </div>
 `;
 
-},{"yo-yo":13}],39:[function(require,module,exports){
+},{"yo-yo":13}],40:[function(require,module,exports){
 var page = require('page');
 
 var empty = require('empty-element');
@@ -3948,7 +3972,7 @@ page('/', function (ctx, netx) {
   empty(plantas);
 });
 
-},{"./template":40,"./template2":41,"./template3":42,"empty-element":3,"page":11}],40:[function(require,module,exports){
+},{"./template":41,"./template2":42,"./template3":43,"empty-element":3,"page":11}],41:[function(require,module,exports){
 var yo = require('yo-yo');
 
 module.exports = yo`
@@ -4027,7 +4051,7 @@ module.exports = yo`
 </div>
 `;
 
-},{"yo-yo":13}],41:[function(require,module,exports){
+},{"yo-yo":13}],42:[function(require,module,exports){
 var yo = require('yo-yo');
 
 module.exports = yo`
@@ -4121,7 +4145,7 @@ module.exports = yo`
 
 </div>`;
 
-},{"yo-yo":13}],42:[function(require,module,exports){
+},{"yo-yo":13}],43:[function(require,module,exports){
 yo = require('yo-yo');
 module.exports = yo`
 <div>
@@ -4129,7 +4153,7 @@ module.exports = yo`
 </div>
 `;
 
-},{"yo-yo":13}],43:[function(require,module,exports){
+},{"yo-yo":13}],44:[function(require,module,exports){
 const page = require('page');
 
 require('./homepage');
@@ -4162,7 +4186,7 @@ require('./optativas/herencia');
 
 page();
 
-},{"./Ingles":15,"./artes":19,"./calculo":23,"./cultura":26,"./derecho":32,"./fisica":35,"./homepage":39,"./optativas":66,"./optativas/bioquimica":44,"./optativas/dibujo":48,"./optativas/economia":52,"./optativas/estrategias":56,"./optativas/etimologias":59,"./optativas/herencia":62,"page":11}],44:[function(require,module,exports){
+},{"./Ingles":15,"./artes":19,"./calculo":23,"./cultura":27,"./derecho":33,"./fisica":36,"./homepage":40,"./optativas":67,"./optativas/bioquimica":45,"./optativas/dibujo":49,"./optativas/economia":53,"./optativas/estrategias":57,"./optativas/etimologias":60,"./optativas/herencia":63,"page":11}],45:[function(require,module,exports){
 var page = require('page');
 
 var empty = require('empty-element');
@@ -4184,7 +4208,7 @@ page('/optativas/bioquimica', function (ctx, netx) {
   empty(plantas).appendChild(template3);
 });
 
-},{"./template":45,"./template2":46,"./template3":47,"empty-element":3,"page":11}],45:[function(require,module,exports){
+},{"./template":46,"./template2":47,"./template3":48,"empty-element":3,"page":11}],46:[function(require,module,exports){
 yo = require('yo-yo');
 module.exports = yo`
 
@@ -4194,7 +4218,7 @@ module.exports = yo`
 
 `;
 
-},{"yo-yo":13}],46:[function(require,module,exports){
+},{"yo-yo":13}],47:[function(require,module,exports){
 yo = require('yo-yo');
 module.exports = yo`
 
@@ -4204,14 +4228,14 @@ module.exports = yo`
 
 `;
 
-},{"yo-yo":13}],47:[function(require,module,exports){
+},{"yo-yo":13}],48:[function(require,module,exports){
 yo = require('yo-yo');
 module.exports = yo`
 
 
 `;
 
-},{"yo-yo":13}],48:[function(require,module,exports){
+},{"yo-yo":13}],49:[function(require,module,exports){
 var page = require('page');
 
 var empty = require('empty-element');
@@ -4233,7 +4257,7 @@ page('/optativas/dibujo', function (ctx, netx) {
   empty(plantas).appendChild(template3);
 });
 
-},{"./template":49,"./template2":50,"./template3":51,"empty-element":3,"page":11}],49:[function(require,module,exports){
+},{"./template":50,"./template2":51,"./template3":52,"empty-element":3,"page":11}],50:[function(require,module,exports){
 yo = require('yo-yo');
 module.exports = yo`
 
@@ -4243,15 +4267,15 @@ module.exports = yo`
 
 `;
 
-},{"yo-yo":13}],50:[function(require,module,exports){
-arguments[4][46][0].apply(exports,arguments)
-},{"dup":46,"yo-yo":13}],51:[function(require,module,exports){
+},{"yo-yo":13}],51:[function(require,module,exports){
+arguments[4][47][0].apply(exports,arguments)
+},{"dup":47,"yo-yo":13}],52:[function(require,module,exports){
 yo = require('yo-yo');
 module.exports = yo`
 
 `;
 
-},{"yo-yo":13}],52:[function(require,module,exports){
+},{"yo-yo":13}],53:[function(require,module,exports){
 var page = require('page');
 
 var empty = require('empty-element');
@@ -4273,7 +4297,7 @@ page('/optativas/economia', function (ctx, netx) {
   empty(plantas).appendChild(template3);
 });
 
-},{"./template":53,"./template2":54,"./template3":55,"empty-element":3,"page":11}],53:[function(require,module,exports){
+},{"./template":54,"./template2":55,"./template3":56,"empty-element":3,"page":11}],54:[function(require,module,exports){
 yo = require('yo-yo');
 module.exports = yo`
 
@@ -4283,11 +4307,11 @@ module.exports = yo`
 
 `;
 
-},{"yo-yo":13}],54:[function(require,module,exports){
-arguments[4][46][0].apply(exports,arguments)
-},{"dup":46,"yo-yo":13}],55:[function(require,module,exports){
-arguments[4][51][0].apply(exports,arguments)
-},{"dup":51,"yo-yo":13}],56:[function(require,module,exports){
+},{"yo-yo":13}],55:[function(require,module,exports){
+arguments[4][47][0].apply(exports,arguments)
+},{"dup":47,"yo-yo":13}],56:[function(require,module,exports){
+arguments[4][52][0].apply(exports,arguments)
+},{"dup":52,"yo-yo":13}],57:[function(require,module,exports){
 var page = require('page');
 
 var empty = require('empty-element');
@@ -4305,7 +4329,7 @@ page('/optativas/estrategias', function (ctx, netx) {
   empty(about).appendChild(template2);
 });
 
-},{"./template":57,"./template2":58,"empty-element":3,"page":11}],57:[function(require,module,exports){
+},{"./template":58,"./template2":59,"empty-element":3,"page":11}],58:[function(require,module,exports){
 var yo = require('yo-yo');
 
 module.exports = yo`
@@ -4332,7 +4356,7 @@ module.exports = yo`
     contaminación ambiental, auditiva y visual, lo cual se pretende lograr a finales de este semestre.</div>
 </div>`;
 
-},{"yo-yo":13}],58:[function(require,module,exports){
+},{"yo-yo":13}],59:[function(require,module,exports){
 yo = require('yo-yo');
 module.exports = yo`
 <div>
@@ -4340,7 +4364,7 @@ module.exports = yo`
 </div>
 `;
 
-},{"yo-yo":13}],59:[function(require,module,exports){
+},{"yo-yo":13}],60:[function(require,module,exports){
 var page = require('page');
 
 var empty = require('empty-element');
@@ -4358,7 +4382,7 @@ page('/optativas/etimologias', function (ctx, netx) {
   empty(about).appendChild(template2);
 });
 
-},{"./template":60,"./template2":61,"empty-element":3,"page":11}],60:[function(require,module,exports){
+},{"./template":61,"./template2":62,"empty-element":3,"page":11}],61:[function(require,module,exports){
 yo = require('yo-yo');
 module.exports = yo`
 
@@ -4368,9 +4392,9 @@ module.exports = yo`
 
 `;
 
-},{"yo-yo":13}],61:[function(require,module,exports){
-arguments[4][46][0].apply(exports,arguments)
-},{"dup":46,"yo-yo":13}],62:[function(require,module,exports){
+},{"yo-yo":13}],62:[function(require,module,exports){
+arguments[4][47][0].apply(exports,arguments)
+},{"dup":47,"yo-yo":13}],63:[function(require,module,exports){
 var page = require('page');
 
 var empty = require('empty-element');
@@ -4392,11 +4416,13 @@ page('/optativas/herencia', function (ctx, netx) {
   empty(plantas).appendChild(template3);
 });
 
-},{"./template":63,"./template2":64,"./template3":65,"empty-element":3,"page":11}],63:[function(require,module,exports){
+},{"./template":64,"./template2":65,"./template3":66,"empty-element":3,"page":11}],64:[function(require,module,exports){
 yo = require('yo-yo');
 module.exports = yo`
 
 <div>
+    <br>
+    <br>
     <img src="herencia-1.jpg" alt="" width="100%" height="auto"> <br> <br>
     
     <img src=" herencia-2.jpg" alt="" width="100%" height="auto">
@@ -4404,11 +4430,24 @@ module.exports = yo`
 
 `;
 
-},{"yo-yo":13}],64:[function(require,module,exports){
-arguments[4][46][0].apply(exports,arguments)
-},{"dup":46,"yo-yo":13}],65:[function(require,module,exports){
-arguments[4][47][0].apply(exports,arguments)
-},{"dup":47,"yo-yo":13}],66:[function(require,module,exports){
+},{"yo-yo":13}],65:[function(require,module,exports){
+yo = require('yo-yo');
+module.exports = yo`
+
+<div>
+    <img width="260px" height="200px" class=" rounded shadow-lg" src="https://media1.tenor.com/images/750a96315e1703fc35b3c8eb6be42c95/tenor.gif?itemid=3550647" alt="" srcset="">
+</div>
+`;
+
+},{"yo-yo":13}],66:[function(require,module,exports){
+yo = require('yo-yo');
+module.exports = yo`
+
+
+
+`;
+
+},{"yo-yo":13}],67:[function(require,module,exports){
 var page = require('page');
 
 var empty = require('empty-element');
@@ -4426,7 +4465,7 @@ page('/optativas', function (ctx, netx) {
   empty(about).appendChild(template2);
 });
 
-},{"./template":67,"./template2":68,"empty-element":3,"page":11}],67:[function(require,module,exports){
+},{"./template":68,"./template2":69,"empty-element":3,"page":11}],68:[function(require,module,exports){
 yo = require('yo-yo');
 module.exports = yo`
 <div class="container">
@@ -4512,7 +4551,7 @@ module.exports = yo`
 
 `;
 
-},{"yo-yo":13}],68:[function(require,module,exports){
+},{"yo-yo":13}],69:[function(require,module,exports){
 yo = require('yo-yo');
 module.exports = yo`
 <div>
@@ -4520,4 +4559,4 @@ module.exports = yo`
 </div>
 `;
 
-},{"yo-yo":13}]},{},[43]);
+},{"yo-yo":13}]},{},[44]);
