@@ -2,9 +2,9 @@ yo = require('yo-yo');
 
 module.exports= yo`
 <div>
-    <h1 class="p-2 titulo text-center" > Fisica II</h1>
+    <h1 class="p-2 titulo text-center" > Física II</h1>
     <div class="text-justify wow fadeInRightBig">
-        <h5 class="p-2 text-center rounded-pill subtitulo" style="background-color: #BC8F8F;"> ¿Qué principio físico que sustenta el prototipo?</h5>
+        <h5 class="p-2 text-center rounded-pill subtitulo" style="background-color: #BC8F8F;"> ¿Qué principio físico sustenta el prototipo?</h5>
         Nuestro prototipo se ve sustentado en el principio físico que se conoce como el efecto fotovoltaico (FV), este
         proceso es la base mediante el cual una célula fotovoltaica convierte la luz solar en electricidad. La luz solar
         está compuesta por fotones. Estos fotones son de diferentes energías, correspondientes a las diferentes
@@ -14,7 +14,7 @@ module.exports= yo`
         <h5 class="pb-2 text-center rounded-pill subtitulo" style="background-color: #FFC0CB;" >¿Qué problemática social resuelve? </h5>
         Lo que nuestro prototipo busca resolver consiste en: disminuir las horas que una persona pasa en el tráfico y al
         mismo tiempo conseguir que se reduzca el nivel de contaminación auditiva y visual del medio en el que se
-        desarrollan los estudiantes del plantel “Dr. Ángel María Garibay Kintana” ya que esto afecta a los niveles de
+        desarrollan los estudiantes del plantel “Dr. Ángel Ma. Garibay Kintana” ya que esto afecta a los niveles de
         estrés en los alumnos y causa una baja en sus calificaciones.
         <h5 class="pb-2 text-center rounded-pill subtitulo" style="background-color: #778899;"> ¿A quién va dirigido el proyecto?</h5>
         Este proyecto fue creado pensando en una de las principales problemáticas sociales que afectan a los estudiantes
@@ -71,7 +71,7 @@ module.exports= yo`
             • Diodo rectificador. <br><br>
             • Batería recargable, cargador de batería y un amplificador de corriente. <br> <br>
             • Papel cascaron, popotes y hojas de colores. <br>
-            <h5 class="rounded-pill text-center subtitulo" style="background-color:#FA8072">Gráficas y datos estadisticos</h5>
+            <h5 class="rounded-pill text-center subtitulo" style="background-color:#FA8072">Gráficas y datos estadísticos</h5>
             El funcionamiento del semáforo inteligente se basa en 3 variables las cuales son las entradas analógicas
             producidas por
             las fotorresistencias e interpretadas por la placa (Arduino UNO) estas variables son directamente

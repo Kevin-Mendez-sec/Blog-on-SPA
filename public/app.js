@@ -2920,6 +2920,9 @@ module.exports = yo`
     <br>
     <img src="ingles.jpg" width="100%" height="auto">
     <br>
+    <h4 class=" text-center objetivos m-2">
+        <a href="https://youtu.be/gKDcShq-fzI">Link del video</a> 
+    </h4>
     <br>
 </div>
 `;
@@ -2965,19 +2968,147 @@ page('/artes', function (ctx, netx) {
 yo = require('yo-yo');
 module.exports = yo`
 
-<div>
-    <h1>artes</h1>
+<div class=" text-justify wow bounceInRight">
+    <h1  class="  text-center titulo">
+        ARTES
+    </h1> 
+
+    <h1 class=" subtitulo text-center rounded-pill" style="background-color: cornflowerblue;">
+        titulo
+    </h1>
+    <div class=" wow zoomIn" data-wow-duration="1s" data-wow-delay="1s">
+        <a data-flickr-embed="true" href="https://www.flickr.com/photos/185695249@N06/49124295843/in/dateposted-public/" title="lel"><img src="https://live.staticflickr.com/65535/49124295843_16731ab7f3.jpg" width="100%" height="auto" alt="lel"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+    </div>
+    <DIV>
+            <h6 class=" text-center objetivos">DESCRIPCIÓN </h6> 
+
+        Nuestro mural está conformado por 4 elementos fundamentales; una tortuga en la parte superior central atada por
+        carreteras, a punto de comer una máscara de gas, y un reloj de arena en la parte inferior izquierda.
+        La tortuga es el único animal sagrado que aún perdura. Las tortugas ya fueron representadas en el arte rupestre.
+        La
+        tortuga es considerada símbolo de la larga vida. Como animal de poder elige guiar a las almas que necesitan
+        aprender
+        la importancia de recorrer su propio camino sin dejarse contaminar por influencias externas. Nos inspiran a
+        seguir
+        los dictados del corazón y ser fieles a nosotros mismos y a nuestras propias creencias. El caparazón de las
+        tortugas
+        les sirve como defensa cuando se sienten amenazadas. No necesitan nada más. Les basta ocultarse en su dura
+        concha
+        para eludir el peligro de los depredadores. Su mensaje nos invita a aprender el valor de la precaución. A veces
+        lo
+        mejor que podemos hacer es no exponernos demasiado y evitar la confrontación directa. Se trata de garantizar la
+        supervivencia, no de jugar a ser héroes. La gloria no sirve de nada si no tenemos ocasión de saborearla. Además,
+        hemos de aprender a no dejar que los problemas, los miedos, la incertidumbre y las críticas nos afecten
+        demasiado.
+        Crearnos un escudo propio es la mejor manera de garantizar la paz mental. La tortuga sigue su propio ritmo. No
+        importa que en comparación con otros parezca que se desplaza de manera exageradamente lenta. Ella ni se inmuta.
+        Sabe
+        perfectamente a donde va y no pierde la paciencia. Sólo hace falta que rememoremos la fábula de la liebre y la
+        tortuga y nos demos cuenta de quién gana la carrera al final… y es que la mayoría de las veces es más importante
+        la
+        constancia que la velocidad. Ir demasiado deprisa te lleva a cometer errores, mientras que tomarte las cosas con
+        calma, te acerca de manera lenta pero segura a tu objetivo, cada día un poco más.</DIV>
+    <div>
+        La representamos con los colores verde y azul, que reflejan la naturaleza, transmiten la paz y la esperanza que
+        existe
+        dentro de ella; además del color café incluido en su caparazón como símbolo de la tierra, ya que en varias
+        culturas se
+        considera que el caparazón de una tortuga simboliza a la misma Madre Tierra.
+        Un reloj de arena es un elemento que nos acompaña desde hace siglos y es que hasta que no llegaron los relojes
+        mecánicos
+        las personas no tenían otro modo de medir el tiempo que hacerlo con un reloj de arena. Desde el año 150 a.C está
+        en la
+        sociedad ya que lo inventaron en Alejandría, aunque hay estudiosos que piensan que podría tener muchos más años
+        de
+        antigüedad.
+        Detrás del reloj de arena hay significados muy claros, por lo que si te gusta el diseño de este elemento deberás
+        tener
+        claro que muchos de sus significados tienen que ver con los siguientes simbolismos:
+        <div class=" m-2 row ">
+            <div class="col-6">
+                Tiempo <br>
+                Equilibrio <br>
+                Fugacidad <br>
+                Vida <br>
+                Muerte <br>
+            </div>
+            <div class="col-6">
+                Ciclos <br>
+                Inevitabilidad <br>
+                Naturaleza <br>
+                Vivir el presente <br>
+            </div>
+        </div>
+        Los hombres esperamos que las cosas sucedan y el reloj de arena puede ser un recordatorio de lo que queremos que
+        ocurra,
+        porque tarde o temprano las cosas pasan. El tiempo, a pesar de ser valioso (expresado con la arena de tono
+        amarillo),
+        pasa y esto es inevitable para todo el mundo.
+        El reloj de arena también simboliza el equilibrio del universo, el orden y el sentido del cosmos. Además, hay
+        quienes
+        interpretan la parte superior como el cielo y la parte inferior como la tierra. La energía que pasa entre los
+        dos
+        expresa también la sensación de equilibrio, la dualidad de la vida, los ciclos de la vida, etc. El reloj de
+        arena revela
+        dos triángulos que representan la polaridad entre el ying y el yang, la oscuridad y la luz, la creación y la
+        destrucción, la luna y el sol, la vida y la muerte.
+        Su estructura externa de color negro, asociado con el infinito, el abismo y la previsión.
+
+        Las carreteras sirven como el camino o las vías que se construyen para permitir el desplazamiento de hombres y
+        vehículos. Partiendo de este significado, el término puede hacer referencia a algo físico y real (como lo es una
+        ruta
+        por donde circulan los coches o un sendero para recorrer a pie que conduce hacia determinado lugar), o a un
+        rumbo
+        abstracto de carácter espiritual (“Quiero encontrar mi propio camino y ser feliz”).
+        Las carretearas que encadenan a la tortuga, son color gris, pues representa la crueldad, y desconsuelo que
+        intenta
+        comunicar.
+        El uso y la cantidad de máscaras de gas aumentó considerablemente en el comienzo de la Primera Guerra Mundial
+        debido a
+        que durante este periodo fue cuando se crearon y emplearon experimentalmente las armas químicas más letales de
+        la
+        historia. Fue muy importante su uso, ya que en su tiempo eran utilizadas contra las bombas de gas y otros
+        químicos ya
+        inventados, que podían ser letales y provocar la muerte.
+        Hoy día las máscaras de gas son muy empleadas por ciclistas y viandantes comunes para transitar por numerosas
+        ciudades, en diversos países de la Tierra, con el fin de protegerse de las inhalaciones de humo tóxico para los
+        pulmones, debidas a fábricas y vehículos en circulación. También representan la lucha continua, la supervivencia
+        ante situaciones complicadas que ponen en riesgo la vida de la persona, por lo que se compone por tonos violetas
+        con matices grises
+    </div>
 </div>
 
 `;
 
 },{"yo-yo":13}],21:[function(require,module,exports){
 yo = require('yo-yo');
-module.exports = yo``;
+module.exports = yo`
+
+<img class="shadow-lg img-fluid text-center" src="http://1.bp.blogspot.com/-kjYJgkeLkvQ/VK1mEcZX0HI/AAAAAAAAH1g/0B4KoKAlC6k/s1600/tumblr_mplcb64hWR1r7p0lmo1_1280.gif" width="100%" height="auto">
+
+`;
 
 },{"yo-yo":13}],22:[function(require,module,exports){
 yo = require('yo-yo');
-module.exports = yo``;
+module.exports = yo`
+
+<div>
+    <div class="d-none d-xl-block">
+        <br><br><br><br>
+        <img class="plantas" planta src="https://especiales.semana.com/especiales/inventario-biblioteca-nacional/images/enredadera.png">
+            
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        
+        <img class="plantas" planta src="https://especiales.semana.com/especiales/inventario-biblioteca-nacional/images/enredadera.png">
+        
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+        <img class="plantas" planta src="https://especiales.semana.com/especiales/inventario-biblioteca-nacional/images/enredadera.png">
+        
+    </div>
+</div>
+
+`;
 
 },{"yo-yo":13}],23:[function(require,module,exports){
 var page = require('page');
@@ -3520,7 +3651,7 @@ module.exports = yo`
         </div>
     </div>
     <nav class="blog-pagination">
-        <a href="/Cultura2#cult2" class="btn btn-outline-primary">Segunda parte</a>
+        <a href="/Cultura2#top" class="btn btn-outline-primary">Segunda parte</a>
     </nav>
 </div>
 
@@ -3530,7 +3661,7 @@ module.exports = yo`
 yo = require('yo-yo');
 module.exports = yo`
 <div>
-    <h2 class="blog-post-title"> Gráficas de los resultados de encuesta</h2>
+    <h2 class="blog-post-title" id="top" > Gráficas de los resultados de encuesta</h2>
     <div id="cult2" class="text-center">
         <img class="img-fluid" style="border:black;border-width:2px;border-style: solid;border-radius: 20px;"
             width="600" height="300" src="Grafica-1.png">
@@ -3667,7 +3798,7 @@ module.exports = yo`
 yo = require('yo-yo');
 module.exports = yo`
   <div>
-      <img class="shadow-lg" src="planeta.gif" width="260px" height="200px" alt="">
+      <img class="shadow-lg img-fluid text-center" src="https://media.giphy.com/media/l1KVcrdl7rJpFnY2s/giphy.gif" width="100%" height="auto" alt="">
   </div>
  `;
 
@@ -3843,9 +3974,9 @@ page('/fisica', function (ctx, netx) {
 yo = require('yo-yo');
 module.exports = yo`
 <div>
-    <h1 class="p-2 titulo text-center" > Fisica II</h1>
+    <h1 class="p-2 titulo text-center" > Física II</h1>
     <div class="text-justify wow fadeInRightBig">
-        <h5 class="p-2 text-center rounded-pill subtitulo" style="background-color: #BC8F8F;"> ¿Qué principio físico que sustenta el prototipo?</h5>
+        <h5 class="p-2 text-center rounded-pill subtitulo" style="background-color: #BC8F8F;"> ¿Qué principio físico sustenta el prototipo?</h5>
         Nuestro prototipo se ve sustentado en el principio físico que se conoce como el efecto fotovoltaico (FV), este
         proceso es la base mediante el cual una célula fotovoltaica convierte la luz solar en electricidad. La luz solar
         está compuesta por fotones. Estos fotones son de diferentes energías, correspondientes a las diferentes
@@ -3855,7 +3986,7 @@ module.exports = yo`
         <h5 class="pb-2 text-center rounded-pill subtitulo" style="background-color: #FFC0CB;" >¿Qué problemática social resuelve? </h5>
         Lo que nuestro prototipo busca resolver consiste en: disminuir las horas que una persona pasa en el tráfico y al
         mismo tiempo conseguir que se reduzca el nivel de contaminación auditiva y visual del medio en el que se
-        desarrollan los estudiantes del plantel “Dr. Ángel María Garibay Kintana” ya que esto afecta a los niveles de
+        desarrollan los estudiantes del plantel “Dr. Ángel Ma. Garibay Kintana” ya que esto afecta a los niveles de
         estrés en los alumnos y causa una baja en sus calificaciones.
         <h5 class="pb-2 text-center rounded-pill subtitulo" style="background-color: #778899;"> ¿A quién va dirigido el proyecto?</h5>
         Este proyecto fue creado pensando en una de las principales problemáticas sociales que afectan a los estudiantes
@@ -3912,7 +4043,7 @@ module.exports = yo`
             • Diodo rectificador. <br><br>
             • Batería recargable, cargador de batería y un amplificador de corriente. <br> <br>
             • Papel cascaron, popotes y hojas de colores. <br>
-            <h5 class="rounded-pill text-center subtitulo" style="background-color:#FA8072">Gráficas y datos estadisticos</h5>
+            <h5 class="rounded-pill text-center subtitulo" style="background-color:#FA8072">Gráficas y datos estadísticos</h5>
             El funcionamiento del semáforo inteligente se basa en 3 variables las cuales son las entradas analógicas
             producidas por
             las fotorresistencias e interpretadas por la placa (Arduino UNO) estas variables son directamente
@@ -4048,7 +4179,7 @@ module.exports = yo`
       <div class="carousel-item active">
         <img src="semaforos.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
-          <h1 style="color: black;">!Los semaforos inteligentes son la solución¡</h5>
+          <h1 style="color: black;">!Los semáforos inteligentes son la solución¡</h5>
         </div>
       </div>
       <div class="carousel-item ">
@@ -4076,9 +4207,9 @@ module.exports = yo`
       <div
         class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative shadow-lg bg-white rounded">
         <div class="col p-4 d-flex flex-column position-static">
-          <strong class="d-inline-block mb-2 text-primary"> ¿ Sabias que ? </strong>
+          <strong class="d-inline-block mb-2 text-primary"> ¿ Sabías qué ? </strong>
           <h3 class="mb-0">Semáforos inteligentes en la capital</h3>
-          <div class="card-text mb-auto">En la capital del pais ya se incorpora un sistema de semaforos inteligentes
+          <div class="card-text mb-auto">En la capital del país ya se incorpora un sistema de semáforos inteligentes
             para mejorar el transito vehicular</div>
           <a href="https://www.elsoldemexico.com.mx/metropoli/cdmx/asi-operan-los-semaforos-inteligentes-en-la-capital-3287849.html"
             class="stretched-link">Saber más!</a>
@@ -4095,7 +4226,7 @@ module.exports = yo`
         class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative shadow-lg bg-white rounded">
         <div class="col p-4 d-flex flex-column position-static">
           <strong class="d-inline-block mb-2 text-success">Te podría interesar!</strong>
-          <h3 class="mb-0">Semaforos Inteligentes ITESM</h3>
+          <h3 class="mb-0">Semáforos Inteligentes ITESM</h3>
           <div class="mb-auto text-justify"> Semáforos inteligentes es un proyecto que esta siendo desarrollado por
             Estudiantes del ITESM Campus Toluca.</div>
           <a href="https://www.facebook.com/pg/SemaforointeligenteITESM/about/?ref=page_internal"
@@ -4117,92 +4248,39 @@ var yo = require('yo-yo');
 
 module.exports = yo`
 <div>
-  <h3 class="pb-4 mb-4 font-italic border-bottom">
-    From the Firehose
-  </h3>
+  <h2 class="blog-post-title text-center"> <img class="bd-placeholder-img" width="40" height="40"
+      src="data:image/png;base64,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">
+    Semáforos Inteligentes
+    <img class="bd-placeholder-img" width="40" height="40"
+      src="data:image/png;base64,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">
+  </h2>
+  <h3>Visión</h3>
+  <div class="text-justify">Nuestro prototipo consiste en un semáforo inteligente, el cual será alimentado con una celda
+    solar y con él se busca mejorar los intervalos de tiempo de espera: siga, precaución y pare, esto se quiere lograr
+    automatizando y programando las decisiones que tomaría un policía de tránsito cuando un semáforo no funciona. </div>
+  <h3>Misión</h3>
+  <div class="text-justify">Queremos desarrollar este prototipo ya que es una forma sustentable para resolver el
+    contratiempo que causa el tráfico, es un proyecto verde o ecológico porque como lo dice su definición un proyecto
+    ecológico es aquel que está orientado al desarrollo de prácticas responsables con su entorno y con el diseño de
+    soluciones. En este proyecto se busca disminuir la cantidad de contaminación producida por los automóviles y esto se
+    logrará de una forma amigable con el ambiente.</div>
+  <h3>Metas</h3>
+  <div class="text-justify">Se lograría la reducción de tiempos que se emplean en los recorridos en vehículo, la
+    contaminación ambiental, auditiva y visual, lo cual se pretende lograr a finales de este semestre.</div>
 
-  <div class="blog-post">
-    <h2 class="blog-post-title">Sample blog post</h2>
-    <div class="blog-post-meta">January 1, 2014 by <a href="#">Mark</a></div>
+    <div class=" text-justify ">
 
-    <div>This blog post shows a few different types of content that’s supported and styled with Bootstrap. Basic
-      typography, images, and code are all supported.</div>
-    <hr>
-    <div>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu
-      leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras
-      mattis consectetur purus sit amet fermentum.</div>
-    <blockquote>
-      <div>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo.
-        Nullam id dolor id nibh ultricies vehicula ut id elit.</div>
-    </blockquote>
-    <div>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum.
-      Aenean lacinia bibendum nulla sed consectetur.</div>
-    <h2>Heading</h2>
-    <div>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus,
-      nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum
-      at eros.</div>
-    <h3>Sub-heading</h3>
-    <div>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</div>
-    <divre><code>Example code block</code></pre>
-      <div>Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus,
-        tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</div>
-      <h3>Sub-heading</h3>
-      <div>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum
-        nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo,
-        tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</div>
-      <ul>
-        <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
-        <li>Donec id elit non mi porta gravida at eget metus.</li>
-        <li>Nulla vitae elit libero, a pharetra augue.</li>
-      </ul>
-      <div>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</div>
-      <ol>
-        <li>Vestibulum id ligula porta felis euismod semper.</li>
-        <li>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</li>
-        <li>Maecenas sed diam eget risus varius blandit sit amet non magna.</li>
-      </ol>
-      <div>Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.</div>
-  </div><!-- /.blog-post -->
+      <h6 class=" m-2 objetivos">
+        <p class=" font-weight-bolder">INTEGRANTES:</p>  <br>
+           Garduño García Janet <br>
+           Mejía Hernandez Brenda Duliana <br>
+           Méndez Jiménez Kevin Emmanuel <br>
+           Montes de Oca Castro Antonio <br>
+           Venegas Arriaga Dayana Ludwika <br>
+      </h6>
 
-  <div class="blog-post">
-    <h2 class="blog-post-title">Another blog post</h2>
-    <div class="blog-post-meta">December 23, 2013 by <a href="#">Jacob</a></div>
+    </div>
 
-    <div>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu
-      leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras
-      mattis consectetur purus sit amet fermentum.</div>
-    <blockquote>
-      <div>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo.
-        Nullam id dolor id nibh ultricies vehicula ut id elit.</div>
-    </blockquote>
-    <div>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum.
-      Aenean lacinia bibendum nulla sed consectetur.</div>
-    <div>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus,
-      nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum
-      at eros.</div>
-  </div><!-- /.blog-post -->
-
-  <div class="blog-post">
-    <h2 class="blog-post-title">New feature</h2>
-    <div class="blog-post-meta">December 14, 2013 by <a href="#">Chris</a></div>
-
-    <div>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum
-      nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo,
-      tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</div>
-    <ul>
-      <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
-      <li>Donec id elit non mi porta gravida at eget metus.</li>
-      <li>Nulla vitae elit libero, a pharetra augue.</li>
-    </ul>
-    <div>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum.
-      Aenean lacinia bibendum nulla sed consectetur.</div>
-    <div>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</div>
-  </div><!-- /.blog-post -->
-
-  <nav class="blog-pagination">
-    <a class="btn btn-outline-primary" href="#">Older</a>
-    <a class="btn btn-outline-secondary disabled" href="#" tabindex="-1" aria-disabled="true">Newer</a>
-  </nav>
 
 </div>`;
 
@@ -4210,7 +4288,7 @@ module.exports = yo`
 yo = require('yo-yo');
 module.exports = yo`
 <div>
-    <h1>about homepage</h1>
+    <a href="https://www.gifsanimados.org/cat-semaforos-44.htm"><img src="https://www.gifsanimados.org/data/media/44/semaforo-imagen-animada-0022.gif"  width="200" height="260" border="0" alt="semaforo-imagen-animada-0022" /></a>
 </div>
 `;
 
@@ -4239,11 +4317,11 @@ require('./optativas/etimologias');
 
 require('./optativas/bioquimica');
 
+require('./optativas/herencia');
+
 require('./optativas/economia');
 
 require('./optativas/dibujo');
-
-require('./optativas/herencia');
 
 page();
 
@@ -4274,7 +4352,62 @@ yo = require('yo-yo');
 module.exports = yo`
 
 <div>
-    <h1>bio</h1>
+    <p class=" p-2 text-center titulo">Bioquímica</p>
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/185695249@N06/49124667198/in/dateposted-public/"
+        title="bio"><img src="https://live.staticflickr.com/65535/49124667198_07f511da43.jpg" width="100%" height="auto"
+            alt="bio"></a>
+    <script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+    <div class=" text-justify"> 
+        <h5 class=" text-center subtitulo"> REFELEXION: </h5>
+
+        Como sabemos la obesidad y la diabetes son enfermedades que le pueden suceder a cualquiera, ya que no respetan
+        edad o género y pueden llevar a graves consecuencias como paros cardiacos, estar medicado de por vida, daños a
+        los órganos del cuerpo y en el peor de los casos la muerte.
+        Deberíamos de tomar en consideración todo esto y no tomarlo tan a la ligera, ya que además de una herencia
+        genética de estas dos enfermedades las demás causas solo dependen de nosotros, pues son el no comer
+        adecuadamente y tener una ingesta muy alta en calorías con alimentos con demasiados hidratos de carbono y grasas
+        (lípidos); además de llevar una vida sedentaria y sin ningún tipo de actividad física, por lo que las únicas
+        calorías que quemamos son por las funciones vitales del cuerpo, como reparar o ir al baño y las pocas
+        actividades diarias.
+        De la misma forma cualquier persona se puede evitar desarrollar la obesidad o la diabetes únicamente cambiando
+        un poco sus estilos de vida, lo que incluye obviamente comer saludablemente, en base al plato del buen comer y
+        la jarra del buen beber, y solo dedicándole diariamente a hacer actividad física por lo menos 30 minutos, ya que
+        no es un tema de estética, sino de salud principalmente y que todos deberíamos conocer y tomar en cuenta.
+    </div>
+
+    <div class="accordion pb-2" id="accordionExample">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Referencias :
+                  </button>
+                </h2>
+              </div>
+          
+              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                       
+                    • Dra. Margaret Chan. Directora General de la Organización Mundial de la Salud. Obesidad y diabetes, una plaga lenta pero devastadora: discurso inaugural de la Directora General en la 47ª reunión de la Academia Nacional de Medicina Washington D.C. (EE.UU.). 17 de octubre de 2016. Obtenido de: https://www.who.int/dg/speeches/2016/obesity-diabetes-disaster/es/
+                    <br>
+                    • Escrito por el personal de Mayo Clinic. Obtenido de: https://www.mayoclinic.org/es-es/diseases-conditions/obesity/symptoms-causes/syc-20375742
+                    <br>    
+                    • Dra. Elva Leticia Pérez Luque. Departamento de Ciencias Médicas. División Ciencias de la Salud. Campus León. Obtenido de: http://www.ugto.mx/eugreka/contribuciones/4-factores-de-riesgo-en-obesidad-y-diabetes-tipo-2
+                    <br>    
+                    • Dr. Ricardo Darias-Garzón, Servicio de Endocrinología y Nutrición, Hospital Universitario Nuestra Señora de Candelaria, Santa Cruz de Tenerife. Diabetes Ascensia. Obtenido de: http://fmdiabetes.org/obesidad-abdominal-factor-factor-riesgo-diabetes/
+                    <br>    
+                    • Sánchez A, Muhn M, Lovera M, Ceballos B, Bonneau G, Pedrozo W. Índices antropométricos predicen riesgo cardiometabólico. Estudio de cohorte prospectivo en una población de empleados de hospitales públicos. Rev argent endocrinol metab [serial on the Internet]. 2014 [cited 2016 03 Ener]; 51(4): Available from: http://www.scielo.org.ar/scielo.php?script=sci_arttext&pid=S185130342014000400003&lng=es.
+                    <br>    
+                    • Kumar RB, Aronne LJ. Efficacy comparison of medications approved for chronic weight management. Obesity (Silver Spring). 2015;23 Suppl 1:S4-S7. PMID: 25900871 www.ncbi.nlm.nih.gov/pubmed/25900871.
+                    <br>
+                    • Kushner RF, Ryan DH. Assessment and lifestyle management of patients with obesity: clinical recommendations from systematic reviews. JAMA. 2014;312(9):943-952. PMID: 25182103 www.ncbi.nlm.nih.gov/pubmed/25182103.
+                    <br>  
+                    • Cowley MA, Brown WA, Considine RV. Obesity: the problem and its management. In: Jameson JL, De Groot LJ, de Kretser DM, et al, eds. Endocrinology: Adult and Pediatric. 7th ed. Philadelphia, PA
+                </div>
+              </div>
+            </div>
+          </div>
+
 </div>
 
 `;
@@ -4284,7 +4417,7 @@ yo = require('yo-yo');
 module.exports = yo`
 
 <div>
-    <h1>about</h1>
+    <img src="http://3.bp.blogspot.com/-IcTecnI7r84/Vtj2QTNzonI/AAAAAAAAABg/B6gHM_vXvOI/s1600-r/moleculaRotando_an.gif" width="100%" width="auto" alt="">
 </div>
 
 `;
@@ -4374,8 +4507,16 @@ module.exports = yo`
 `;
 
 },{"yo-yo":13}],55:[function(require,module,exports){
-arguments[4][47][0].apply(exports,arguments)
-},{"dup":47,"yo-yo":13}],56:[function(require,module,exports){
+yo = require('yo-yo');
+module.exports = yo`
+
+<div>
+    <h1>about</h1>
+</div>
+
+`;
+
+},{"yo-yo":13}],56:[function(require,module,exports){
 arguments[4][18][0].apply(exports,arguments)
 },{"dup":18,"yo-yo":13}],57:[function(require,module,exports){
 var page = require('page');
@@ -4453,14 +4594,34 @@ yo = require('yo-yo');
 module.exports = yo`
 
 <div>
-    <h1>etimo</h1>
+    <h1 class=" text-center p-2 titulo"> ETIMOLOGÍAS </h1>
+    <p class=" text-center">
+         Es estudio del origen de las palabras individuales, de su cronología, de su incorporación a un idioma, así como de la fuente y los detalles de sus cambios de forma y significado.​ 
+    </p>
+    <p class=" subtitulo text-center p-2"> Glosario </p>
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/185695249@N06/49123706157/in/dateposted-public/" title="PALABRA_page-0001"><img src="https://live.staticflickr.com/65535/49123706157_0aa7e64488.jpg" width="100%" height="auto" alt="PALABRA_page-0001"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/185695249@N06/49123020813/in/dateposted-public/" title="PALABRA_page-0002"><img src="https://live.staticflickr.com/65535/49123020813_682e083a74.jpg" width="100%" height="auto" alt="PALABRA_page-0002"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/185695249@N06/49123020423/in/dateposted-public/" title="PALABRA_page-0003"><img src="https://live.staticflickr.com/65535/49123020423_4567ba8788.jpg" width="100%" height="auto" alt="PALABRA_page-0003"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/185695249@N06/49123704832/in/dateposted-public/" title="PALABRA_page-0004"><img src="https://live.staticflickr.com/65535/49123704832_85a2fbb700.jpg" width="100%" height="auto" alt="PALABRA_page-0004"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/185695249@N06/49123704362/in/dateposted-public/" title="PALABRA_page-0005"><img src="https://live.staticflickr.com/65535/49123704362_6279516409.jpg" width="100%" height="auto" alt="PALABRA_page-0005"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/185695249@N06/49123704362/in/dateposted-public/" title="PALABRA_page-0005"><img src="https://live.staticflickr.com/65535/49123704362_6279516409.jpg" width="100%" height="auto" alt="PALABRA_page-0005"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/185695249@N06/49123018858/in/dateposted-public/" title="PALABRA_page-0007"><img src="https://live.staticflickr.com/65535/49123018858_0d4c39e697.jpg" width="100%" height="auto" alt="PALABRA_page-0007"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/185695249@N06/49123516761/in/dateposted-public/" title="PALABRA_page-0008"><img src="https://live.staticflickr.com/65535/49123516761_891f5633a1.jpg" width="100%" height="auto" alt="PALABRA_page-0008"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 </div>
 
 `;
 
 },{"yo-yo":13}],62:[function(require,module,exports){
-arguments[4][47][0].apply(exports,arguments)
-},{"dup":47,"yo-yo":13}],63:[function(require,module,exports){
+yo = require('yo-yo');
+module.exports = yo`
+
+<div>
+    <img src="https://media.giphy.com/media/O72kumwZkeElq/giphy.gif" width="260" height="200" alt="">
+</div>
+
+`;
+
+},{"yo-yo":13}],63:[function(require,module,exports){
 var page = require('page');
 
 var empty = require('empty-element');
@@ -4489,9 +4650,9 @@ module.exports = yo`
 <div>
     <br>
     <br>
-    <img src="herencia-1.jpg" alt="" width="100%" height="auto"> <br> <br>
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/185695249@N06/49116311008/in/dateposted-public/" title="herencia-1"><img src="https://live.staticflickr.com/65535/49116311008_1462d61f0d_z.jpg" width="100%" height="auto" alt="herencia-1"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script> <br> <br>
     
-    <img src=" herencia-2.jpg" alt="" width="100%" height="auto">
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/185695249@N06/49117007912/in/dateposted-public/" title="herencia-2"><img src="https://live.staticflickr.com/65535/49117007912_4b30133e76_z.jpg" width="100%" height="auto" alt="herencia-2"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 </div>
 
 `;
@@ -4501,7 +4662,7 @@ yo = require('yo-yo');
 module.exports = yo`
 
 <div>
-    <img width="260px" height="200px" class=" rounded shadow-lg" src="https://media1.tenor.com/images/750a96315e1703fc35b3c8eb6be42c95/tenor.gif?itemid=3550647" alt="" srcset="">
+    <img width="260px" height="200px" class=" rounded shadow-lg img-fluid" src="https://media1.tenor.com/images/750a96315e1703fc35b3c8eb6be42c95/tenor.gif?itemid=3550647" alt="" srcset="">
 </div>
 `;
 
@@ -4536,11 +4697,11 @@ page('/optativas', function (ctx, netx) {
 },{"./template":68,"./template2":69,"empty-element":3,"page":11}],68:[function(require,module,exports){
 yo = require('yo-yo');
 module.exports = yo`
-<div class="container">
+
+<div class="container wow bounceInDown">
   <div class="card mb-3 shadow-lg bg-white rounded">
     <img class="card-img-top" width="200" height="250"
-      src="http://observatorio.edomex.gob.mx/sites/observatorio.edomex.gob.mx/files/images/banners_mision%2C-vis-y-obj.jpg"
-      alt="...">
+      src="http://observatorio.edomex.gob.mx/sites/observatorio.edomex.gob.mx/files/images/banners_mision%2C-vis-y-obj.jpg">
     <div class="card-body">
       <h5 class="card-title text-primary">Estrategias para la resolucion de conflictos </h5>
       <h3 class="mb-0">Misión,Visión,Metas</h3>
@@ -4554,7 +4715,7 @@ module.exports = yo`
     <div class="col p-4 d-flex flex-column position-static">
       <h5 class="d-inline-block mb-2 text-success">Etimologías</h5>
       <h3 class="mb-0">Glosario de 50 palabras </h3>
-      <div class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.
+      <div class="mb-auto">Contiene un glosario etimologico de palabras relacionadas con el medio ambiente.
       </div>
       <a href="/optativas/etimologias" class="stretched-link">Ver Glosario</a>
     </div>
@@ -4563,58 +4724,66 @@ module.exports = yo`
         src="data:image/png;base64,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">
     </div>
   </div>
+
   <div
     class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative shadow-lg bg-white rounded">
     <div class="col p-4 d-flex flex-column position-static">
-      <h5 class="d-inline-block mb-2 text-success">Bioquimica</h5>
+      <h5 class="d-inline-block mb-2 text-success">Bioquímica</h5>
       <h3 class="mb-0">Trabajo bio </h3>
-      <div class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.
-      </div>
-      <a href="/optativas/bioquimica" class="stretched-link">Saber más...</a>
-    </div>
-    <div class="col-auto d-none d-lg-block">
-      <img class="bd-placeholder-img" width="200" height="250">
-    </div>
+      <div class=" mb-auto"> En esta sección se encuentra el trabajo de Bioquimica</div>
+    <a href="/optativas/bioquimica" class="stretched-link">Saber más...</a>
   </div>
-  <div
-    class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative shadow-lg bg-white rounded">
-    <div class="col p-4 d-flex flex-column position-static">
-      <h5 class="d-inline-block mb-2 text-success">Herencia y evolución</h5>
-      <h3 class="mb-0">Trabajo de Herencia </h3>
-      <div class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.
-      </div>
-      <a href="/optativas/herencia" class="stretched-link">Saber más...</a>
-    </div>
-    <div class="col-auto d-none d-lg-block">
-      <img src="https://c8.alamy.com/compes/pg1f2k/lecturas-en-la-evolucion-la-genetica-y-la-eugenesia-evolucion-herencia-eugenesia-i66-lecturas-en-la-evolucion-la-genetica-y-la-eugenesia-exterior-la-forma-de-la-pared-circunferencial-de-esta-esfera-hueca-esto-se-denomina-blastula-blastoderm-o-etapa-de-desarrollo-y-el-embrion-en-si-se-denomina-blastula-o-blastoderm-en-esta-etapa-tambien-es-comun-a-todos-los-muchos-celled-los-animales-la-siguiente-etapa-en-el-desarrollo-embrionario-esta-formado-por-la-curvatura-hacia-adentro-de-una-parte-de-la-capa-de-celulas-blastoderm-tal-y-como-se-muestra-en-g-o-la-escision-interiormente-de-celulas-de-una-parte-especial-de-la-blastula-capa-celular-este-b-pg1f2k.jpg" class="bd-placeholder-img" width="200" height="250">
-    </div>
+    
+ 
+  <div class="col-auto d-none d-lg-block">
+    <img class="bd-placeholder-img" width="200" height="250">
   </div>
-  <div
-    class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative shadow-lg bg-white rounded">
-    <div class="col p-4 d-flex flex-column position-static">
-      <h5 class="d-inline-block mb-2 text-success">economia</h5>
-      <h3 class="mb-0">Trabajo de economia </h3>
-      <div class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.
-      </div>
-      <a href="/optativas/economia" class="stretched-link">Saber más...</a>
+</div>
+
+<div
+  class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative shadow-lg bg-white rounded">
+  <div class="col p-4 d-flex flex-column position-static">
+    <h5 class="d-inline-block mb-2 text-success">Herencia y evolución</h5>
+    <h3 class="mb-0">Trabajo de Herencia </h3>
+    <div class=" mb-auto"> En esta sección se encuentra el trabajo de Herencia y evolución</div>
+  <a href="/optativas/herencia" class="stretched-link">Saber más...</a>
+</div>
+  
+<div class="col-auto d-none d-lg-block">
+  <img
+    src="https://c8.alamy.com/compes/pg1f2k/lecturas-en-la-evolucion-la-genetica-y-la-eugenesia-evolucion-herencia-eugenesia-i66-lecturas-en-la-evolucion-la-genetica-y-la-eugenesia-exterior-la-forma-de-la-pared-circunferencial-de-esta-esfera-hueca-esto-se-denomina-blastula-blastoderm-o-etapa-de-desarrollo-y-el-embrion-en-si-se-denomina-blastula-o-blastoderm-en-esta-etapa-tambien-es-comun-a-todos-los-muchos-celled-los-animales-la-siguiente-etapa-en-el-desarrollo-embrionario-esta-formado-por-la-curvatura-hacia-adentro-de-una-parte-de-la-capa-de-celulas-blastoderm-tal-y-como-se-muestra-en-g-o-la-escision-interiormente-de-celulas-de-una-parte-especial-de-la-blastula-capa-celular-este-b-pg1f2k.jpg"
+    class="bd-placeholder-img" width="200" height="250">
+</div>
+</div>
+
+<div
+  class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative shadow-lg bg-white rounded">
+  <div class="col p-4 d-flex flex-column position-static">
+    <h5 class="d-inline-block mb-2 text-success">Economía</h5>
+    <h3 class="mb-0">Trabajo de economía </h3>
+    <div class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.
     </div>
-    <div class="col-auto d-none d-lg-block">
-      <img class="bd-placeholder-img" width="200" height="250">
-    </div>
+    <a href="/optativas/economia" class="stretched-link">Saber más...</a>
   </div>
-  <div
-    class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative shadow-lg bg-white rounded">
-    <div class="col p-4 d-flex flex-column position-static">
-      <h5 class="d-inline-block mb-2 text-success">dibujo</h5>
-      <h3 class="mb-0">Trabajo de dibujo </h3>
-      <div class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.
-      </div>
-      <a href="/optativas/dibujo" class="stretched-link">Saber más...</a>
-    </div>
-    <div class="col-auto d-none d-lg-block">
-      <img src="https://cdn.pixabay.com/photo/2013/07/12/14/46/sketch-148769_960_720.png" class="bd-placeholder-img" width="200" height="250">
-    </div>
+  <div class="col-auto d-none d-lg-block">
+    <img class="bd-placeholder-img" width="200" height="250">
   </div>
+</div>
+
+<div
+  class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative shadow-lg bg-white rounded">
+  <div class="col p-4 d-flex flex-column position-static">
+    <h5 class="d-inline-block mb-2 text-success">Dibujo</h5>
+    <h3 class="mb-0">Trabajo de dibujo </h3>
+    <div class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.
+    </div>
+    <a href="/optativas/dibujo" class="stretched-link">Saber más...</a>
+  </div>
+  <div class="col-auto d-none d-lg-block">
+    <img src="https://cdn.pixabay.com/photo/2013/07/12/14/46/sketch-148769_960_720.png" class="bd-placeholder-img"
+      width="200" height="250">
+  </div>
+</div>
 </div>
 
 `;

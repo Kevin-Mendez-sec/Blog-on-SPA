@@ -2,7 +2,7 @@ yo = require('yo-yo');
 
 module.exports= yo`
 <div>
-    <h2 class="blog-post-title"> Gráficas de los resultados de encuesta</h2>
+    <h2 class="blog-post-title" id="top" > Gráficas de los resultados de encuesta</h2>
     <div id="cult2" class="text-center">
         <img class="img-fluid" style="border:black;border-width:2px;border-style: solid;border-radius: 20px;"
             width="600" height="300" src="Grafica-1.png">

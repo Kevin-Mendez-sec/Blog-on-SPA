@@ -11,7 +11,7 @@ module.exports = yo`
       <div class="carousel-item active">
         <img src="semaforos.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
-          <h1 style="color: black;">!Los semaforos inteligentes son la solución¡</h5>
+          <h1 style="color: black;">!Los semáforos inteligentes son la solución¡</h5>
         </div>
       </div>
       <div class="carousel-item ">
@@ -39,9 +39,9 @@ module.exports = yo`
       <div
         class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative shadow-lg bg-white rounded">
         <div class="col p-4 d-flex flex-column position-static">
-          <strong class="d-inline-block mb-2 text-primary"> ¿ Sabias que ? </strong>
+          <strong class="d-inline-block mb-2 text-primary"> ¿ Sabías qué ? </strong>
           <h3 class="mb-0">Semáforos inteligentes en la capital</h3>
-          <div class="card-text mb-auto">En la capital del pais ya se incorpora un sistema de semaforos inteligentes
+          <div class="card-text mb-auto">En la capital del país ya se incorpora un sistema de semáforos inteligentes
             para mejorar el transito vehicular</div>
           <a href="https://www.elsoldemexico.com.mx/metropoli/cdmx/asi-operan-los-semaforos-inteligentes-en-la-capital-3287849.html"
             class="stretched-link">Saber más!</a>
@@ -58,7 +58,7 @@ module.exports = yo`
         class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative shadow-lg bg-white rounded">
         <div class="col p-4 d-flex flex-column position-static">
           <strong class="d-inline-block mb-2 text-success">Te podría interesar!</strong>
-          <h3 class="mb-0">Semaforos Inteligentes ITESM</h3>
+          <h3 class="mb-0">Semáforos Inteligentes ITESM</h3>
           <div class="mb-auto text-justify"> Semáforos inteligentes es un proyecto que esta siendo desarrollado por
             Estudiantes del ITESM Campus Toluca.</div>
           <a href="https://www.facebook.com/pg/SemaforointeligenteITESM/about/?ref=page_internal"

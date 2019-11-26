@@ -295,7 +295,7 @@ module.exports= yo`
         </div>
     </div>
     <nav class="blog-pagination">
-        <a href="/Cultura2#cult2" class="btn btn-outline-primary">Segunda parte</a>
+        <a href="/Cultura2#top" class="btn btn-outline-primary">Segunda parte</a>
     </nav>
 </div>
 

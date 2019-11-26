@@ -3,7 +3,7 @@ yo = require('yo-yo');
 module.exports= yo`
 
 <div>
-    <h1>about</h1>
+    <img src="https://media.giphy.com/media/O72kumwZkeElq/giphy.gif" width="260" height="200" alt="">
 </div>
 
 `;
