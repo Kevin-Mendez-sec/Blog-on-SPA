@@ -26,11 +26,14 @@ module.exports = yo`
 
       <h6 class=" m-2 objetivos">
         <p class=" font-weight-bolder">INTEGRANTES:</p>  <br>
+        <div class=" text-center rounded" style=" background-color:darkorchid">
            Garduño García Janet <br>
            Mejía Hernandez Brenda Duliana <br>
            Méndez Jiménez Kevin Emmanuel <br>
            Montes de Oca Castro Antonio <br>
            Venegas Arriaga Dayana Ludwika <br>
+        </div>
+           
       </h6>
 
     </div>

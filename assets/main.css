@@ -299,8 +299,9 @@ background-size:100%;
 /*************footer End*****************/
 
 .imgzoom{
-  transition: transform 3s;
+   position: relative;
+  transition: transform .5s;
 }
 .imgzoom:hover{
-  transform: scale(1.5);
+  transform: scale(1.2);
 }

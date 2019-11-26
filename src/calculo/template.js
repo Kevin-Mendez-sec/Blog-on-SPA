@@ -17,7 +17,7 @@ module.exports= yo`
         </div>
     </div>
 
-    <h5 class=" text-center subtitulo">Aplicación de límites de una función en diferentes</h5>
+    <h5 style="background-color: lightgreen;" class="  rounded-pill text-center subtitulo">Aplicación de límites de una función en diferentes</h5>
     En el área de las ciencias biológicas, en la enseñanza media ya aparecen aplicaciones matemáticas, como son los
     logaritmos para calcular el pH en química, las ecuaciones químicas, el cálculo de mezclas... En biología, la forma
     en que los padres transmiten su información a sus hijos, o genética, es una materia que utiliza mucho la estadística
@@ -34,15 +34,16 @@ module.exports= yo`
     <div>
 
         <div>
-            <h5 class="card-title">COTINUIDAD DE UNA FUNCIÓN A LO LARGO DE LA HISTORIA</h5>
-            <div>
-                <img src="linea-calculo.jpg" class=" img-fluid" width="100%" height="auto">
+            <br>
+            <h5  style="background-color: darkcyan;" class=" subtitulo text-center rounded-pill">COTINUIDAD DE UNA FUNCIÓN A LO LARGO DE LA HISTORIA</h5>
+            <div> <br>
+                <img src="linea-calculo.jpg" class=" imgzoom img-fluid" width="100%" height="auto">
             </div>
-
+                <br>
         </div>
 
 
-        <h5 class=" text-center subtitulo">PROBLEMA DE OPTIMIZACIÓN</h5>
+        <h5 style="background-color: darksalmon;" class=" rounded-pill text-center subtitulo">PROBLEMA DE OPTIMIZACIÓN</h5>
         En la asignatura de Cálculo Diferencial se nos solicitó realizar un modelo matemático en el cual aplicáramos
         todos
         los conocimientos previos obtenidos durante el semestre en esta materia. El ejercicio que planteamos es un

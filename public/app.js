@@ -2977,7 +2977,7 @@ module.exports = yo`
         Cuestión De Tiempo
     </h1>
     <div class=" wow zoomIn" data-wow-duration="1s" data-wow-delay="1s">
-        <a data-flickr-embed="true" href="https://www.flickr.com/photos/185695249@N06/49124295843/in/dateposted-public/" title="lel"><img class=" imgzoom" src="https://live.staticflickr.com/65535/49124295843_16731ab7f3.jpg" width="100%" height="auto" alt="lel"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+        <a data-flickr-embed="true" href="https://www.flickr.com/photos/185695249@N06/49124295843/in/dateposted-public/" title="Cuestion  De Tiempo"><img class=" imgzoom" src="https://live.staticflickr.com/65535/49124295843_16731ab7f3.jpg" width="100%" height="auto" alt="Cuestion  De Tiempo"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
     </div>
     <DIV>
             <h3 class=" text-center objetivos font-weight-bolder">DESCRIPCIÓN </h3> 
@@ -3158,7 +3158,7 @@ module.exports = yo`
         </div>
     </div>
 
-    <h5 class=" text-center subtitulo">Aplicación de límites de una función en diferentes</h5>
+    <h5 style="background-color: lightgreen;" class="  rounded-pill text-center subtitulo">Aplicación de límites de una función en diferentes</h5>
     En el área de las ciencias biológicas, en la enseñanza media ya aparecen aplicaciones matemáticas, como son los
     logaritmos para calcular el pH en química, las ecuaciones químicas, el cálculo de mezclas... En biología, la forma
     en que los padres transmiten su información a sus hijos, o genética, es una materia que utiliza mucho la estadística
@@ -3175,15 +3175,16 @@ module.exports = yo`
     <div>
 
         <div>
-            <h5 class="card-title">COTINUIDAD DE UNA FUNCIÓN A LO LARGO DE LA HISTORIA</h5>
-            <div>
-                <img src="linea-calculo.jpg" class=" img-fluid" width="100%" height="auto">
+            <br>
+            <h5  style="background-color: darkcyan;" class=" subtitulo text-center rounded-pill">COTINUIDAD DE UNA FUNCIÓN A LO LARGO DE LA HISTORIA</h5>
+            <div> <br>
+                <img src="linea-calculo.jpg" class=" imgzoom img-fluid" width="100%" height="auto">
             </div>
-
+                <br>
         </div>
 
 
-        <h5 class=" text-center subtitulo">PROBLEMA DE OPTIMIZACIÓN</h5>
+        <h5 style="background-color: darksalmon;" class=" rounded-pill text-center subtitulo">PROBLEMA DE OPTIMIZACIÓN</h5>
         En la asignatura de Cálculo Diferencial se nos solicitó realizar un modelo matemático en el cual aplicáramos
         todos
         los conocimientos previos obtenidos durante el semestre en esta materia. El ejercicio que planteamos es un
@@ -4334,11 +4335,14 @@ module.exports = yo`
 
       <h6 class=" m-2 objetivos">
         <p class=" font-weight-bolder">INTEGRANTES:</p>  <br>
+        <div class=" text-center rounded" style=" background-color:darkorchid">
            Garduño García Janet <br>
            Mejía Hernandez Brenda Duliana <br>
            Méndez Jiménez Kevin Emmanuel <br>
            Montes de Oca Castro Antonio <br>
            Venegas Arriaga Dayana Ludwika <br>
+        </div>
+           
       </h6>
 
     </div>
@@ -4414,13 +4418,13 @@ yo = require('yo-yo');
 module.exports = yo`
 
 <div>
-    <p class=" p-2 text-center titulo">Bioquímica</p>
+    <h2 class=" p-2 text-center titulo">Bioquímica</h2>
     <a data-flickr-embed="true" href="https://www.flickr.com/photos/185695249@N06/49124667198/in/dateposted-public/"
         title="bio"><img src="https://live.staticflickr.com/65535/49124667198_07f511da43.jpg" width="100%" height="auto"
             alt="bio"></a>
     <script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
     <div class=" text-justify"> 
-        <h5 class=" text-center subtitulo"> REFELEXION: </h5>
+        <h5 class=" text-center subtitulo"> REFLEXIÓN: </h5>
 
         Como sabemos la obesidad y la diabetes son enfermedades que le pueden suceder a cualquiera, ya que no respetan
         edad o género y pueden llevar a graves consecuencias como paros cardiacos, estar medicado de por vida, daños a
