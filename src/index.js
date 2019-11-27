@@ -11,6 +11,5 @@ require('./optativas/estrategias');
 require('./optativas/etimologias')
 require('./optativas/bioquimica');
 require('./optativas/herencia');
-require('./optativas/economia');
 require('./optativas/dibujo');
 page();

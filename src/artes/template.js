@@ -3,7 +3,7 @@ yo = require('yo-yo');
 module.exports= yo`
 
 <div class=" text-justify wow bounceInRight">
-    <h1  class="  text-center titulo">
+    <h1  class="  text-center titulo" style="color: mediumvioletred;">
         ARTES
     </h1> 
 
@@ -14,15 +14,14 @@ module.exports= yo`
         <a data-flickr-embed="true" href="https://www.flickr.com/photos/185695249@N06/49124295843/in/dateposted-public/" title="Cuestion  De Tiempo"><img class=" imgzoom" src="https://live.staticflickr.com/65535/49124295843_16731ab7f3.jpg" width="100%" height="auto" alt="Cuestion  De Tiempo"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
     </div>
     <DIV>
-            <h3 class=" text-center objetivos font-weight-bolder">DESCRIPCIÓN </h3> 
 
-            <h5 class=" text-center font-weight-bolder">
+            <h5 class="  rounded-pill subtitulo text-center" style="background-color:indianred">
                 Lectura descriptiva
             </h5> 
 
             Nuestro mural de forma horizontal, está conformado por 4 elementos fundamentales, elaborados a base de acrílico; en el centro, se encuentra una tortuga color verde, encadenada por carreteras grises que surgen de los lados. A su vez, la tortuga está a punto de devorar una máscara de gas, y con un reloj de arena sujeto a su pata derecha, en la parte inferior izquierda del mural.
 
-            <h5 class=" text-center font-weight-bolder">
+            <h5 class="  rounded-pill text-center subtitulo" style="background-color: goldenrod;">
                 Lectura Interpretativa
             </h5>
         La tortuga es el único animal sagrado que aún perdura. Las tortugas ya fueron representadas en el arte rupestre.

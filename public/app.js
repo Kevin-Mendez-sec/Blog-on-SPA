@@ -2917,9 +2917,13 @@ yo = require('yo-yo');
 module.exports = yo`
 <div>
     <br>
+    <h1 class=" titulo text-center">
+        INGLÉS
+    </h1>
     <br>
     <img src="ingles.jpg" width="100%" height="auto">
     <br>
+    <img src="ingles2.jpg"  width="100%" height="auto" alt="">
     <h4 class=" text-center objetivos m-2">
         <a href="https://youtu.be/gKDcShq-fzI">Link del video</a> 
     </h4>
@@ -2969,7 +2973,7 @@ yo = require('yo-yo');
 module.exports = yo`
 
 <div class=" text-justify wow bounceInRight">
-    <h1  class="  text-center titulo">
+    <h1  class="  text-center titulo" style="color: mediumvioletred;">
         ARTES
     </h1> 
 
@@ -2980,15 +2984,14 @@ module.exports = yo`
         <a data-flickr-embed="true" href="https://www.flickr.com/photos/185695249@N06/49124295843/in/dateposted-public/" title="Cuestion  De Tiempo"><img class=" imgzoom" src="https://live.staticflickr.com/65535/49124295843_16731ab7f3.jpg" width="100%" height="auto" alt="Cuestion  De Tiempo"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
     </div>
     <DIV>
-            <h3 class=" text-center objetivos font-weight-bolder">DESCRIPCIÓN </h3> 
 
-            <h5 class=" text-center font-weight-bolder">
+            <h5 class="  rounded-pill subtitulo text-center" style="background-color:indianred">
                 Lectura descriptiva
             </h5> 
 
             Nuestro mural de forma horizontal, está conformado por 4 elementos fundamentales, elaborados a base de acrílico; en el centro, se encuentra una tortuga color verde, encadenada por carreteras grises que surgen de los lados. A su vez, la tortuga está a punto de devorar una máscara de gas, y con un reloj de arena sujeto a su pata derecha, en la parte inferior izquierda del mural.
 
-            <h5 class=" text-center font-weight-bolder">
+            <h5 class="  rounded-pill text-center subtitulo" style="background-color: goldenrod;">
                 Lectura Interpretativa
             </h5>
         La tortuga es el único animal sagrado que aún perdura. Las tortugas ya fueron representadas en el arte rupestre.
@@ -3143,7 +3146,7 @@ page('/calculo', function (ctx, netx) {
 yo = require('yo-yo');
 module.exports = yo`
 <div class=" text-justify wow rollIn">
-    <h1 class="  p-2 text-center titulo">
+    <h1 class="  p-2 text-center titulo" >
         CALCULO DIFERENCIAL
     </h1>
     <div>
@@ -3176,7 +3179,7 @@ module.exports = yo`
 
         <div>
             <br>
-            <h5  style="background-color: darkcyan;" class=" subtitulo text-center rounded-pill">COTINUIDAD DE UNA FUNCIÓN A LO LARGO DE LA HISTORIA</h5>
+            <h5  style="background-color: darkcyan;" class=" subtitulo text-center rounded-pill">Continuidad de una función a lo largo de la historia</h5>
             <div> <br>
                 <img src="linea-calculo.jpg" class=" imgzoom img-fluid" width="100%" height="auto">
             </div>
@@ -3184,7 +3187,7 @@ module.exports = yo`
         </div>
 
 
-        <h5 style="background-color: darksalmon;" class=" rounded-pill text-center subtitulo">PROBLEMA DE OPTIMIZACIÓN</h5>
+        <h5 style="background-color: darksalmon;" class=" rounded-pill text-center subtitulo">Problema de optimización</h5>
         En la asignatura de Cálculo Diferencial se nos solicitó realizar un modelo matemático en el cual aplicáramos
         todos
         los conocimientos previos obtenidos durante el semestre en esta materia. El ejercicio que planteamos es un
@@ -3991,7 +3994,7 @@ page('/derecho', function (ctx, netx) {
 yo = require('yo-yo');
 module.exports = yo`
 <div>
-    <h1 class="blog-post-title text-center">
+    <h1 class="titulo text-center" style="color: sandybrown;">
         <img  class="bd-placeholder-img" width="40" height="40" src="https://4.bp.blogspot.com/-qQ4Slr-kFwM/Vt7inkcNylI/AAAAAAAAB3M/WKKQeO2yGic/s1600-r/DerechoAmbiental.png">            
         NOCIONES DE DERECHO
         <img class="bd-placeholder-img" width="40" height="40" src="https://4.bp.blogspot.com/-qQ4Slr-kFwM/Vt7inkcNylI/AAAAAAAAB3M/WKKQeO2yGic/s1600-r/DerechoAmbiental.png">
@@ -3999,6 +4002,9 @@ module.exports = yo`
         <div class="embed-responsive embed-responsive-16by9">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/ngRTZBRKrKA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
+        <p class=" text-justify">
+            Este vídeo contiene las normas vigentes aplicables acerca de la contaminación al medio ambiente, ya sea por gases toxicos como el CO<sub>2</sub> o tambien la contaminación acústica. Además incluye nuestro reglamento y los beneficios que tendriamos al aplicarlo   
+        </p>
 </div>
     
 `;
@@ -4037,7 +4043,7 @@ page('/fisica', function (ctx, netx) {
 yo = require('yo-yo');
 module.exports = yo`
 <div>
-    <h1 class="p-2 titulo text-center" > Física II</h1>
+    <h1 class="p-2 titulo text-center" style="color: rgb(6, 218, 247);" > Física II</h1>
     <div class="text-justify wow fadeInRightBig">
         <h5 class="p-2 text-center rounded-pill subtitulo" style="background-color: #BC8F8F;"> ¿Qué principio físico sustenta el prototipo?</h5>
         Nuestro prototipo se ve sustentado en el principio físico que se conoce como el efecto fotovoltaico (FV), este
@@ -4234,9 +4240,9 @@ module.exports = yo`
 <div>
   <div id="carouselExampleIndicators" class="carousel slide pt-2" data-ride="carousel">
     <ol class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" ></li>
       <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2" class="active"></li>
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
@@ -4329,7 +4335,6 @@ module.exports = yo`
     logrará de una forma amigable con el ambiente.</div>
    <h3 class="text-center">Metas</h3>
   <div class="text-justify">
-      <i class="fa fa-heart" aria-hidden="true"></i>
     Se lograría la reducción de tiempos que se emplean en los recorridos en vehículo, la
     contaminación ambiental, auditiva y visual, lo cual se pretende lograr a finales de este semestre.</div>
 
@@ -4387,13 +4392,11 @@ require('./optativas/bioquimica');
 
 require('./optativas/herencia');
 
-require('./optativas/economia');
-
 require('./optativas/dibujo');
 
 page();
 
-},{"./Ingles":15,"./artes":19,"./calculo":23,"./cultura":27,"./derecho":33,"./fisica":36,"./homepage":40,"./optativas":67,"./optativas/bioquimica":45,"./optativas/dibujo":49,"./optativas/economia":53,"./optativas/estrategias":57,"./optativas/etimologias":60,"./optativas/herencia":63,"page":11}],45:[function(require,module,exports){
+},{"./Ingles":15,"./artes":19,"./calculo":23,"./cultura":27,"./derecho":33,"./fisica":36,"./homepage":40,"./optativas":63,"./optativas/bioquimica":45,"./optativas/dibujo":49,"./optativas/estrategias":53,"./optativas/etimologias":56,"./optativas/herencia":59,"page":11}],45:[function(require,module,exports){
 var page = require('page');
 
 var empty = require('empty-element');
@@ -4422,7 +4425,7 @@ module.exports = yo`
 <div>
     <h2 class=" p-2 text-center titulo">Bioquímica</h2>
     <a data-flickr-embed="true" href="https://www.flickr.com/photos/185695249@N06/49124667198/in/dateposted-public/"
-        title="bio"><img src="https://live.staticflickr.com/65535/49124667198_07f511da43.jpg" width="100%" height="auto"
+        title="bio"><img  class=" imgzoom" src="https://live.staticflickr.com/65535/49124667198_07f511da43.jpg" width="100%" height="auto"
             alt="bio"></a>
     <script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
     <div class=" text-justify"> 
@@ -4551,50 +4554,6 @@ var template = require('./template');
 
 var template2 = require('./template2');
 
-var template3 = require('./template3');
-
-page('/optativas/economia', function (ctx, netx) {
-  var main = document.getElementById('main-container');
-  var arriba = document.getElementById('arriba');
-  var about = document.getElementById('about');
-  var plantas = document.getElementById('plantas');
-  empty(arriba);
-  empty(main).appendChild(template);
-  empty(about).appendChild(template2);
-  empty(plantas).appendChild(template3);
-});
-
-},{"./template":54,"./template2":55,"./template3":56,"empty-element":3,"page":11}],54:[function(require,module,exports){
-yo = require('yo-yo');
-module.exports = yo`
-
-<div>
-    <h1>eco</h1>
-</div>
-
-`;
-
-},{"yo-yo":13}],55:[function(require,module,exports){
-yo = require('yo-yo');
-module.exports = yo`
-
-<div>
-    <h1>about</h1>
-</div>
-
-`;
-
-},{"yo-yo":13}],56:[function(require,module,exports){
-arguments[4][18][0].apply(exports,arguments)
-},{"dup":18,"yo-yo":13}],57:[function(require,module,exports){
-var page = require('page');
-
-var empty = require('empty-element');
-
-var template = require('./template');
-
-var template2 = require('./template2');
-
 page('/optativas/estrategias', function (ctx, netx) {
   var main = document.getElementById('main-container');
   var arriba = document.getElementById('arriba');
@@ -4604,7 +4563,7 @@ page('/optativas/estrategias', function (ctx, netx) {
   empty(about).appendChild(template2);
 });
 
-},{"./template":58,"./template2":59,"empty-element":3,"page":11}],58:[function(require,module,exports){
+},{"./template":54,"./template2":55,"empty-element":3,"page":11}],54:[function(require,module,exports){
 var yo = require('yo-yo');
 
 module.exports = yo`
@@ -4631,7 +4590,7 @@ module.exports = yo`
     contaminación ambiental, auditiva y visual, lo cual se pretende lograr a finales de este semestre.</div>
 </div>`;
 
-},{"yo-yo":13}],59:[function(require,module,exports){
+},{"yo-yo":13}],55:[function(require,module,exports){
 yo = require('yo-yo');
 module.exports = yo`
 <div>
@@ -4639,7 +4598,7 @@ module.exports = yo`
 </div>
 `;
 
-},{"yo-yo":13}],60:[function(require,module,exports){
+},{"yo-yo":13}],56:[function(require,module,exports){
 var page = require('page');
 
 var empty = require('empty-element');
@@ -4657,7 +4616,7 @@ page('/optativas/etimologias', function (ctx, netx) {
   empty(about).appendChild(template2);
 });
 
-},{"./template":61,"./template2":62,"empty-element":3,"page":11}],61:[function(require,module,exports){
+},{"./template":57,"./template2":58,"empty-element":3,"page":11}],57:[function(require,module,exports){
 yo = require('yo-yo');
 module.exports = yo`
 
@@ -4679,7 +4638,7 @@ module.exports = yo`
 
 `;
 
-},{"yo-yo":13}],62:[function(require,module,exports){
+},{"yo-yo":13}],58:[function(require,module,exports){
 yo = require('yo-yo');
 module.exports = yo`
 
@@ -4689,7 +4648,7 @@ module.exports = yo`
 
 `;
 
-},{"yo-yo":13}],63:[function(require,module,exports){
+},{"yo-yo":13}],59:[function(require,module,exports){
 var page = require('page');
 
 var empty = require('empty-element');
@@ -4711,7 +4670,7 @@ page('/optativas/herencia', function (ctx, netx) {
   empty(plantas).appendChild(template3);
 });
 
-},{"./template":64,"./template2":65,"./template3":66,"empty-element":3,"page":11}],64:[function(require,module,exports){
+},{"./template":60,"./template2":61,"./template3":62,"empty-element":3,"page":11}],60:[function(require,module,exports){
 yo = require('yo-yo');
 module.exports = yo`
 
@@ -4725,7 +4684,7 @@ module.exports = yo`
 
 `;
 
-},{"yo-yo":13}],65:[function(require,module,exports){
+},{"yo-yo":13}],61:[function(require,module,exports){
 yo = require('yo-yo');
 module.exports = yo`
 
@@ -4734,7 +4693,7 @@ module.exports = yo`
 </div>
 `;
 
-},{"yo-yo":13}],66:[function(require,module,exports){
+},{"yo-yo":13}],62:[function(require,module,exports){
 yo = require('yo-yo');
 module.exports = yo`
 
@@ -4742,7 +4701,7 @@ module.exports = yo`
 
 `;
 
-},{"yo-yo":13}],67:[function(require,module,exports){
+},{"yo-yo":13}],63:[function(require,module,exports){
 var page = require('page');
 
 var empty = require('empty-element');
@@ -4762,7 +4721,7 @@ page('/optativas', function (ctx, netx) {
   empty(plantas);
 });
 
-},{"./template":68,"./template2":69,"empty-element":3,"page":11}],68:[function(require,module,exports){
+},{"./template":64,"./template2":65,"empty-element":3,"page":11}],64:[function(require,module,exports){
 yo = require('yo-yo');
 module.exports = yo`
 
@@ -4797,14 +4756,12 @@ module.exports = yo`
     class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative shadow-lg bg-white rounded">
     <div class="col p-4 d-flex flex-column position-static">
       <h5 class="d-inline-block mb-2 text-success">Bioquímica</h5>
-      <h3 class="mb-0">Trabajo bio </h3>
-      <div class=" mb-auto"> En esta sección se encuentra el trabajo de Bioquimica</div>
+      <h3 class="mb-0"> Mapa conceptual  </h3>
+      <div class=" mb-auto"> Acerca de los factores de la diabetes y obesidad y su prevención reflexión sobre las causas y consecuencias de estos problemas de salud</div>
     <a href="/optativas/bioquimica" class="stretched-link">Saber más...</a>
   </div>
-    
- 
   <div class="col-auto d-none d-lg-block">
-    <img class="bd-placeholder-img" width="200" height="250">
+    <img class="bd-placeholder-img" src="https://image.flaticon.com/icons/png/512/2015/2015191.png" width="200" height="250">
   </div>
 </div>
 
@@ -4812,14 +4769,14 @@ module.exports = yo`
   class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative shadow-lg bg-white rounded">
   <div class="col p-4 d-flex flex-column position-static">
     <h5 class="d-inline-block mb-2 text-success">Herencia y evolución</h5>
-    <h3 class="mb-0">Trabajo de Herencia </h3>
-    <div class=" mb-auto"> En esta sección se encuentra el trabajo de Herencia y evolución</div>
+    <h3 class="mb-0">Alimentos transgénicos </h3>
+    <div class=" mb-auto"> Concepto, la razón de su existencia y sus posibles consecuencias. Desarrolla particularmente el caso del jitomate, sus efectos ambientales, a la salud y técnicas de modificación genética.</div>
   <a href="/optativas/herencia" class="stretched-link">Saber más...</a>
 </div>
   
 <div class="col-auto d-none d-lg-block">
   <img
-    src="https://c8.alamy.com/compes/pg1f2k/lecturas-en-la-evolucion-la-genetica-y-la-eugenesia-evolucion-herencia-eugenesia-i66-lecturas-en-la-evolucion-la-genetica-y-la-eugenesia-exterior-la-forma-de-la-pared-circunferencial-de-esta-esfera-hueca-esto-se-denomina-blastula-blastoderm-o-etapa-de-desarrollo-y-el-embrion-en-si-se-denomina-blastula-o-blastoderm-en-esta-etapa-tambien-es-comun-a-todos-los-muchos-celled-los-animales-la-siguiente-etapa-en-el-desarrollo-embrionario-esta-formado-por-la-curvatura-hacia-adentro-de-una-parte-de-la-capa-de-celulas-blastoderm-tal-y-como-se-muestra-en-g-o-la-escision-interiormente-de-celulas-de-una-parte-especial-de-la-blastula-capa-celular-este-b-pg1f2k.jpg"
+    src="https://images.vexels.com/media/users/3/159257/isolated/preview/1b111da2b3901960d586e994c1e1731b-bosquejo-de-la-cadena-de-adn-by-vexels.png"
     class="bd-placeholder-img" width="200" height="250">
 </div>
 </div>
@@ -4827,23 +4784,9 @@ module.exports = yo`
 <div
   class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative shadow-lg bg-white rounded">
   <div class="col p-4 d-flex flex-column position-static">
-    <h5 class="d-inline-block mb-2 text-success">Economía</h5>
-    <h3 class="mb-0">Trabajo de economía </h3>
-    <div class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.
-    </div>
-    <a href="/optativas/economia" class="stretched-link">Saber más...</a>
-  </div>
-  <div class="col-auto d-none d-lg-block">
-    <img class="bd-placeholder-img" width="200" height="250">
-  </div>
-</div>
-
-<div
-  class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative shadow-lg bg-white rounded">
-  <div class="col p-4 d-flex flex-column position-static">
     <h5 class="d-inline-block mb-2 text-success">Dibujo</h5>
-    <h3 class="mb-0">Trabajo de dibujo </h3>
-    <div class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.
+    <h3 class="mb-0">Vídeo </h3>
+    <div class="mb-auto">Vídeo sobre la realización de una maqueta desde su representación isométrica hasta la representación ortogonal
     </div>
     <a href="/optativas/dibujo" class="stretched-link">Saber más...</a>
   </div>
@@ -4856,7 +4799,7 @@ module.exports = yo`
 
 `;
 
-},{"yo-yo":13}],69:[function(require,module,exports){
+},{"yo-yo":13}],65:[function(require,module,exports){
 yo = require('yo-yo');
 module.exports = yo`
 <div>

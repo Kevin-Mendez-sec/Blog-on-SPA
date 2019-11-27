@@ -20,7 +20,6 @@ module.exports = yo`
     logrará de una forma amigable con el ambiente.</div>
    <h3 class="text-center">Metas</h3>
   <div class="text-justify">
-      <i class="fa fa-heart" aria-hidden="true"></i>
     Se lograría la reducción de tiempos que se emplean en los recorridos en vehículo, la
     contaminación ambiental, auditiva y visual, lo cual se pretende lograr a finales de este semestre.</div>
 

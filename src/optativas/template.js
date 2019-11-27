@@ -33,14 +33,12 @@ module.exports= yo`
     class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative shadow-lg bg-white rounded">
     <div class="col p-4 d-flex flex-column position-static">
       <h5 class="d-inline-block mb-2 text-success">Bioquímica</h5>
-      <h3 class="mb-0">Trabajo bio </h3>
-      <div class=" mb-auto"> En esta sección se encuentra el trabajo de Bioquimica</div>
+      <h3 class="mb-0"> Mapa conceptual  </h3>
+      <div class=" mb-auto"> Acerca de los factores de la diabetes y obesidad y su prevención reflexión sobre las causas y consecuencias de estos problemas de salud</div>
     <a href="/optativas/bioquimica" class="stretched-link">Saber más...</a>
   </div>
-    
- 
   <div class="col-auto d-none d-lg-block">
-    <img class="bd-placeholder-img" width="200" height="250">
+    <img class="bd-placeholder-img" src="https://image.flaticon.com/icons/png/512/2015/2015191.png" width="200" height="250">
   </div>
 </div>
 
@@ -48,14 +46,14 @@ module.exports= yo`
   class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative shadow-lg bg-white rounded">
   <div class="col p-4 d-flex flex-column position-static">
     <h5 class="d-inline-block mb-2 text-success">Herencia y evolución</h5>
-    <h3 class="mb-0">Trabajo de Herencia </h3>
-    <div class=" mb-auto"> En esta sección se encuentra el trabajo de Herencia y evolución</div>
+    <h3 class="mb-0">Alimentos transgénicos </h3>
+    <div class=" mb-auto"> Concepto, la razón de su existencia y sus posibles consecuencias. Desarrolla particularmente el caso del jitomate, sus efectos ambientales, a la salud y técnicas de modificación genética.</div>
   <a href="/optativas/herencia" class="stretched-link">Saber más...</a>
 </div>
   
 <div class="col-auto d-none d-lg-block">
   <img
-    src="https://c8.alamy.com/compes/pg1f2k/lecturas-en-la-evolucion-la-genetica-y-la-eugenesia-evolucion-herencia-eugenesia-i66-lecturas-en-la-evolucion-la-genetica-y-la-eugenesia-exterior-la-forma-de-la-pared-circunferencial-de-esta-esfera-hueca-esto-se-denomina-blastula-blastoderm-o-etapa-de-desarrollo-y-el-embrion-en-si-se-denomina-blastula-o-blastoderm-en-esta-etapa-tambien-es-comun-a-todos-los-muchos-celled-los-animales-la-siguiente-etapa-en-el-desarrollo-embrionario-esta-formado-por-la-curvatura-hacia-adentro-de-una-parte-de-la-capa-de-celulas-blastoderm-tal-y-como-se-muestra-en-g-o-la-escision-interiormente-de-celulas-de-una-parte-especial-de-la-blastula-capa-celular-este-b-pg1f2k.jpg"
+    src="https://images.vexels.com/media/users/3/159257/isolated/preview/1b111da2b3901960d586e994c1e1731b-bosquejo-de-la-cadena-de-adn-by-vexels.png"
     class="bd-placeholder-img" width="200" height="250">
 </div>
 </div>
@@ -63,23 +61,9 @@ module.exports= yo`
 <div
   class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative shadow-lg bg-white rounded">
   <div class="col p-4 d-flex flex-column position-static">
-    <h5 class="d-inline-block mb-2 text-success">Economía</h5>
-    <h3 class="mb-0">Trabajo de economía </h3>
-    <div class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.
-    </div>
-    <a href="/optativas/economia" class="stretched-link">Saber más...</a>
-  </div>
-  <div class="col-auto d-none d-lg-block">
-    <img class="bd-placeholder-img" width="200" height="250">
-  </div>
-</div>
-
-<div
-  class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative shadow-lg bg-white rounded">
-  <div class="col p-4 d-flex flex-column position-static">
     <h5 class="d-inline-block mb-2 text-success">Dibujo</h5>
-    <h3 class="mb-0">Trabajo de dibujo </h3>
-    <div class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.
+    <h3 class="mb-0">Vídeo </h3>
+    <div class="mb-auto">Vídeo sobre la realización de una maqueta desde su representación isométrica hasta la representación ortogonal
     </div>
     <a href="/optativas/dibujo" class="stretched-link">Saber más...</a>
   </div>

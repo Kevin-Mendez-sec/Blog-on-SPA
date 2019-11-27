@@ -46,10 +46,6 @@ app.get('/optativas/etimologias', function (req, res) {
   res.render('index');
 })
 
-app.get('/optativas/economia', function (req, res) {
-  res.render('index');
-})
-
 app.get('/optativas/bioquimica', function (req, res) {
   res.render('index');
 })

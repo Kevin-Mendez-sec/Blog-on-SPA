@@ -2,7 +2,7 @@ yo = require('yo-yo');
 
 module.exports= yo`
 <div class=" text-justify wow rollIn">
-    <h1 class="  p-2 text-center titulo">
+    <h1 class="  p-2 text-center titulo" >
         CALCULO DIFERENCIAL
     </h1>
     <div>
@@ -35,7 +35,7 @@ module.exports= yo`
 
         <div>
             <br>
-            <h5  style="background-color: darkcyan;" class=" subtitulo text-center rounded-pill">COTINUIDAD DE UNA FUNCIÓN A LO LARGO DE LA HISTORIA</h5>
+            <h5  style="background-color: darkcyan;" class=" subtitulo text-center rounded-pill">Continuidad de una función a lo largo de la historia</h5>
             <div> <br>
                 <img src="linea-calculo.jpg" class=" imgzoom img-fluid" width="100%" height="auto">
             </div>
@@ -43,7 +43,7 @@ module.exports= yo`
         </div>
 
 
-        <h5 style="background-color: darksalmon;" class=" rounded-pill text-center subtitulo">PROBLEMA DE OPTIMIZACIÓN</h5>
+        <h5 style="background-color: darksalmon;" class=" rounded-pill text-center subtitulo">Problema de optimización</h5>
         En la asignatura de Cálculo Diferencial se nos solicitó realizar un modelo matemático en el cual aplicáramos
         todos
         los conocimientos previos obtenidos durante el semestre en esta materia. El ejercicio que planteamos es un

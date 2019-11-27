@@ -5,7 +5,7 @@ module.exports= yo`
 <div>
     <h2 class=" p-2 text-center titulo">Bioquímica</h2>
     <a data-flickr-embed="true" href="https://www.flickr.com/photos/185695249@N06/49124667198/in/dateposted-public/"
-        title="bio"><img src="https://live.staticflickr.com/65535/49124667198_07f511da43.jpg" width="100%" height="auto"
+        title="bio"><img  class=" imgzoom" src="https://live.staticflickr.com/65535/49124667198_07f511da43.jpg" width="100%" height="auto"
             alt="bio"></a>
     <script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
     <div class=" text-justify"> 
